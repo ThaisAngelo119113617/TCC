@@ -1,0 +1,610 @@
+[0mUsing GAZEBO version: harmonic[0m
+-- Looking for gz-sim8 -- found version 8.13.0
+-- Searching for dependencies of gz-sim8
+-- Looking for sdformat14 -- found version 14.9.0
+-- Searching for dependencies of sdformat14
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 9.0.0
+-- Looking for gz-math7 -- found version 7.6.0
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for dependencies of gz-utils2
+-- Searching for <gz-utils2> component [cli]
+-- Looking for gz-utils2-cli -- found version 2.2.1
+-- Searching for dependencies of gz-utils2-cli
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-plugin2> component [loader]
+-- Looking for gz-plugin2-loader -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2-loader
+-- Searching for <gz-plugin2> component [register]
+-- Looking for gz-plugin2-register -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2-register
+-- Looking for gz-transport13 -- found version 13.5.0
+-- Searching for dependencies of gz-transport13
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.4
+-- Checking for module 'uuid'
+--   Found uuid, version 2.37.2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Searching for dependencies of gz-msgs10
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-math7 -- found version 7.6.0
+-- Searching for <gz-transport13> component [log]
+-- Looking for gz-transport13-log -- found version 13.5.0
+-- Searching for dependencies of gz-transport13-log
+-- Searching for <gz-transport13> component [parameters]
+-- Looking for gz-transport13-parameters -- found version 13.5.0
+-- Searching for dependencies of gz-transport13-parameters
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-common5 -- found version 5.8.0
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [av]
+-- Looking for gz-common5-av -- found version 5.8.0
+-- Searching for dependencies of gz-common5-av
+-- Checking for module 'libswscale'
+--   Found libswscale, version 5.9.100
+-- Checking for module 'libavdevice >= 56.4.100'
+--   Found libavdevice , version 58.13.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 58.76.100
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 58.134.100
+-- Checking for module 'libavutil'
+--   Found libavutil, version 56.70.100
+-- Searching for <gz-common5> component [events]
+-- Looking for gz-common5-events -- found version 5.8.0
+-- Searching for dependencies of gz-common5-events
+-- Looking for gz-math7 -- found version 7.6.0
+-- Searching for <gz-common5> component [graphics]
+-- Looking for gz-common5-graphics -- found version 5.8.0
+-- Searching for dependencies of gz-common5-graphics
+-- Looking for gz-math7 -- found version 7.6.0
+-- Found GzAssimp: TRUE (found version "5.2.0") 
+-- Searching for <gz-common5> component [io]
+-- Looking for gz-common5-io -- found version 5.8.0
+-- Searching for dependencies of gz-common5-io
+-- Searching for <gz-common5> component [profiler]
+-- Looking for gz-common5-profiler -- found version 5.8.0
+-- Searching for dependencies of gz-common5-profiler
+-- Looking for gz-fuel_tools9 -- found version 9.1.1
+-- Searching for dependencies of gz-fuel_tools9
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-common5 -- found version 5.8.0
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [testing]
+-- Looking for gz-common5-testing -- found version 5.8.0
+-- Searching for dependencies of gz-common5-testing
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-gui8 -- found version 8.4.0
+-- Searching for dependencies of gz-gui8
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-transport13 -- found version 13.5.0
+-- Looking for gz-rendering8 -- found version 8.2.3
+-- Searching for dependencies of gz-rendering8
+-- Looking for gz-math7 -- found version 7.6.0
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-math7> component [eigen3]
+-- Looking for gz-math7-eigen3 -- found version 7.6.0
+-- Searching for dependencies of gz-math7-eigen3
+-- Looking for gz-common5 -- found version 5.8.0
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [graphics]
+-- Searching for <gz-common5> component [events]
+-- Searching for <gz-common5> component [geospatial]
+-- Looking for gz-common5-geospatial -- found version 5.8.0
+-- Searching for dependencies of gz-common5-geospatial
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-plugin2> component [all]
+-- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-physics7 -- found version 7.8.0
+-- Searching for dependencies of gz-physics7
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-physics7> component [heightmap]
+-- Looking for gz-physics7-heightmap -- found version 7.8.0
+-- Searching for dependencies of gz-physics7-heightmap
+-- Looking for gz-common5 -- found version 5.8.0
+-- Searching for <gz-physics7> component [mesh]
+-- Looking for gz-physics7-mesh -- found version 7.8.0
+-- Searching for dependencies of gz-physics7-mesh
+-- Looking for gz-common5 -- found version 5.8.0
+-- Searching for <gz-physics7> component [sdf]
+-- Looking for gz-physics7-sdf -- found version 7.8.0
+-- Searching for dependencies of gz-physics7-sdf
+-- Looking for sdformat14 -- found version 14.9.0
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-transport13 -- found version 13.5.0
+-- Looking for gz-rendering8 -- found version 8.2.3
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for sdformat14 -- found version 14.9.0
+-- Searching for <gz-sensors8> component [air_pressure]
+-- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-air_pressure
+-- Searching for <gz-sensors8> component [air_speed]
+-- Looking for gz-sensors8-air_speed -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-air_speed
+-- Searching for <gz-sensors8> component [altimeter]
+-- Looking for gz-sensors8-altimeter -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-altimeter
+-- Searching for <gz-sensors8> component [imu]
+-- Looking for gz-sensors8-imu -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-imu
+-- Searching for <gz-sensors8> component [force_torque]
+-- Looking for gz-sensors8-force_torque -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-force_torque
+-- Searching for <gz-sensors8> component [logical_camera]
+-- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-logical_camera
+-- Searching for <gz-sensors8> component [magnetometer]
+-- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-magnetometer
+-- Searching for <gz-sensors8> component [navsat]
+-- Looking for gz-sensors8-navsat -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-navsat
+-- Searching for <gz-sensors8> component [dvl]
+-- Looking for gz-sensors8-dvl -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-dvl
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-transport13 -- found version 13.5.0
+-- Looking for gz-rendering8 -- found version 8.2.3
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for sdformat14 -- found version 14.9.0
+-- Searching for <gz-sensors8> component [rendering]
+-- Looking for gz-sensors8-rendering -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-rendering
+-- Searching for <gz-sensors8> component [rendering]
+-- Searching for <gz-sensors8> component [lidar]
+-- Looking for gz-sensors8-lidar -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-lidar
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [gpu_lidar]
+-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-gpu_lidar
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [camera]
+-- Looking for gz-sensors8-camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [boundingbox_camera]
+-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-boundingbox_camera
+-- Searching for <gz-sensors8> component [segmentation_camera]
+-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-segmentation_camera
+-- Searching for <gz-sensors8> component [depth_camera]
+-- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-depth_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [rgbd_camera]
+-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-rgbd_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [thermal_camera]
+-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-thermal_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [wide_angle_camera]
+-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-wide_angle_camera
+-- Looking for gz-rendering8 -- found version 8.2.3
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-common5 -- found version 5.8.0
+-- Looking for gz-math7 -- found version 7.6.0
+-- Looking for gz-transport13 -- found version 13.5.0
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-rendering8 -- found version 8.2.3
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ros_gz_sim: 0.244.12 (/opt/ros/humble/share/ros_gz_sim/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ros_gz_bridge: 0.244.12 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+-- Found as2_core: 1.1.3 (/home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake)
+-- Created yaml-cpp::yaml-cpp alias from yaml-cpp target
+-- Created GeographicLib::GeographicLib target from legacy variables
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found ament_cmake_pytest: 1.3.14 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/include;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/include/as2_gazebo_assets
+-- Configured cppcheck exclude dirs and/or files: /home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Common.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Common.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/INDIControlPlugin.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/INDIControlPlugin.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/IndiController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/PIDController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Parameters.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Common.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Common.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/INDIControlPlugin.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/INDIControlPlugin.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/IndiController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/PIDController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Parameters.hpp
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: /home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Common.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Common.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/INDIControlPlugin.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/INDIControlPlugin.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/IndiController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/PIDController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control/Parameters.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Common.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Common.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/INDIControlPlugin.cpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/INDIControlPlugin.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/IndiController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/PIDController.hpp;/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/plugins/indi-control_ign/Parameters.hpp
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/developer/aerostack2_ws/build/as2_gazebo_assets
+[  7%] [32mBuilding CXX object CMakeFiles/object_tf_broadcaster.dir/src/object_tf_broadcaster/object_tf_broadcaster.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/object_tf_broadcaster.dir/src/object_tf_broadcaster/object_tf_broadcaster_node.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/SuctionGripper.dir/plugins/SuctionGripper.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/acro_bridge.dir/src/acro_bridge/acro_bridge.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/azimuth_bridge.dir/src/azimuth_bridge/azimuth_bridge_node.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/azimuth_bridge.dir/src/azimuth_bridge/azimuth_bridge.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/gimbal_bridge.dir/src/gimbal_bridge/gimbal_bridge.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/gps_bridge.dir/src/gps_bridge/gps_bridge_node.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/gimbal_bridge.dir/src/gimbal_bridge/gimbal_bridge_node.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/acro_bridge.dir/src/acro_bridge/acro_bridge_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/gps_bridge.dir/src/gps_bridge/gps_bridge.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/MulticopterINDIControl.dir/plugins/indi-control/Common.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/MulticopterINDIControl.dir/plugins/indi-control/INDIControlPlugin.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/set_entity_pose_bridge.dir/src/set_entity_pose_bridge/set_entity_pose_bridge.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/set_entity_pose_bridge.dir/src/set_entity_pose_bridge/set_entity_pose_bridge_node.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ground_truth_bridge.dir/src/ground_truth_bridge/ground_truth_bridge.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ground_truth_bridge.dir/src/ground_truth_bridge/ground_truth_bridge_node.cpp.o[0m
+[ 65%] Built target ament_cmake_python_symlink_as2_gazebo_assets
+running egg_info
+creating as2_gazebo_assets.egg-info
+writing as2_gazebo_assets.egg-info/PKG-INFO
+writing dependency_links to as2_gazebo_assets.egg-info/dependency_links.txt
+writing top-level names to as2_gazebo_assets.egg-info/top_level.txt
+writing manifest file 'as2_gazebo_assets.egg-info/SOURCES.txt'
+reading manifest file 'as2_gazebo_assets.egg-info/SOURCES.txt'
+writing manifest file 'as2_gazebo_assets.egg-info/SOURCES.txt'
+[ 65%] Built target ament_cmake_python_build_as2_gazebo_assets_egg
+[ 69%] [32m[1mLinking CXX executable gps_bridge[0m
+[ 73%] [32m[1mLinking CXX executable azimuth_bridge[0m
+[ 76%] [32m[1mLinking CXX executable set_entity_pose_bridge[0m
+[ 76%] Built target azimuth_bridge
+[ 76%] Built target set_entity_pose_bridge
+[ 80%] [32m[1mLinking CXX executable object_tf_broadcaster[0m
+[ 80%] Built target gps_bridge
+[ 84%] [32m[1mLinking CXX executable ground_truth_bridge[0m
+[ 84%] Built target object_tf_broadcaster
+[ 84%] Built target ground_truth_bridge
+[ 88%] [32m[1mLinking CXX shared library libMulticopterINDIControl.so[0m
+[ 92%] [32m[1mLinking CXX executable acro_bridge[0m
+[ 96%] [32m[1mLinking CXX executable gimbal_bridge[0m
+[ 96%] Built target MulticopterINDIControl
+[ 96%] Built target acro_bridge
+[ 96%] Built target gimbal_bridge
+[100%] [32m[1mLinking CXX shared library libSuctionGripper.so[0m
+[100%] Built target SuctionGripper
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/resource_paths.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/resource_paths.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/azimuth_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/gps_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/ground_truth_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/object_tf_broadcaster
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/gimbal_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/acro_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/as2_gazebo_assets/set_entity_pose_bridge
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/libSuctionGripper.so
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/lib/libMulticopterINDIControl.so
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/pythonpath.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/pythonpath.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets-1.1.3-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets-1.1.3-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets-1.1.3-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets-1.1.3-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/__init__.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/__init__.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/bridge.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/bridges.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/custom_bridges.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/__init__.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/drone.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/entity.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/object.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/payload.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/tests/test_models.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/utils/launch_exception.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/world.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/acro_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/azimuth_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/gimbal_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/gps_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/ground_truth_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/object_tf_broadcaster.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/include/as2_gazebo_assets/set_entity_pose_bridge.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/launch/drone_bridges.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/launch/launch_simulation.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/launch/monitor_sim.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/launch/object_bridges.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/launch/world_bridges.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/worlds/default.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/worlds/empty.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/worlds/grass.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/worlds/test_gripper.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/3d_lidar/3d_lidar.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/3d_lidar/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/air_pressure/air_pressure.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/air_pressure/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/aruco.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/scripts/aruco.material
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/textures/marker1.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/textures/marker2.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/textures/marker3.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/textures/marker4.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/materials/textures/marker5.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/meshes/checkerboard_plane.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/aruco_gate_1.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/meshes/background.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/meshes/base.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/meshes/base_2.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/meshes/hoop.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/meshes/hoop_2.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_1/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_2/aruco_gate_2.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/aruco_gate_2/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/crazyflie.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/crazyflie.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/meshes/ccw_prop.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/meshes/cf2_assembly.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/meshes/cw_prop.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/crazyflie/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/cvar_gate/cvar_gate.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/cvar_gate/meshes/cvar_gate_texture.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/cvar_gate/meshes/model.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/cvar_gate/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/f330/f330.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/f330/f330.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/f330/meshes/model.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/f330/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gate/gate.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gate/meshes/gate.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gate/meshes/gate_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gate/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gimbal/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gimbal/position_gimbal.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gimbal/position_gimbal.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gimbal/speed_gimbal.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gps/gps.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/gps/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grass_patch/materials/textures/grass_dry.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grass_patch/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grass_patch/model.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grass_patch/thumbnails/grasspatch.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grayscale_camera/grayscale_camera.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grayscale_camera/grayscale_camera.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/grayscale_camera/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/ground_plane/ground_plane.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/ground_plane/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hd_camera/hd_camera.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hd_camera/hd_camera.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hd_camera/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/hexrotor_base.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/hexrotor_base.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/materials/textures/led.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/hexrotor.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/hexrotor.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/led.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/led_lamp.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/neo11_propeller_ccw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/meshes/neo11_propeller_cw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/hexrotor_base/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/lidar_3d/lidar_3d.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/lidar_3d/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/magnetometer/magnetometer.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/magnetometer/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/planar_lidar/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/planar_lidar/planar_lidar.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/point_lidar/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/point_lidar/point_lidar.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/meshes/body.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/meshes/iris_prop_ccw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/meshes/iris_prop_cw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/px4vision.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/px4vision.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/thumbnails/px4_vision_front.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/thumbnails/px4_vision_top.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/px4vision/thumbnails/px4vision_diagonal.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/materials/textures/led.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/led.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/led_lamp.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/propeller_ccw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/propeller_cw.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/quadrotor.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/meshes/quadrotor.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/quadrotor_base.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/quadrotor_base/quadrotor_base.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/rgbd_camera/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/rgbd_camera/rgbd_camera.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/rgbd_camera/rgbd_camera.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/semantic_camera/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/semantic_camera/semantic_camera.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/semantic_camera/semantic_camera.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/suction_gripper/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/suction_gripper/suction_gripper.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/suction_gripper/suction_gripper.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/base_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/base_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/elbow_flex_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/elbow_flex_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/finger_H_Color_100430.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/fingertip_H_Color_100430.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/float_H_Color_100430.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/forearm.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/forearm_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/forearm_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/gripper_palm_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/gripper_palm_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_pan_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_pan_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_tilt_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_tilt_color_red.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_tilt_color_yellow.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_tilt_green.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/head_tilt_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_finger_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_finger_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_finger_tip_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_finger_tip_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_float_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/l_float_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/palm_H_Color_100430.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/shoulder_lift_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/shoulder_lift_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/shoulder_pan_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/shoulder_pan_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/tilting_hokuyo_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/tilting_hokuyo_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/torso_lift_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/torso_lift_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/upper_arm.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/upper_arm_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/upper_arm_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/upper_arm_roll_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/upper_arm_roll_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/wheel_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/wheel_h_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/wheel_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/wrist_color.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/materials/textures/wrist_normals.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/forearm_v0/wrist_roll.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/forearm_v0/wrist_roll_L.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/float_H_UV_100430.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/gripper_palm.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/gripper_palm.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_finger.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_finger.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_finger_tip.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_finger_tip.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_float.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/l_floating.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/palm_H_UV_100430.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/upper_finger_l.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/meshes/gripper_v0/upper_finger_r.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/thumbnails/1.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/thumbnails/2.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/thumbnails/3.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/thumbnails/4.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/thumbnails/5.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/two_fingers_gripper.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/two_fingers_gripper/two_fingers_gripper.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/vga_camera/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/vga_camera/vga_camera.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/vga_camera/vga_camera.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/meshes/Plastic010_1K_Displacement.jpg
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/meshes/blades.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/meshes/rotor.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/meshes/tower.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/windmill/windmill.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/materials/textures/CF.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/materials/textures/nxp.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/materials/textures/rd.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/1345_prop_ccw.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/1345_prop_cw.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/5010Base.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/5010Bell.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/CF.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/meshes/NXP-HGD-CF.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/thumbnails/1.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/thumbnails/2.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/thumbnails/3.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/thumbnails/4.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/thumbnails/5.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/x500.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500/x500.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/materials/textures/CF.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/materials/textures/nxp.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/materials/textures/rd.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/1345_prop_ccw.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/1345_prop_cw.stl
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/5010Base.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/5010Bell.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/CF.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/meshes/NXP-HGD-CF.dae
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/model.config
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/thumbnails/1.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/thumbnails/2.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/thumbnails/3.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/thumbnails/4.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/thumbnails/5.png
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/x500_px4.sdf
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models/x500_px4/x500_px4.sdf.jinja
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/scripts/jinja_gen.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/ament_index/resource_index/package_run_dependencies/as2_gazebo_assets
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/ament_index/resource_index/parent_prefix_path/as2_gazebo_assets
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/ament_prefix_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/ament_prefix_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/environment/path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/local_setup.bash
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/local_setup.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/local_setup.zsh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/local_setup.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/package.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/ament_index/resource_index/packages/as2_gazebo_assets
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/cmake/as2_gazebo_assetsConfig.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/cmake/as2_gazebo_assetsConfig-version.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/package.xml
+Listing '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/__init__.py'...
+Listing '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/__init__.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/bridge.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/bridges.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/bridges/custom_bridges.py'...
+Listing '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/__init__.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/drone.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/entity.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/object.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/models/payload.py'...
+Listing '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/tests'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/tests/test_models.py'...
+Listing '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/utils'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/utils/launch_exception.py'...
+Compiling '/home/developer/aerostack2_ws/install/as2_gazebo_assets/local/lib/python3.10/dist-packages/as2_gazebo_assets/world.py'...

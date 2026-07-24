@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_aerial_platforms/as2_platform_multirotor_simulator/include/as2_platform_multirotor_simulator/as2_interface.hpp

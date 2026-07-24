@@ -1,0 +1,16 @@
+In file included from [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/src/detect_aruco_markers_behavior.cpp:29[m[K:
+[01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/include/detect_aruco_markers_behavior/detect_aruco_markers_behavior.hpp:40:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+   40 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/build.make:76: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/src/detect_aruco_markers_behavior_node.cpp:38[m[K:
+[01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/include/detect_aruco_markers_behavior/detect_aruco_markers_behavior.hpp:40:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+   40 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/build.make:90: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:209: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

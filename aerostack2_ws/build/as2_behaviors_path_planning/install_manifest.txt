@@ -1,0 +1,6 @@
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/lib/libas2_behaviors_path_planning_plugin_base.so
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/lib/libpath_planner_component.so
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/share/as2_behaviors_path_planning/cmake/as2_behaviors_path_planning_plugin_baseExport.cmake
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/share/as2_behaviors_path_planning/cmake/as2_behaviors_path_planning_plugin_baseExport-release.cmake
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/lib/liba_star.so
+/home/developer/aerostack2_ws/install/as2_behaviors_path_planning/lib/libvoronoi.so

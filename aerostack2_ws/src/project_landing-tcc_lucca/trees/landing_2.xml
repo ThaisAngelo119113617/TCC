@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <SequenceStar>
+            <Decorator ID="WaitForEvent" result="start_event" topic_name="start">
+                <AlwaysSuccess/>
+            </Decorator>
+            <Action ID="Arm" service_name="set_arming_state"/>
+            <Action ID="Offboard" service_name="set_offboard_mode"/>
+            <Action ID="TakeOff" height="2" speed="0.5"/>
+            <Fallback>
+                <Sequence>
+                    <Parallel failure_threshold="1" success_threshold="1">
+                        <Repeat num_cycles="2">
+                            <Sequence>
+                                <Action ID="GoTo" max_speed="2" offset="0;0;0" pose="-2;2;5" yaw_angle="0.0" yaw_mode="0"/>
+                                <Action ID="GoTo" max_speed="2" offset="0;0;0" pose="2;2;5" yaw_angle="0.0" yaw_mode="0"/>
+                                <Action ID="GoTo" max_speed="2" offset="0;0;0" pose="2;-2;5" yaw_angle="0.0" yaw_mode="0"/>
+                                <Action ID="GoTo" max_speed="2" offset="0;0;0" pose="-2;-2;5" yaw_angle="0.0" yaw_mode="0"/>
+                            </Sequence>
+                        </Repeat>
+                        <Decorator ID="WaitForTFDecorator" source_frame="earth" target_frame="aruco_1" tf_pose="" tf_position="{aruco_global_position}">
+                            <Sequence>
+                                <SetBlackboard output_key="aruco_global_position" value="{aruco_global_position}"/>
+                                <Action ID="Echo" data="{aruco_global_position}"/>
+                                <Inverter>
+                                    <AlwaysSuccess/>
+                                </Inverter>
+                            </Sequence>
+                        </Decorator>
+                    </Parallel>
+                    <Action ID="GoTo" max_speed="2" offset="0;0;0" pose="0;0;5" yaw_angle="0.0" yaw_mode="0"/>
+                    <Action ID="Land" speed="0.5"/>
+                </Sequence>
+                <Sequence>
+                    <Action ID="GoTo" max_speed="2" offset="0;0;5" pose="{aruco_global_position}" yaw_angle="0.0" yaw_mode="0"/>
+                    <Action ID="PrecisionLanding" marker_frame_id="aruco_1"/>
+                    <Action ID="Land" speed="0.5"/>
+                </Sequence>
+            </Fallback>
+        </SequenceStar>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="Arm">
+            <input_port default="set_arming_state" name="service_name">Arming service name</input_port>
+        </Action>
+        <SubTree ID="ArmTakeoff">
+            <input_port default="false" name="__shared_blackboard">If false (default), the Subtree has an isolated blackboard and needs port remapping</input_port>
+            <input_port default="2" name="tk_height">Takeoff Height</input_port>
+            <input_port default="0.5" name="tk_speed">Takeoff Speed</input_port>
+        </SubTree>
+        <Action ID="Disarm">
+            <input_port default="set_arming_state" name="service_name">Arming service name</input_port>
+        </Action>
+        <Action ID="Echo">
+            <input_port name="data"/>
+        </Action>
+        <Action ID="FollowObject"/>
+        <Action ID="FollowPath"/>
+        <Action ID="GetOrigin">
+            <output_port name="altitude">Altitude</output_port>
+            <output_port name="latitude">Latitude</output_port>
+            <output_port name="longitude">Longitude</output_port>
+            <input_port default="get_origin" name="service_name">Get origin</input_port>
+        </Action>
+        <Action ID="GoTo">
+            <input_port name="max_speed">Maximum cruise speed</input_port>
+            <input_port default="0;0;0" name="offset">Offset</input_port>
+            <input_port name="pose">Position</input_port>
+            <input_port default="0.0" name="yaw_angle">Angle of yaw</input_port>
+            <input_port default="0" name="yaw_mode">Yaw mode flag: {KEEP_YAW = 0; PATH_FACING = 1; FIXED_YAW = 2}</input_port>
+        </Action>
+        <Action ID="GoToGps">
+            <input_port default="0.0" name="altitude">Altitude</input_port>
+            <input_port default="0.0" name="latitude">Latitude</input_port>
+            <input_port default="0.0" name="longitude">Longitude</input_port>
+            <input_port name="max_speed">Maximum cruise speed</input_port>
+            <input_port default="0.0" name="yaw_angle">Angle of yaw</input_port>
+            <input_port default="0" name="yaw_mode">Yaw mode flag: {KEEP_YAW = 0; PATH_FACING = 1; FIXED_YAW = 2}</input_port>
+        </Action>
+        <Action ID="GpsToCartesian">
+            <input_port default="0.0" name="latitude">Latitude</input_port>
+            <input_port default="0.0" name="longitude">Longitude</input_port>
+            <output_port name="out_pose">Target Pose</output_port>
+            <input_port default="geopath_to_path" name="service_name">Geopath to be converted</input_port>
+            <input_port default="0.0" name="z">Altitude</input_port>
+        </Action>
+        <Action ID="Hover"/>
+        <SubTree ID="IdentifyVessel"/>
+        <Condition ID="IsArucoDetected">
+            <input_port name="aruco_id">Aruco ID</input_port>
+            <input_port name="dist_threshold">Minimum distance to aruco</input_port>
+            <output_port name="pose">Aruco Pose</output_port>
+            <input_port name="topic_name">Topic Name</input_port>
+        </Condition>
+        <Condition ID="IsFlying"/>
+        <Condition ID="IsTargetDetected">
+            <input_port name="dist_threshold">Minimum distance to target</input_port>
+            <output_port name="pose">Target Pose</output_port>
+            <input_port name="topic_name">Topic Name</input_port>
+        </Condition>
+        <Action ID="Land">
+            <input_port default="0.5" name="speed">Landing speed</input_port>
+        </Action>
+        <Action ID="Offboard">
+            <input_port default="set_offboard_mode" name="service_name">Offboard service name</input_port>
+        </Action>
+        <Action ID="Pick"/>
+        <SubTree ID="PickObject"/>
+        <Action ID="PrecisionLanding">
+            <input_port name="marker_frame_id">Marker Frame ID</input_port>
+        </Action>
+        <SubTree ID="RTL">
+            <input_port default="false" name="__shared_blackboard">If false (default), the Subtree has an isolated blackboard and needs port remapping</input_port>
+        </SubTree>
+        <SubTree ID="SearchInArea"/>
+        <Action ID="SendEvent">
+            <input_port name="data">Data to send</input_port>
+            <input_port name="topic_name">Topic Name</input_port>
+        </Action>
+        <Action ID="SetOrigin">
+            <input_port default="0.0" name="altitude">Altitude</input_port>
+            <input_port default="0.0" name="latitude">Latitude</input_port>
+            <input_port default="0.0" name="longitude">Longitude</input_port>
+            <input_port default="set_origin" name="service_name">Set origin</input_port>
+        </Action>
+        <Action ID="TakeOff">
+            <input_port default="2" name="height">Takeoff Height</input_port>
+            <input_port default="0.5" name="speed">Takeoff Speed</input_port>
+        </Action>
+        <Action ID="UnPick"/>
+        <SubTree ID="UnPickObject"/>
+        <Decorator ID="WaitForAlert">
+            <output_port name="alert">Alert</output_port>
+            <input_port name="topic_name">Alert Topic Name</input_port>
+        </Decorator>
+        <Decorator ID="WaitForAruco">
+            <input_port name="aruco_id">Aruco ID</input_port>
+            <output_port name="aruco_pose">Aruco Pose in Camera Frame</output_port>
+            <input_port name="topic_name">Aruco Topic Name</input_port>
+        </Decorator>
+        <Decorator ID="WaitForEvent">
+            <output_port name="result">Result</output_port>
+            <input_port name="topic_name">Event Topic Name</input_port>
+        </Decorator>
+        <Decorator ID="WaitForTFDecorator">
+            <input_port name="source_frame">Source Frame for TF</input_port>
+            <input_port name="target_frame">Target Frame for TF</input_port>
+            <output_port name="tf_pose">Output TF Pose</output_port>
+            <output_port name="tf_position">Output TF Position</output_port>
+        </Decorator>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>

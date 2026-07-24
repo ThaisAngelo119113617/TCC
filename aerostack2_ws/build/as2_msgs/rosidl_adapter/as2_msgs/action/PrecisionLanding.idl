@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from as2_msgs/action/PrecisionLanding.action
+// generated code does not contain a copyright notice
+
+
+module as2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Land action definition")
+    struct PrecisionLanding_Goal {
+      @verbatim (language="comment", text=
+        "Request" "\n"
+        "marker frame ID")
+      string marker_frame_id;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct PrecisionLanding_Result {
+      @verbatim (language="comment", text=
+        "false if failed to land")
+      boolean precision_landing_success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct PrecisionLanding_Feedback {
+      @verbatim (language="comment", text=
+        "actual speed (m/s)")
+      float precision_landing_speed;
+
+      @verbatim (language="comment", text=
+        "actual height (m)")
+      float precision_landing_height;
+
+      @verbatim (language="comment", text=
+        "distance to target in xy (m)")
+      float distance_xy;
+
+      @verbatim (language="comment", text=
+        "distance to target in z (m)")
+      float distance_z;
+    };
+  };
+};

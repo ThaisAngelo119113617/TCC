@@ -1,0 +1,160 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 982,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 990,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1040,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1059,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1065,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1071,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/glog-build/libglog.so.0.6.0",
+				"_deps/glog-build/libglog.so.1"
+			],
+			"targetId" : "glog::@224256942feaec034081",
+			"targetIndex" : 37,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/glog-build/libglog.so"
+			],
+			"targetId" : "glog::@224256942feaec034081",
+			"targetIndex" : 37,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/glog",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog/export.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog/logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog/raw_logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog/stl_logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog/vlog_is_on.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src/src/glog/log_severity.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src/src/glog/platform.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/libglog.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Development",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glog",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog-config.cmake",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/glog-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Development",
+			"destination" : "share/glog",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/share/glog/cmake"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glog",
+			"exportName" : "glog-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "glog::@224256942feaec034081",
+					"index" : 37
+				}
+			],
+			"paths" : 
+			[
+				"_deps/glog-build/CMakeFiles/Export/lib/cmake/glog/glog-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/glog-build",
+		"source" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src"
+	}
+}

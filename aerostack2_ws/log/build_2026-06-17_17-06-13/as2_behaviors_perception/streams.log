@@ -1,0 +1,98 @@
+[0.010s] Invoking command in '/home/developer/aerostack2_ws/build/as2_behaviors_perception': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_behavior/lib:/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/developer/aerostack2_ws/install/as2_behaviors_perception
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.089s] -- The CXX compiler identification is GNU 11.4.0
+[0.094s] -- Detecting C compiler ABI info
+[0.144s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.151s] -- Detecting CXX compiler ABI info
+[0.207s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.214s] -- Detecting CXX compile features
+[0.214s] -- Detecting CXX compile features - done
+[0.216s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.319s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.358s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.377s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.404s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.407s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.412s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.420s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.457s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.459s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.521s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.543s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.578s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.584s] -- Looking for pthread.h
+[0.632s] -- Looking for pthread.h - found
+[0.633s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.684s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.685s] -- Found Threads: TRUE  
+[0.719s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[0.724s] -- Found as2_core: 1.1.3 (/home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake)
+[0.726s] -- Created yaml-cpp::yaml-cpp alias from yaml-cpp target
+[0.727s] -- Created GeographicLib::GeographicLib target from legacy variables
+[0.810s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.811s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.811s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.898s] -- Found as2_behavior: 1.1.3 (/home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake)
+[0.901s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.923s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.925s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.928s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.981s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.984s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.984s] -- Configured cppcheck include dirs: 
+[0.984s] -- Configured cppcheck exclude dirs and/or files: 
+[0.985s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.985s] -- Configured cpplint exclude dirs and/or files: 
+[0.985s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.986s] -- Added test 'lint_cmake' to check CMake code style
+[0.986s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.988s] -- Added test 'uncrustify' to check C / C++ code style
+[0.988s] -- Configured uncrustify additional arguments: 
+[0.988s] -- Added test 'xmllint' to check XML markup files
+[0.989s] -- Configuring done
+[1.026s] -- Generating done
+[1.037s] -- Build files have been written to: /home/developer/aerostack2_ws/build/as2_behaviors_perception
+[1.047s] Invoked command in '/home/developer/aerostack2_ws/build/as2_behaviors_perception' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_behavior/lib:/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/developer/aerostack2_ws/install/as2_behaviors_perception
+[1.048s] Invoking command in '/home/developer/aerostack2_ws/build/as2_behaviors_perception': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_behavior/lib:/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_behaviors_perception -- -j20 -l20
+[1.091s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.091s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.091s] [ 16%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_pub_landingpad_node.dir/src/detect_aruco_markers_behavior_pub_landingpad.cpp.o[0m
+[1.091s] [ 22%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior.cpp.o[0m
+[1.091s] [ 27%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_pub_landingpad_node.dir/src/detect_aruco_markers_behavior_pub_landingpad_node.cpp.o[0m
+[1.091s] [ 33%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior_node.cpp.o[0m
+[1.095s] [ 44%] [32mBuilding CXX object point_gimbal_behavior/CMakeFiles/point_gimbal_behavior_node.dir/src/point_gimbal_behavior.cpp.o[0m
+[1.095s] [ 44%] [32mBuilding CXX object point_gimbal_behavior/CMakeFiles/point_gimbal_behavior_node.dir/src/point_gimbal_behavior_node.cpp.o[0m
+[1.095s] [ 55%] [32mBuilding CXX object point_gimbal_behavior/CMakeFiles/point_gimbal_behavior.dir/src/point_gimbal_behavior.cpp.o[0m
+[1.095s] [ 55%] [32mBuilding CXX object point_gimbal_behavior/CMakeFiles/point_gimbal_behavior.dir/src/point_gimbal_behavior_node.cpp.o[0m
+[1.097s] In file included from [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/src/detect_aruco_markers_behavior.cpp:29[m[K:
+[1.097s] [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/include/detect_aruco_markers_behavior/detect_aruco_markers_behavior.hpp:40:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[1.097s]    40 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[1.097s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.097s] compilation terminated.
+[1.097s] gmake[2]: *** [detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/build.make:76: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior.cpp.o] Error 1
+[1.097s] gmake[2]: *** Waiting for unfinished jobs....
+[1.255s] In file included from [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/src/detect_aruco_markers_behavior_node.cpp:38[m[K:
+[1.255s] [01m[K/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/include/detect_aruco_markers_behavior/detect_aruco_markers_behavior.hpp:40:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[1.255s]    40 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[1.255s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.255s] compilation terminated.
+[1.265s] gmake[2]: *** [detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/build.make:90: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior_node.cpp.o] Error 1
+[1.265s] gmake[1]: *** [CMakeFiles/Makefile2:209: detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/all] Error 2
+[1.265s] gmake[1]: *** Waiting for unfinished jobs....
+[1.633s] [ 61%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.662s] [ 61%] Built target gtest_main
+[5.877s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[5.909s] [ 66%] Built target gtest
+[7.730s] [ 72%] [32m[1mLinking CXX executable detect_aruco_markers_behavior_pub_landingpad_node[0m
+[7.854s] [ 72%] Built target detect_aruco_markers_behavior_pub_landingpad_node
+[8.137s] [ 77%] [32m[1mLinking CXX shared library libpoint_gimbal_behavior.so[0m
+[8.281s] [ 77%] Built target point_gimbal_behavior
+[8.909s] [ 83%] [32m[1mLinking CXX executable point_gimbal_behavior_node[0m
+[9.049s] [ 83%] Built target point_gimbal_behavior_node
+[9.050s] gmake: *** [Makefile:146: all] Error 2
+[9.052s] Invoked command in '/home/developer/aerostack2_ws/build/as2_behaviors_perception' returned '2': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_behavior:/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_behavior/lib:/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_behaviors_perception -- -j20 -l20

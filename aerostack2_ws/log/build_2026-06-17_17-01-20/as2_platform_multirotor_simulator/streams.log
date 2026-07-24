@@ -1,0 +1,26 @@
+[0.025s] Invoking command in '/home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator -- -j20 -l20
+[0.098s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.105s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.114s] [  6%] [32m[1mLinking CXX shared library libpid_controller.so[0m
+[0.236s] [  6%] Built target pid_controller
+[0.288s] [  8%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_saturate_output_gtest.dir/pid_test/saturate_output_gtest.cpp.o[0m
+[0.289s] [ 10%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_pid_gtest.dir/pid_test/pid_gtest.cpp.o[0m
+[0.291s] [ 12%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator.dir/src/as2_platform_multirotor_simulator.cpp.o[0m
+[0.297s] [ 14%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator.dir/src/as2_interface.cpp.o[0m
+[0.297s] [ 16%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator_node.dir/src/as2_platform_multirotor_simulator_node.cpp.o[0m
+[0.304s] [ 20%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_imu_gtest.dir/imu_simulator/imu_gtest.cpp.o[0m
+[0.305s] [ 22%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_pid_1d_gtest.dir/pid_1d_test/pid_1d_gtest.cpp.o[0m
+[0.307s] [ 24%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_indi_controller_gtest.dir/multirotor_controllers/controllers/indi_controller_gtest.cpp.o[0m
+[0.312s] [ 26%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_utils_gtest.dir/multirotor_dynamic_model/common/utils_gtest.cpp.o[0m
+[0.317s] [ 18%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_trajectory_controller_gtest.dir/multirotor_controllers/controllers/trajectory_controller_gtest.cpp.o[0m
+[0.332s] [ 28%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_inertial_odometry_gtest.dir/imu_simulator/inertial_odometry_gtest.cpp.o[0m
+[0.332s] [ 30%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_state_gtest.dir/multirotor_dynamic_model/common/state_gtest.cpp.o[0m
+[0.334s] [ 32%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_multirotor_controllers_gtest.dir/multirotor_controllers/multirotor_controllers_gtest.cpp.o[0m
+[0.336s] [ 34%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_dynamics_gtest.dir/multirotor_dynamic_model/multirotor_dynamic_model/dynamics_gtest.cpp.o[0m
+[0.338s] [ 36%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_acro_controller_gtest.dir/multirotor_controllers/controllers/acro_controller_gtest.cpp.o[0m
+[0.339s] [ 38%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_position_controller_gtest.dir/multirotor_controllers/controllers/position_controller_gtest.cpp.o[0m
+[0.344s] [ 40%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_model_gtest.dir/multirotor_dynamic_model/multirotor_dynamic_model/model_gtest.cpp.o[0m
+[0.344s] [ 42%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_velocity_controller_gtest.dir/multirotor_controllers/controllers/velocity_controller_gtest.cpp.o[0m
+[4.077s] [ 44%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.202s] [ 44%] Built target gtest_main
+[4.244s] [ 46%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_multirotor_simulator_fly_gtest.dir/multirotor_simulator/multirotor_simulator_fly_gtest.cpp.o[0m

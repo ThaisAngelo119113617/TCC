@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/build/as2_rviz_plugins/ament_cmake_core/as2_rviz_pluginsConfig.cmake

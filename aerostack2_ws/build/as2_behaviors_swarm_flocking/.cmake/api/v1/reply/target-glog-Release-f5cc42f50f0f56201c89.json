@@ -1,0 +1,192 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/glog-build/libglog.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_definitions",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src/CMakeLists.txt",
+			"/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/dynamic_trajectory_generator-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 638,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 982,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 662,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 665,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 495,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 688,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "glogbase::@224256942feaec034081"
+		}
+	],
+	"id" : "glog::@224256942feaec034081",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/developer/aerostack2_ws/install/as2_behaviors_swarm_flocking"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "glog",
+	"nameOnDisk" : "libglog.so",
+	"paths" : 
+	{
+		"build" : "_deps/glog-build",
+		"source" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/demangle.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/logging.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/raw_logging.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/symbolize.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/utilities.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/vlog_is_on.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/developer/aerostack2_ws/build/as2_behaviors_swarm_flocking/_deps/glog-build/CMakeFiles/glogbase.dir/src/signalhandler.cc.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

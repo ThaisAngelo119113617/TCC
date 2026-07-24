@@ -1,0 +1,8 @@
+[0.027s] Invoking command in '/home/developer/aerostack2_ws/build/as2_geozones': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_geozones -- -j20 -l20
+[0.076s] [  9%] [32mBuilding CXX object CMakeFiles/as2_geozones.dir/src/as2_geozones.cpp.o[0m
+[0.086s] [ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.096s] [ 27%] [32mBuilding CXX object CMakeFiles/as2_geozones_node.dir/src/as2_geozones_node.cpp.o[0m
+[0.100s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.111s] [ 45%] [32mBuilding CXX object CMakeFiles/as2_geozones_node.dir/src/as2_geozones.cpp.o[0m
+[3.324s] [ 54%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.413s] [ 54%] Built target gtest_main

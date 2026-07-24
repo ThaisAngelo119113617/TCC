@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/developer/aerostack2_ws/build/as2_behaviors_param_estimation/mass_estimation_behavior/mass_estimation_behavior_node" "TARGETS" "mass_estimation_behavior_node" "DESTINATION" "lib/as2_behaviors_param_estimation")

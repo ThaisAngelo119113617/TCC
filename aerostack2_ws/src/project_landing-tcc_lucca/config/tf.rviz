@@ -1,0 +1,734 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+      Splitter Ratio: 0.5
+    Tree Height: 343
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        aruco_102:
+          Value: true
+        aruco_103:
+          Value: true
+        aruco_104:
+          Value: true
+        aruco_105:
+          Value: true
+        aruco_107:
+          Value: true
+        aruco_108:
+          Value: true
+        aruco_109:
+          Value: true
+        aruco_117:
+          Value: true
+        aruco_118:
+          Value: true
+        aruco_119:
+          Value: true
+        aruco_128:
+          Value: true
+        aruco_129:
+          Value: true
+        aruco_138:
+          Value: true
+        aruco_139:
+          Value: true
+        aruco_148:
+          Value: true
+        aruco_149:
+          Value: true
+        aruco_158:
+          Value: true
+        aruco_159:
+          Value: true
+        aruco_168:
+          Value: true
+        aruco_169:
+          Value: true
+        aruco_17:
+          Value: true
+        aruco_178:
+          Value: true
+        aruco_18:
+          Value: true
+        aruco_19:
+          Value: true
+        aruco_202:
+          Value: true
+        aruco_203:
+          Value: true
+        aruco_204:
+          Value: true
+        aruco_205:
+          Value: true
+        aruco_207:
+          Value: true
+        aruco_209:
+          Value: true
+        aruco_217:
+          Value: true
+        aruco_219:
+          Value: true
+        aruco_229:
+          Value: true
+        aruco_239:
+          Value: true
+        aruco_249:
+          Value: true
+        aruco_259:
+          Value: true
+        aruco_269:
+          Value: true
+        aruco_279:
+          Value: true
+        aruco_28:
+          Value: true
+        aruco_29:
+          Value: true
+        aruco_302:
+          Value: true
+        aruco_303:
+          Value: true
+        aruco_304:
+          Value: true
+        aruco_305:
+          Value: true
+        aruco_309:
+          Value: true
+        aruco_319:
+          Value: true
+        aruco_329:
+          Value: true
+        aruco_339:
+          Value: true
+        aruco_349:
+          Value: true
+        aruco_359:
+          Value: true
+        aruco_369:
+          Value: true
+        aruco_38:
+          Value: true
+        aruco_39:
+          Value: true
+        aruco_402:
+          Value: true
+        aruco_403:
+          Value: true
+        aruco_404:
+          Value: true
+        aruco_405:
+          Value: true
+        aruco_48:
+          Value: true
+        aruco_49:
+          Value: true
+        aruco_502:
+          Value: true
+        aruco_503:
+          Value: true
+        aruco_504:
+          Value: true
+        aruco_505:
+          Value: true
+        aruco_58:
+          Value: true
+        aruco_59:
+          Value: true
+        aruco_6:
+          Value: true
+        aruco_602:
+          Value: true
+        aruco_603:
+          Value: true
+        aruco_604:
+          Value: true
+        aruco_605:
+          Value: true
+        aruco_68:
+          Value: true
+        aruco_69:
+          Value: true
+        aruco_7:
+          Value: true
+        aruco_702:
+          Value: true
+        aruco_703:
+          Value: true
+        aruco_704:
+          Value: true
+        aruco_705:
+          Value: true
+        aruco_78:
+          Value: true
+        aruco_79:
+          Value: true
+        aruco_8:
+          Value: true
+        aruco_802:
+          Value: true
+        aruco_803:
+          Value: true
+        aruco_804:
+          Value: true
+        aruco_805:
+          Value: true
+        aruco_9:
+          Value: true
+        aruco_902:
+          Value: true
+        aruco_903:
+          Value: true
+        aruco_904:
+          Value: true
+        aruco_905:
+          Value: true
+        earth:
+          Value: true
+        landing_pad:
+          Value: true
+        pad_107:
+          Value: true
+        pad_108:
+          Value: true
+        pad_109:
+          Value: true
+        pad_117:
+          Value: true
+        pad_118:
+          Value: true
+        pad_119:
+          Value: true
+        pad_128:
+          Value: true
+        pad_129:
+          Value: true
+        pad_138:
+          Value: true
+        pad_139:
+          Value: true
+        pad_148:
+          Value: true
+        pad_149:
+          Value: true
+        pad_158:
+          Value: true
+        pad_159:
+          Value: true
+        pad_168:
+          Value: true
+        pad_169:
+          Value: true
+        pad_17:
+          Value: true
+        pad_178:
+          Value: true
+        pad_18:
+          Value: true
+        pad_19:
+          Value: true
+        pad_207:
+          Value: true
+        pad_209:
+          Value: true
+        pad_217:
+          Value: true
+        pad_219:
+          Value: true
+        pad_229:
+          Value: true
+        pad_239:
+          Value: true
+        pad_249:
+          Value: true
+        pad_259:
+          Value: true
+        pad_269:
+          Value: true
+        pad_279:
+          Value: true
+        pad_28:
+          Value: true
+        pad_29:
+          Value: true
+        pad_38:
+          Value: true
+        pad_39:
+          Value: true
+        pad_48:
+          Value: true
+        pad_49:
+          Value: true
+        pad_58:
+          Value: true
+        pad_59:
+          Value: true
+        pad_6:
+          Value: true
+        pad_68:
+          Value: true
+        pad_69:
+          Value: true
+        pad_7:
+          Value: true
+        pad_78:
+          Value: true
+        pad_79:
+          Value: true
+        pad_8:
+          Value: true
+        pad_9:
+          Value: true
+        x500_px4:
+          Value: true
+        x500_px4/base_footprint:
+          Value: true
+        x500_px4/base_link:
+          Value: true
+        x500_px4/base_link/air_pressure_sensor:
+          Value: true
+        x500_px4/base_link/imu_sensor:
+          Value: true
+        x500_px4/base_link/magnetometer_sensor:
+          Value: true
+        x500_px4/base_link/navsat_sensor:
+          Value: true
+        x500_px4/gps:
+          Value: true
+        x500_px4/gps/gps:
+          Value: true
+        x500_px4/gps/gps/navsat:
+          Value: true
+        x500_px4/hd_camera:
+          Value: true
+        x500_px4/hd_camera/hd_camera:
+          Value: true
+        x500_px4/hd_camera/hd_camera/hd_camera:
+          Value: true
+        x500_px4/hd_camera/hd_camera/optical_frame:
+          Value: true
+        x500_px4/map:
+          Value: true
+        x500_px4/odom:
+          Value: true
+        x500_px4/rotor_0:
+          Value: true
+        x500_px4/rotor_1:
+          Value: true
+        x500_px4/rotor_2:
+          Value: true
+        x500_px4/rotor_3:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        earth:
+          landing_pad:
+            {}
+          x500_px4/map:
+            x500_px4/odom:
+              x500_px4:
+                x500_px4/base_link:
+                  x500_px4/base_link/air_pressure_sensor:
+                    {}
+                  x500_px4/base_link/imu_sensor:
+                    {}
+                  x500_px4/base_link/magnetometer_sensor:
+                    {}
+                  x500_px4/base_link/navsat_sensor:
+                    {}
+                x500_px4/gps:
+                  x500_px4/gps/gps:
+                    x500_px4/gps/gps/navsat:
+                      {}
+                x500_px4/hd_camera:
+                  x500_px4/hd_camera/hd_camera:
+                    x500_px4/hd_camera/hd_camera/hd_camera:
+                      {}
+                    x500_px4/hd_camera/hd_camera/optical_frame:
+                      aruco_102:
+                        {}
+                      aruco_103:
+                        {}
+                      aruco_104:
+                        {}
+                      aruco_105:
+                        {}
+                      aruco_107:
+                        pad_107:
+                          {}
+                      aruco_108:
+                        pad_108:
+                          {}
+                      aruco_109:
+                        pad_109:
+                          {}
+                      aruco_117:
+                        pad_117:
+                          {}
+                      aruco_118:
+                        pad_118:
+                          {}
+                      aruco_119:
+                        pad_119:
+                          {}
+                      aruco_128:
+                        pad_128:
+                          {}
+                      aruco_129:
+                        pad_129:
+                          {}
+                      aruco_138:
+                        pad_138:
+                          {}
+                      aruco_139:
+                        pad_139:
+                          {}
+                      aruco_148:
+                        pad_148:
+                          {}
+                      aruco_149:
+                        pad_149:
+                          {}
+                      aruco_158:
+                        pad_158:
+                          {}
+                      aruco_159:
+                        pad_159:
+                          {}
+                      aruco_168:
+                        pad_168:
+                          {}
+                      aruco_169:
+                        pad_169:
+                          {}
+                      aruco_17:
+                        pad_17:
+                          {}
+                      aruco_178:
+                        pad_178:
+                          {}
+                      aruco_18:
+                        pad_18:
+                          {}
+                      aruco_19:
+                        pad_19:
+                          {}
+                      aruco_202:
+                        {}
+                      aruco_203:
+                        {}
+                      aruco_204:
+                        {}
+                      aruco_205:
+                        {}
+                      aruco_207:
+                        pad_207:
+                          {}
+                      aruco_209:
+                        pad_209:
+                          {}
+                      aruco_217:
+                        pad_217:
+                          {}
+                      aruco_219:
+                        pad_219:
+                          {}
+                      aruco_229:
+                        pad_229:
+                          {}
+                      aruco_239:
+                        pad_239:
+                          {}
+                      aruco_249:
+                        pad_249:
+                          {}
+                      aruco_259:
+                        pad_259:
+                          {}
+                      aruco_269:
+                        pad_269:
+                          {}
+                      aruco_279:
+                        pad_279:
+                          {}
+                      aruco_28:
+                        pad_28:
+                          {}
+                      aruco_29:
+                        pad_29:
+                          {}
+                      aruco_302:
+                        {}
+                      aruco_303:
+                        {}
+                      aruco_304:
+                        {}
+                      aruco_305:
+                        {}
+                      aruco_309:
+                        {}
+                      aruco_319:
+                        {}
+                      aruco_329:
+                        {}
+                      aruco_339:
+                        {}
+                      aruco_349:
+                        {}
+                      aruco_359:
+                        {}
+                      aruco_369:
+                        {}
+                      aruco_38:
+                        pad_38:
+                          {}
+                      aruco_39:
+                        pad_39:
+                          {}
+                      aruco_402:
+                        {}
+                      aruco_403:
+                        {}
+                      aruco_404:
+                        {}
+                      aruco_405:
+                        {}
+                      aruco_48:
+                        pad_48:
+                          {}
+                      aruco_49:
+                        pad_49:
+                          {}
+                      aruco_502:
+                        {}
+                      aruco_503:
+                        {}
+                      aruco_504:
+                        {}
+                      aruco_505:
+                        {}
+                      aruco_58:
+                        pad_58:
+                          {}
+                      aruco_59:
+                        pad_59:
+                          {}
+                      aruco_6:
+                        pad_6:
+                          {}
+                      aruco_602:
+                        {}
+                      aruco_603:
+                        {}
+                      aruco_604:
+                        {}
+                      aruco_605:
+                        {}
+                      aruco_68:
+                        pad_68:
+                          {}
+                      aruco_69:
+                        pad_69:
+                          {}
+                      aruco_7:
+                        pad_7:
+                          {}
+                      aruco_702:
+                        {}
+                      aruco_703:
+                        {}
+                      aruco_704:
+                        {}
+                      aruco_705:
+                        {}
+                      aruco_78:
+                        pad_78:
+                          {}
+                      aruco_79:
+                        pad_79:
+                          {}
+                      aruco_8:
+                        pad_8:
+                          {}
+                      aruco_802:
+                        {}
+                      aruco_803:
+                        {}
+                      aruco_804:
+                        {}
+                      aruco_805:
+                        {}
+                      aruco_9:
+                        pad_9:
+                          {}
+                      aruco_902:
+                        {}
+                      aruco_903:
+                        {}
+                      aruco_904:
+                        {}
+                      aruco_905:
+                        {}
+                x500_px4/rotor_0:
+                  {}
+                x500_px4/rotor_1:
+                  {}
+                x500_px4/rotor_2:
+                  {}
+                x500_px4/rotor_3:
+                  {}
+              x500_px4/base_footprint:
+                {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /x500_px4/sensor_measurements/aruco_img_topic/image
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: earth
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 22.106815338134766
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 1.4053974151611328
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 3.1354033946990967
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 940
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016900000356fc020000000bfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000003b00000192000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d006100670065010000003b000003560000002800fffffffb0000000a0049006d0061006700650100000272000000c10000000000000000fb0000000a0049006d00610067006501000002240000010f0000000000000000000000010000010f000002b4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003b000002b4000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004b00000003efc0100000002fb0000000800540069006d00650000000000000004b00000025300fffffffb0000000800540069006d00650100000000000004500000000000000000000002510000035600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 960
+  X: 960
+  Y: 32

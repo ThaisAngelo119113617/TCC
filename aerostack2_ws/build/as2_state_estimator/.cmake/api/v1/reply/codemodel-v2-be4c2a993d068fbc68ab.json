@@ -1,0 +1,368 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						5,
+						8,
+						10
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f8ffbec603bc251c550d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						13
+					]
+				},
+				{
+					"build" : "plugins/raw_odometry",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.raw_odometry-Release-8ca1f948d452fa3778f9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/raw_odometry",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "plugins/raw_odometry/tests",
+					"jsonFile" : "directory-plugins.raw_odometry.tests-Release-fec72dcd1fa6f863b814.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "plugins/raw_odometry/tests"
+				},
+				{
+					"build" : "plugins/ground_truth",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.ground_truth-Release-c6855634c921dba58fff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/ground_truth",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "plugins/ground_truth/tests",
+					"jsonFile" : "directory-plugins.ground_truth.tests-Release-bc80bd69854afbaa5b31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "plugins/ground_truth/tests"
+				},
+				{
+					"build" : "plugins/mocap_pose",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.mocap_pose-Release-d99172c24cbd74c2d63d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/mocap_pose",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "plugins/mocap_pose/tests",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-plugins.mocap_pose.tests-Release-38e3528f5ec0c3f58d50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "plugins/mocap_pose/tests",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Release-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"build" : "plugins/ground_truth_odometry_fuse",
+					"childIndexes" : 
+					[
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.ground_truth_odometry_fuse-Release-8dcb14714d65fbadd456.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/ground_truth_odometry_fuse",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "plugins/ground_truth_odometry_fuse/tests",
+					"jsonFile" : "directory-plugins.ground_truth_odometry_fuse.tests-Release-da491e8cdffd03554e9f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "plugins/ground_truth_odometry_fuse/tests",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Release-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8,
+						9,
+						10
+					],
+					"name" : "as2_state_estimator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						11,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_state_estimator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_state_estimator-Release-70ed91ca884b2ed7af8e.json",
+					"name" : "as2_state_estimator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "as2_state_estimator_as2_state_estimator_gtest::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-as2_state_estimator_as2_state_estimator_gtest-Release-eeab3b422fef8d94a622.json",
+					"name" : "as2_state_estimator_as2_state_estimator_gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "as2_state_estimator_ground_truth_odometry_fuse_gtest::@4e4ceb8d0da81acea2df",
+					"jsonFile" : "target-as2_state_estimator_ground_truth_odometry_fuse_gtest-Release-6cb8cdc0bcc0cc90b31f.json",
+					"name" : "as2_state_estimator_ground_truth_odometry_fuse_gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "as2_state_estimator_mocap_gtest::@8e985c8d521896aaf9a9",
+					"jsonFile" : "target-as2_state_estimator_mocap_gtest-Release-124f32fae118284f6488.json",
+					"name" : "as2_state_estimator_mocap_gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_state_estimator_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_state_estimator_node-Release-62a572825be37ede7c8e.json",
+					"name" : "as2_state_estimator_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_state_estimator_plugin_base::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_state_estimator_plugin_base-Release-04452acadc02d18d4e69.json",
+					"name" : "as2_state_estimator_plugin_base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_state_estimator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_state_estimator_uninstall-Release-35cc73baf3f81f8b1fde.json",
+					"name" : "as2_state_estimator_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ground_truth::@8628fe3cc27c2f636823",
+					"jsonFile" : "target-ground_truth-Release-3d8fa9bd00c6517fa378.json",
+					"name" : "ground_truth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ground_truth_odometry_fuse::@601ca94ecb057001dd78",
+					"jsonFile" : "target-ground_truth_odometry_fuse-Release-5264311be351513edcfd.json",
+					"name" : "ground_truth_odometry_fuse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Release-8693ec813f29e5afa525.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-Release-4207f680e1bc34a19d4e.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "mocap_pose::@777db0ce9dcd90eb91eb",
+					"jsonFile" : "target-mocap_pose-Release-f34a75a7fa29f382dde5.json",
+					"name" : "mocap_pose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw_odometry::@a904cc8ee1ffd7e09b0f",
+					"jsonFile" : "target-raw_odometry-Release-f80469814cf816d6359f.json",
+					"name" : "raw_odometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-b51bcf5c06f98a78dab7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/developer/aerostack2_ws/build/as2_state_estimator",
+		"source" : "/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_state_estimator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

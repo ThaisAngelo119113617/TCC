@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "as2_msgs__rs",
+		"source" : "/home/developer/aerostack2_ws/build/as2_msgs/as2_msgs__rs"
+	}
+}

@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_path_planning/plugins/a_star/include/a_star_algorithm.hpp

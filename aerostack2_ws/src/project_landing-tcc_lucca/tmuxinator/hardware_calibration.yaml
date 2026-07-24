@@ -1,0 +1,22 @@
+<%
+# Input parameters
+drone_namespace        = @settings["drone_namespace"]
+simulation_config_file = @settings["simulation_config_file"]
+base_launch            = @settings["base_launch"] == "true"
+%>
+
+name: <%= drone_namespace %>
+attach: false
+root: ./
+startup_window: user
+pre_window: |
+  export AS2_EXTRA_DRONE_MODELS=$AS2_EXTRA_DRONE_MODELS:'x500_px4'
+
+windows:
+  # Basic Robotics Functions
+  - as2_cam_interface:
+      layout:
+      panes:
+        # Camera Node
+        - ros2 launch camera_ros camera.launch.py
+        - sleep 5; #ros2 bag record /sensor_measurements/hd_camera/image_raw

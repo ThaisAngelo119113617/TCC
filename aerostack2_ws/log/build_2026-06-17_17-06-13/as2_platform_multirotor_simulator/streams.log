@@ -1,0 +1,102 @@
+[0.009s] Invoking command in '/home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator -- -j20 -l20
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.055s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.057s] [  4%] Built target pid_controller
+[0.057s] [  8%] Built target gtest_main
+[0.073s] [ 12%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_trajectory_controller_gtest.dir/multirotor_controllers/controllers/trajectory_controller_gtest.cpp.o[0m
+[0.073s] [ 14%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_indi_controller_gtest.dir/multirotor_controllers/controllers/indi_controller_gtest.cpp.o[0m
+[0.074s] [ 14%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_pid_1d_gtest.dir/pid_1d_test/pid_1d_gtest.cpp.o[0m
+[0.074s] [ 16%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_multirotor_controllers_gtest.dir/multirotor_controllers/multirotor_controllers_gtest.cpp.o[0m
+[0.074s] [ 18%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator_node.dir/src/as2_platform_multirotor_simulator_node.cpp.o[0m
+[0.075s] [ 20%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_acro_controller_gtest.dir/multirotor_controllers/controllers/acro_controller_gtest.cpp.o[0m
+[0.075s] [ 22%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_velocity_controller_gtest.dir/multirotor_controllers/controllers/velocity_controller_gtest.cpp.o[0m
+[0.077s] [ 24%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_position_controller_gtest.dir/multirotor_controllers/controllers/position_controller_gtest.cpp.o[0m
+[0.077s] [ 26%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator.dir/src/as2_platform_multirotor_simulator.cpp.o[0m
+[0.077s] [ 28%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_saturate_output_gtest.dir/pid_test/saturate_output_gtest.cpp.o[0m
+[0.077s] [ 30%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_model_gtest.dir/multirotor_dynamic_model/multirotor_dynamic_model/model_gtest.cpp.o[0m
+[0.077s] [ 32%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_state_gtest.dir/multirotor_dynamic_model/common/state_gtest.cpp.o[0m
+[0.078s] [ 34%] [32mBuilding CXX object _deps/multirotor_simulator-build/pid_controller/tests/CMakeFiles/pid_controller_pid_gtest.dir/pid_test/pid_gtest.cpp.o[0m
+[0.078s] [ 36%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_multirotor_simulator_fly_gtest.dir/multirotor_simulator/multirotor_simulator_fly_gtest.cpp.o[0m
+[0.078s] [ 38%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_inertial_odometry_gtest.dir/imu_simulator/inertial_odometry_gtest.cpp.o[0m
+[0.079s] [ 42%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_utils_gtest.dir/multirotor_dynamic_model/common/utils_gtest.cpp.o[0m
+[0.080s] [ 42%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_dynamics_gtest.dir/multirotor_dynamic_model/multirotor_dynamic_model/dynamics_gtest.cpp.o[0m
+[0.083s] [ 44%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_multirotor_simulator_gtest.dir/multirotor_simulator/multirotor_simulator_gtest.cpp.o[0m
+[0.084s] [ 46%] [32mBuilding CXX object _deps/multirotor_simulator-build/tests/CMakeFiles/multirotor_simulator_imu_gtest.dir/imu_simulator/imu_gtest.cpp.o[0m
+[2.429s] [ 48%] [32m[1mLinking CXX executable pid_controller_saturate_output_gtest[0m
+[2.586s] [ 48%] Built target pid_controller_saturate_output_gtest
+[2.595s] [ 50%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator.dir/src/as2_interface.cpp.o[0m
+[3.346s] [ 52%] [32m[1mLinking CXX executable pid_controller_pid_1d_gtest[0m
+[3.482s] [ 52%] Built target pid_controller_pid_1d_gtest
+[3.491s] [ 54%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator_node.dir/src/as2_platform_multirotor_simulator.cpp.o[0m
+[4.045s] [ 56%] [32m[1mLinking CXX executable multirotor_simulator_velocity_controller_gtest[0m
+[4.172s] [ 56%] Built target multirotor_simulator_velocity_controller_gtest
+[4.180s] [ 58%] [32mBuilding CXX object CMakeFiles/as2_platform_multirotor_simulator_node.dir/src/as2_interface.cpp.o[0m
+[4.288s] [ 60%] [32m[1mLinking CXX executable multirotor_simulator_utils_gtest[0m
+[4.450s] [ 60%] Built target multirotor_simulator_utils_gtest
+[4.895s] [ 62%] [32m[1mLinking CXX executable multirotor_simulator_state_gtest[0m
+[5.031s] [ 62%] Built target multirotor_simulator_state_gtest
+[5.191s] [ 64%] [32m[1mLinking CXX executable multirotor_simulator_position_controller_gtest[0m
+[5.280s] [ 66%] [32m[1mLinking CXX executable pid_controller_pid_gtest[0m
+[5.302s] [ 68%] [32m[1mLinking CXX executable multirotor_simulator_trajectory_controller_gtest[0m
+[5.341s] [ 68%] Built target multirotor_simulator_position_controller_gtest
+[5.411s] [ 68%] Built target pid_controller_pid_gtest
+[5.455s] [ 68%] Built target multirotor_simulator_trajectory_controller_gtest
+[6.571s] [ 70%] [32m[1mLinking CXX executable multirotor_simulator_indi_controller_gtest[0m
+[6.690s] [ 70%] Built target multirotor_simulator_indi_controller_gtest
+[7.339s] [ 72%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.382s] [ 72%] Built target gtest
+[7.624s] [ 74%] [32m[1mLinking CXX executable multirotor_simulator_acro_controller_gtest[0m
+[7.753s] [ 74%] Built target multirotor_simulator_acro_controller_gtest
+[7.877s] [ 76%] [32m[1mLinking CXX executable multirotor_simulator_multirotor_simulator_fly_gtest[0m
+[7.962s] [ 76%] Built target multirotor_simulator_multirotor_simulator_fly_gtest
+[8.356s] [ 78%] [32m[1mLinking CXX executable multirotor_simulator_inertial_odometry_gtest[0m
+[8.475s] [ 78%] Built target multirotor_simulator_inertial_odometry_gtest
+[8.559s] [ 80%] [32m[1mLinking CXX executable multirotor_simulator_imu_gtest[0m
+[8.681s] [ 80%] Built target multirotor_simulator_imu_gtest
+[9.212s] [ 82%] [32m[1mLinking CXX executable multirotor_simulator_dynamics_gtest[0m
+[9.288s] [ 82%] Built target multirotor_simulator_dynamics_gtest
+[9.657s] [ 84%] [32m[1mLinking CXX executable multirotor_simulator_multirotor_simulator_gtest[0m
+[9.733s] [ 84%] Built target multirotor_simulator_multirotor_simulator_gtest
+[10.225s] [ 86%] [32m[1mLinking CXX executable multirotor_simulator_multirotor_controllers_gtest[0m
+[10.318s] [ 86%] Built target multirotor_simulator_multirotor_controllers_gtest
+[11.409s] [ 88%] [32m[1mLinking CXX executable multirotor_simulator_model_gtest[0m
+[11.476s] [ 88%] Built target multirotor_simulator_model_gtest
+[18.719s] [ 90%] [32m[1mLinking CXX static library libas2_platform_multirotor_simulator.a[0m
+[18.759s] [ 90%] Built target as2_platform_multirotor_simulator
+[18.777s] [ 92%] [32mBuilding CXX object tests/CMakeFiles/as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_fly_gtest.dir/as2_platform_multirotor_simulator_fly_gtest.cpp.o[0m
+[18.777s] [ 94%] [32mBuilding CXX object tests/CMakeFiles/as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_gtest.dir/as2_platform_multirotor_simulator_gtest.cpp.o[0m
+[18.860s] [ 96%] [32m[1mLinking CXX executable as2_platform_multirotor_simulator_node[0m
+[19.342s] [ 96%] Built target as2_platform_multirotor_simulator_node
+[23.001s] [ 98%] [32m[1mLinking CXX executable as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_gtest[0m
+[23.432s] [ 98%] Built target as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_gtest
+[24.852s] [100%] [32m[1mLinking CXX executable as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_fly_gtest[0m
+[25.286s] [100%] Built target as2_platform_multirotor_simulator_as2_platform_multirotor_simulator_fly_gtest
+[25.296s] Invoked command in '/home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator -- -j20 -l20
+[25.298s] Invoking command in '/home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator
+[25.303s] -- Install configuration: "Release"
+[25.303s] -- Execute custom install script
+[25.304s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/include/as2_platform_multirotor_simulator/as2_interface.hpp
+[25.310s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/include/as2_platform_multirotor_simulator/as2_platform_multirotor_simulator.hpp
+[25.316s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/lib/as2_platform_multirotor_simulator/as2_platform_multirotor_simulator_node
+[25.321s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/launch/as2_platform_multirotor_simulator.launch.py
+[25.329s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/config/control_modes.yaml
+[25.335s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/config/platform_config_file.yaml
+[25.340s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/config/uav_config.yaml
+[25.346s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/config/world_config.yaml
+[25.353s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/ament_index/resource_index/package_run_dependencies/as2_platform_multirotor_simulator
+[25.359s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/ament_index/resource_index/parent_prefix_path/as2_platform_multirotor_simulator
+[25.364s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/environment/ament_prefix_path.sh
+[25.370s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/environment/ament_prefix_path.dsv
+[25.378s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/environment/path.sh
+[25.382s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/environment/path.dsv
+[25.389s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/local_setup.bash
+[25.396s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/local_setup.sh
+[25.401s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/local_setup.zsh
+[25.407s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/local_setup.dsv
+[25.411s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/package.dsv
+[25.418s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/ament_index/resource_index/packages/as2_platform_multirotor_simulator
+[25.424s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/cmake/as2_platform_multirotor_simulatorConfig.cmake
+[25.430s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/cmake/as2_platform_multirotor_simulatorConfig-version.cmake
+[25.436s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/share/as2_platform_multirotor_simulator/package.xml
+[25.443s] -- Installing: /home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/lib/libas2_platform_multirotor_simulator.a
+[25.454s] Invoked command in '/home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_platform_multirotor_simulator

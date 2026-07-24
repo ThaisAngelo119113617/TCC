@@ -1,0 +1,15 @@
+/home/developer/aerostack2_ws/install/as2_cli/share/ament_index/resource_index/package_run_dependencies/as2_cli
+/home/developer/aerostack2_ws/install/as2_cli/share/ament_index/resource_index/parent_prefix_path/as2_cli
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/environment/ament_prefix_path.sh
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/environment/ament_prefix_path.dsv
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/environment/path.sh
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/environment/path.dsv
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/local_setup.bash
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/local_setup.sh
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/local_setup.zsh
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/local_setup.dsv
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/package.dsv
+/home/developer/aerostack2_ws/install/as2_cli/share/ament_index/resource_index/packages/as2_cli
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/cmake/as2_cliConfig.cmake
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/cmake/as2_cliConfig-version.cmake
+/home/developer/aerostack2_ws/install/as2_cli/share/as2_cli/package.xml

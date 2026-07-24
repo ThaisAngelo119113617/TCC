@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_perception/point_gimbal_behavior/launch/point_gimbal_behavior.launch.py

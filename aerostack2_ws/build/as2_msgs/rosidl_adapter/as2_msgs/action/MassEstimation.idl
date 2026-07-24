@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from as2_msgs/action/MassEstimation.action
+// generated code does not contain a copyright notice
+
+
+module as2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "MassEstimation")
+    struct MassEstimation_Goal {
+      @verbatim (language="comment", text=
+        "Request")
+      boolean request;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct MassEstimation_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct MassEstimation_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

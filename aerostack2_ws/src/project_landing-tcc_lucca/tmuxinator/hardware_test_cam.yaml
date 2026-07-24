@@ -1,0 +1,53 @@
+<%
+# Input parameters
+drone_namespace        = @settings["drone_namespace"]
+simulation_config_file = @settings["simulation_config_file"]
+base_launch            = @settings["base_launch"] == "true"
+%>
+
+name: <%= drone_namespace %>
+attach: false
+root: ./
+startup_window: user
+pre_window: |
+  export AS2_EXTRA_DRONE_MODELS=$AS2_EXTRA_DRONE_MODELS:'x500_px4'
+
+windows:
+  # Basic Robotics Functions
+  - as2_cam_interface:
+      layout:
+      panes:
+        # Camera Node
+        - ros2 launch camera_ros camera.launch.py
+
+  # Behaviors
+  - behaviors_perception:
+      layout:
+      panes:
+        # Perception
+        - ros2 launch as2_behaviors_perception detect_aruco_markers_behavior_tf_only_launch.py
+            tf_config_file:=$AEROSTACK2_PATH/as2_behaviors/as2_behaviors_perception/detect_aruco_markers_behavior/config/ariel_static_transforms.yaml
+
+        - ros2 launch as2_behaviors_perception detect_aruco_markers_behavior_sim_launch.py
+            namespace:=/<%= drone_namespace %>
+            config_file:=config/config_real.yaml
+            camera_image_topic:=<%= drone_namespace %>/sensor_measurements/hd_camera/image_raw
+            camera_info_topic:=<%= drone_namespace %>/sensor_measurements/hd_camera/camera_info
+
+  # Mission execution
+  - send_goal_detect_aruco_markers:
+      layout:
+      panes:
+        # Detect ArUco markers
+        - |
+         sleep 6
+         ros2 action send_goal /detect_aruco_markers_behavior \
+           as2_msgs/action/DetectArucoMarkers \
+           '{target_ids: [6, 7, 8, 9, 17, 18, 19, 28, 29, 38, 39, 48, 49, 58, 59, 68, 69, 78, 79, 102, 103, 104, 105, 107, 108, 109, 117, 118, 119, 128, 129, 138, 139, 148, 149, 158, 159, 168, 169, 178, 202, 203, 204, 205, 207, 209, 217, 219, 229, 239, 249, 259, 269, 279, 302, 303, 304, 305, 309, 319, 329, 339, 349, 359, 369, 402, 403, 404, 405, 502, 503, 504, 505, 602, 603, 604, 605, 702, 703, 704, 705, 802, 803, 804, 805, 902, 903, 904, 905]}'
+
+  # User
+  - user:
+      layout: tiled
+      panes:
+        - sleep 1; #ros2 topic pub /start std_msgs/msg/String data:\ \'\'
+        - sleep 1; 

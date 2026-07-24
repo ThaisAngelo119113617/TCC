@@ -1,0 +1,10 @@
+prefix=/home/developer/aerostack2_ws/install/as2_behaviors_swarm_flocking
+exec_prefix=/home/developer/aerostack2_ws/install/as2_behaviors_swarm_flocking/bin
+libdir=/home/developer/aerostack2_ws/install/as2_behaviors_swarm_flocking/lib
+includedir=/home/developer/aerostack2_ws/install/as2_behaviors_swarm_flocking/include
+
+Name: libglog
+Description: Google Log (glog) C++ logging framework
+Version: 0.6.0
+Libs: -L${libdir} -lglog
+Cflags: -I${includedir}

@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/install/as2_platform_multirotor_simulator/lib/libas2_platform_multirotor_simulator.a

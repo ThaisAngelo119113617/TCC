@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_simulation_assets/as2_gazebo_assets/src/as2_gazebo_assets/models/drone.py

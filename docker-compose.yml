@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  aerostack2:
+    container_name: aerostack_lead
+    image: aerostack2_custom:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    network_mode: host
+    ipc: host
+    pid: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      # ESTA LINHA ABAIXO É O SEGREDO: ela aponta para a models local do TCC automaticamente
+      - GZ_SIM_RESOURCE_PATH=/home/developer/aerostack2_ws/src/project_landing-tcc_lucca/models
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - .:/home/developer/aerostack2_ws/src
+    user: developer
+    stdin_open: true
+    tty: true

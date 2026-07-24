@@ -1,0 +1,76 @@
+[0.008s] Invoking command in '/home/developer/aerostack2_ws/build/as2_state_estimator': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_state_estimator -- -j20 -l20
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target as2_state_estimator[0m
+[0.047s] [  8%] Built target gtest_main
+[0.051s] [ 13%] Built target as2_state_estimator_plugin_base
+[0.054s] [ 21%] Built target gtest
+[0.062s] [ 30%] Built target as2_state_estimator
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target ground_truth_odometry_fuse[0m
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target mocap_pose[0m
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target ground_truth[0m
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target as2_state_estimator_node[0m
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target raw_odometry[0m
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target as2_state_estimator_as2_state_estimator_gtest[0m
+[0.083s] [ 47%] Built target ground_truth
+[0.083s] [ 47%] Built target raw_odometry
+[0.084s] [ 65%] Built target ground_truth_odometry_fuse
+[0.084s] [ 65%] Built target mocap_pose
+[0.092s] [ 82%] Built target as2_state_estimator_as2_state_estimator_gtest
+[0.092s] [ 82%] Built target as2_state_estimator_node
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target as2_state_estimator_mocap_gtest[0m
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target as2_state_estimator_ground_truth_odometry_fuse_gtest[0m
+[0.110s] [ 91%] Built target as2_state_estimator_ground_truth_odometry_fuse_gtest
+[0.112s] [100%] Built target as2_state_estimator_mocap_gtest
+[0.121s] Invoked command in '/home/developer/aerostack2_ws/build/as2_state_estimator' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_state_estimator -- -j20 -l20
+[0.122s] Invoking command in '/home/developer/aerostack2_ws/build/as2_state_estimator': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_state_estimator
+[0.127s] -- Install configuration: "Release"
+[0.127s] -- Execute custom install script
+[0.127s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/as2_state_estimator/as2_state_estimator_node
+[0.127s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/as2_state_estimator/as2_state_estimator.hpp
+[0.127s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/as2_state_estimator/plugin_base.hpp
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/raw_odometry.hpp
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.sh
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.dsv
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/ground_truth.hpp
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.sh
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.dsv
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/mocap_pose.hpp
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.sh
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.dsv
+[0.128s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/include/ground_truth_odometry_fuse.hpp
+[0.129s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.sh
+[0.129s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/library_path.dsv
+[0.129s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator//plugins.xml
+[0.129s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/plugins/raw_odometry/config/plugin_default.yaml
+[0.129s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/plugins/ground_truth/config/plugin_default.yaml
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/plugins/mocap_pose/config/plugin_default.yaml
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/plugins/ground_truth_odometry_fuse/config/plugin_default.yaml
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/launch/ground_truth_odometry_fuse_state_estimator.launch.py
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/launch/ground_truth_state_estimator.launch.py
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/launch/mocap_pose_state_estimator.launch.py
+[0.130s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/launch/raw_odometry_state_estimator.launch.py
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/launch/state_estimator_launch.py
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/config/state_estimator_default.yaml
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/ament_index/resource_index/package_run_dependencies/as2_state_estimator
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/ament_index/resource_index/parent_prefix_path/as2_state_estimator
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/ament_prefix_path.sh
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/ament_prefix_path.dsv
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/path.sh
+[0.131s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/environment/path.dsv
+[0.132s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/local_setup.bash
+[0.132s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/local_setup.sh
+[0.132s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/local_setup.zsh
+[0.132s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/local_setup.dsv
+[0.132s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/package.dsv
+[0.138s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/ament_index/resource_index/packages/as2_state_estimator
+[0.138s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/ament_index/resource_index/as2_state_estimator__pluginlib__plugin/as2_state_estimator
+[0.138s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/cmake/as2_state_estimatorConfig.cmake
+[0.138s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/cmake/as2_state_estimatorConfig-version.cmake
+[0.138s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_state_estimator/share/as2_state_estimator/package.xml
+[0.138s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libas2_state_estimator.so
+[0.138s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libas2_state_estimator_plugin_base.so
+[0.138s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libraw_odometry.so
+[0.139s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libground_truth.so
+[0.139s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libmocap_pose.so
+[0.140s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_state_estimator/lib/libground_truth_odometry_fuse.so
+[0.141s] Invoked command in '/home/developer/aerostack2_ws/build/as2_state_estimator' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_core:/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_core/lib:/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages:/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_state_estimator

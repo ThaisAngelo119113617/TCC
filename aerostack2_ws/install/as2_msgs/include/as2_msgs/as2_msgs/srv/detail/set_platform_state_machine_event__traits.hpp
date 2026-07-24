@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/build/as2_msgs/rosidl_generator_cpp/as2_msgs/srv/detail/set_platform_state_machine_event__traits.hpp

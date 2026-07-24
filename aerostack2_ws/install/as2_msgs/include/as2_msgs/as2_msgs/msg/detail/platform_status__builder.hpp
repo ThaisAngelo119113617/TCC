@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/build/as2_msgs/rosidl_generator_cpp/as2_msgs/msg/detail/platform_status__builder.hpp

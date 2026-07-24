@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/build/aerostack2/ament_cmake_environment_hooks/local_setup.bash

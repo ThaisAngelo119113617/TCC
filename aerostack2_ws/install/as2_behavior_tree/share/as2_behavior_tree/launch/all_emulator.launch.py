@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behavior_tree/tests/node_emulators/launch/all_emulator.launch.py

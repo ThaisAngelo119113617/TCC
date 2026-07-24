@@ -1,0 +1,228 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-8b5c70784cf67b26eb6d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						8
+					]
+				},
+				{
+					"build" : "plugins/scan2occ_grid",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.scan2occ_grid-Release-b99857f915c1dabfd979.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/scan2occ_grid",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "plugins/depth2occ_grid",
+					"jsonFile" : "directory-plugins.depth2occ_grid-Release-0a7329a47256511d1e17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/depth2occ_grid"
+				},
+				{
+					"build" : "plugins/point_cloud2occ_grid",
+					"jsonFile" : "directory-plugins.point_cloud2occ_grid-Release-d14746bd1f540833603c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins/point_cloud2occ_grid"
+				},
+				{
+					"build" : "tests",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-tests-Release-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Release-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "as2_map_server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_map_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_map_server-Release-5fa26e914e09bebb4f95.json",
+					"name" : "as2_map_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_map_server_base::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_map_server_base-Release-d7dbb3cde4766d41cfb9.json",
+					"name" : "as2_map_server_base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "as2_map_server_map_server_gtest::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-as2_map_server_map_server_gtest-Release-bce4affcba1248bef2e8.json",
+					"name" : "as2_map_server_map_server_gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_map_server_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_map_server_node-Release-08cefa3ecc8873ba1a7c.json",
+					"name" : "as2_map_server_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "as2_map_server_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-as2_map_server_uninstall-Release-e566fa1f97acd2112ee2.json",
+					"name" : "as2_map_server_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Release-7c05b87e6afc694dd2a2.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-Release-f711dd8e21e2bae0c1cc.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "scan2occ_grid::@da22797db5df2f7b91bf",
+					"jsonFile" : "target-scan2occ_grid-Release-25d57ecc41085f5dc068.json",
+					"name" : "scan2occ_grid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-8936240d3be74031a8e7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/developer/aerostack2_ws/build/as2_map_server",
+		"source" : "/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_map_server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

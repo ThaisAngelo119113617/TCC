@@ -1,0 +1,169 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_install",
+			"ament_cmake_symlink_install_targets",
+			"install",
+			"ament_cmake_symlink_install_directory"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-src/CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_directory.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 982,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1040,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1065,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1071,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 9
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/glog-build/libglog.so.0.6.0",
+				"_deps/glog-build/libglog.so.1"
+			],
+			"targetId" : "glog::@224256942feaec034081",
+			"targetIndex" : 38,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/glog-build/libglog.so"
+			],
+			"targetId" : "glog::@224256942feaec034081",
+			"targetIndex" : 38,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/glog",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/glog/export.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/glog/logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/glog/raw_logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/glog/stl_logging.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/glog/vlog_is_on.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-src/src/glog/log_severity.h",
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-src/src/glog/platform.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Development",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Development",
+			"destination" : "share/glog",
+			"paths" : 
+			[
+				"/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-build/share/glog/cmake"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glog",
+			"exportName" : "glog-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "glog::@224256942feaec034081",
+					"index" : 38
+				}
+			],
+			"paths" : 
+			[
+				"_deps/glog-build/CMakeFiles/Export/lib/cmake/glog/glog-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/glog-build",
+		"source" : "/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/_deps/glog-src"
+	}
+}

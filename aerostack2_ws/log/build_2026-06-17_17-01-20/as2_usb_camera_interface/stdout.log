@@ -1,0 +1,7 @@
+[  9%] [32mBuilding CXX object CMakeFiles/as2_usb_camera_interface.dir/src/as2_usb_camera_interface.cpp.o[0m
+[ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/as2_usb_camera_interface_node.dir/src/as2_usb_camera_interface_node.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/as2_usb_camera_interface_node.dir/src/as2_usb_camera_interface.cpp.o[0m
+[ 45%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 54%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 54%] Built target gtest_main

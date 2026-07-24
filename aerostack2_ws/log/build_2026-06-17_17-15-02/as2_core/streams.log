@@ -1,0 +1,89 @@
+[0.007s] Invoking command in '/home/developer/aerostack2_ws/build/as2_core': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_core -- -j20 -l20
+[0.051s] [  6%] Built target gtest_main
+[0.055s] [ 16%] Built target as2_names
+[0.055s] [ 19%] Built target gtest
+[0.058s] [ 19%] Built target ament_cmake_python_symlink_as2_core
+[0.072s] [ 58%] Built target as2_core
+[0.093s] [ 70%] Built target platform_state_machine_test
+[0.093s] [ 70%] Built target sensor_test
+[0.094s] [ 77%] Built target tf_utils_gtest
+[0.094s] [ 83%] Built target tf2_namespace_test
+[0.095s] [ 90%] Built target frame_test
+[0.096s] [100%] Built target mocks
+[0.188s] running egg_info
+[0.189s] writing as2_core.egg-info/PKG-INFO
+[0.189s] writing dependency_links to as2_core.egg-info/dependency_links.txt
+[0.189s] writing top-level names to as2_core.egg-info/top_level.txt
+[0.190s] reading manifest file 'as2_core.egg-info/SOURCES.txt'
+[0.190s] writing manifest file 'as2_core.egg-info/SOURCES.txt'
+[0.208s] [100%] Built target ament_cmake_python_build_as2_core_egg
+[0.215s] Invoked command in '/home/developer/aerostack2_ws/build/as2_core' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_core -- -j20 -l20
+[0.216s] Invoking command in '/home/developer/aerostack2_ws/build/as2_core': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_core
+[0.222s] -- Install configuration: "Release"
+[0.223s] -- Execute custom install script
+[0.223s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/pythonpath.sh
+[0.223s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/pythonpath.dsv
+[0.223s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core-1.1.3-py3.10.egg-info/PKG-INFO
+[0.223s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core-1.1.3-py3.10.egg-info/SOURCES.txt
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core-1.1.3-py3.10.egg-info/dependency_links.txt
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core-1.1.3-py3.10.egg-info/top_level.txt
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/__init__.py
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/declare_launch_arguments_from_config_file.py
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/launch_configuration_from_config_file.py
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/launch_param_utils.py
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/launch_plugin_utils.py
+[0.224s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/library_path.sh
+[0.225s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/library_path.dsv
+[0.225s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core/as2_names.cpython-310-x86_64-linux-gnu.so
+[0.225s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/aerial_platform.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/as2_basic_behavior.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/core_functions.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/custom/cv_bridge.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/custom/cv_bridge.hpp.in
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/custom/tf2_geometry_msgs.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/custom/tf2_geometry_msgs.hpp.in
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/names/actions.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/names/services.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/names/topics.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/node.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/platform_state_machine.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/rate.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/sensor.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/synchronous_service_client.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/utils/control_mode_utils.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/utils/frame_utils.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/utils/gps_utils.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/utils/tf_utils.hpp
+[0.226s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/utils/yaml_utils.hpp
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/ament_index/resource_index/package_run_dependencies/as2_core
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/ament_index/resource_index/parent_prefix_path/as2_core
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/ament_prefix_path.sh
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/ament_prefix_path.dsv
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/path.sh
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/environment/path.dsv
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/local_setup.bash
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/local_setup.sh
+[0.227s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/local_setup.zsh
+[0.228s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/local_setup.dsv
+[0.228s] -- Symlinking: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/package.dsv
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/ament_index/resource_index/packages/as2_core
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/yaml-cpp-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/GeographicLib-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/ament_cmake_export_targets-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/ament_cmake_export_libraries-extras.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/as2_coreConfig.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/as2_coreConfig-version.cmake
+[0.233s] -- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/package.xml
+[0.253s] Listing '/home/developer/aerostack2_ws/install/as2_core/local/lib/python3.10/dist-packages/as2_core'...
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks/
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//aerial_platform
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//aerial_platform/mock_aerial_platform.hpp
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//executor_thread_util
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//executor_thread_util/executor_thread_util.hpp
+[0.257s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/lib/libas2_core.a
+[0.258s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/lib/libmocks.so
+[0.258s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/export_as2_coreExport.cmake
+[0.258s] -- Up-to-date: /home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/export_as2_coreExport-release.cmake
+[0.261s] Invoked command in '/home/developer/aerostack2_ws/build/as2_core' returned '0': AMENT_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/developer/aerostack2_ws/install/as2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/developer/aerostack2_ws/install/as2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/developer/aerostack2_ws/install/as2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_core

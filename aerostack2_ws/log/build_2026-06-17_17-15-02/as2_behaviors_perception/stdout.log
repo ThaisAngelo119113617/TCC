@@ -1,0 +1,57 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target detect_aruco_markers_behavior_pub_landingpad_node[0m
+[35m[1mConsolidate compiler generated dependencies of target point_gimbal_behavior_node[0m
+[35m[1mConsolidate compiler generated dependencies of target point_gimbal_behavior[0m
+[ 22%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior_node.cpp.o[0m
+[ 22%] Built target gtest_main
+[ 22%] [32mBuilding CXX object detect_aruco_markers_behavior/CMakeFiles/detect_aruco_markers_behavior_node.dir/src/detect_aruco_markers_behavior.cpp.o[0m
+[ 33%] Built target gtest
+[ 50%] Built target detect_aruco_markers_behavior_pub_landingpad_node
+[ 83%] Built target point_gimbal_behavior
+[ 83%] Built target point_gimbal_behavior_node
+[ 88%] [32mBuilding CXX object point_gimbal_behavior/tests/CMakeFiles/point_gimbal_behavior_point_gimbal_gtest.dir/point_gimbal_gtest.cpp.o[0m
+[ 94%] [32m[1mLinking CXX executable point_gimbal_behavior_point_gimbal_gtest[0m
+[ 94%] Built target point_gimbal_behavior_point_gimbal_gtest
+[100%] [32m[1mLinking CXX executable detect_aruco_markers_behavior_node[0m
+[100%] Built target detect_aruco_markers_behavior_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior/config/ariel_static_transforms.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior/config/real_params.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior/config/sim_params.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_real_launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_sim_launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_tf_only_launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/as2_behaviors_perception/detect_aruco_markers_behavior_node
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior_pub_landingpad/config/ariel_static_transforms.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior_pub_landingpad/config/real_params.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/detect_aruco_markers_behavior_pub_landingpad/config/sim_params.yaml
+-- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_real_launch.py
+-- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_sim_launch.py
+-- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/detect_aruco_markers_behavior_tf_only_launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/as2_behaviors_perception/detect_aruco_markers_behavior_pub_landingpad_node
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/include/point_gimbal_behavior/point_gimbal_behavior.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/launch/point_gimbal_behavior.launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/point_gimbal_behavior/config/config_default.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/as2_behaviors_perception/point_gimbal_behavior_node
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/library_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/library_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/ament_index/resource_index/package_run_dependencies/as2_behaviors_perception
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/ament_index/resource_index/parent_prefix_path/as2_behaviors_perception
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/ament_prefix_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/ament_prefix_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/environment/path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/local_setup.bash
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/local_setup.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/local_setup.zsh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/local_setup.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/package.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/ament_index/resource_index/packages/as2_behaviors_perception
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/cmake/as2_behaviors_perceptionConfig.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/cmake/as2_behaviors_perceptionConfig-version.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behaviors_perception/share/as2_behaviors_perception/package.xml
+-- Installing: /home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/libpoint_gimbal_behavior.so
+-- Set runtime path of "/home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/libpoint_gimbal_behavior.so" to ""

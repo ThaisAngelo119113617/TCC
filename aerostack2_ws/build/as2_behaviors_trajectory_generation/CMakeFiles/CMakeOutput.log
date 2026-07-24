@@ -1,0 +1,1770 @@
+The system is: Linux - 6.17.0-35-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7d88/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7d88.dir/build.make CMakeFiles/cmTC_b7d88.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b7d88.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHDyaQT.s
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 46ebede1f5b795a957a1e85cb61af9d8
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/'
+ as -v --64 -o CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o /tmp/ccHDyaQT.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_b7d88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d88.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -o cmTC_b7d88 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d88' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d88.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cclVcUWD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7d88 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d88' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d88.'
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7d88/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7d88.dir/build.make CMakeFiles/cmTC_b7d88.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b7d88.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHDyaQT.s]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 46ebede1f5b795a957a1e85cb61af9d8]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o /tmp/ccHDyaQT.s]
+  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_b7d88]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d88.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -o cmTC_b7d88 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d88' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d88.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cclVcUWD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b7d88 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cclVcUWD.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b7d88] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_b7d88.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0b6ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0b6ab.dir/build.make CMakeFiles/cmTC_0b6ab.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0b6ab.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXj3v8W.s
+GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/11
+ /usr/include/x86_64-linux-gnu/c++/11
+ /usr/include/c++/11/backward
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: ac7fa628ee459f217e6fdb88b3db0bde
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/'
+ as -v --64 -o CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXj3v8W.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_0b6ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b6ab.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0b6ab 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b6ab' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0b6ab.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckjxJ8j.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0b6ab /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b6ab' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0b6ab.'
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/11]
+    add: [/usr/include/x86_64-linux-gnu/c++/11]
+    add: [/usr/include/c++/11/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+  collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0b6ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0b6ab.dir/build.make CMakeFiles/cmTC_0b6ab.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0b6ab.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXj3v8W.s]
+  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/11]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+  ignore line: [ /usr/include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.3) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: ac7fa628ee459f217e6fdb88b3db0bde]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXj3v8W.s]
+  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_0b6ab]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b6ab.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0b6ab ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.3' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-0odw26/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b6ab' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0b6ab.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckjxJ8j.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0b6ab /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckjxJ8j.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0b6ab] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_0b6ab.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_82b71/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_82b71.dir/build.make CMakeFiles/cmTC_82b71.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_82b71.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_82b71.dir/CheckIncludeFile.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_82b71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82b71.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_82b71.dir/CheckIncludeFile.c.o -o cmTC_82b71 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98720/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98720.dir/build.make CMakeFiles/cmTC_98720.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98720.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_98720.dir/src.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_98720
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98720.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_98720.dir/src.c.o -o cmTC_98720 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining the gflags namespace passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_75478/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_75478.dir/build.make CMakeFiles/cmTC_75478.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_75478.dir/DetermineGflagsNamespace.cxx.o
+/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DGLOG_GFLAGS_NAMESPACE=gflags  -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_75478.dir/DetermineGflagsNamespace.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/DetermineGflagsNamespace.cxx
+Linking CXX executable cmTC_75478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75478.dir/link.txt --verbose=1
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/cmTC_75478.dir/DetermineGflagsNamespace.cxx.o -o cmTC_75478  /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2 -lpthread 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unwind.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eca99/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eca99.dir/build.make CMakeFiles/cmTC_eca99.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eca99.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_eca99.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_eca99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eca99.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_eca99.dir/CheckIncludeFile.cxx.o -o cmTC_eca99 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the _Unwind_Backtrace exist passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e22f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e22f1.dir/build.make CMakeFiles/cmTC_e22f1.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e22f1.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_e22f1.dir/CheckSymbolExists.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_e22f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e22f1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e22f1.dir/CheckSymbolExists.cxx.o -o cmTC_e22f1 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+File /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _Unwind_Backtrace
+  return ((int*)(&_Unwind_Backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc891/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc891.dir/build.make CMakeFiles/cmTC_fc891.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fc891.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_fc891.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_fc891
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc891.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_fc891.dir/CheckIncludeFile.cxx.o -o cmTC_fc891 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ca326/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ca326.dir/build.make CMakeFiles/cmTC_ca326.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca326.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_ca326.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_ca326
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca326.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ca326.dir/CheckIncludeFile.cxx.o -o cmTC_ca326 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file glob.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bbf3f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bbf3f.dir/build.make CMakeFiles/cmTC_bbf3f.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bbf3f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_bbf3f.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_bbf3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf3f.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_bbf3f.dir/CheckIncludeFile.cxx.o -o cmTC_bbf3f 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_57ae0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_57ae0.dir/build.make CMakeFiles/cmTC_57ae0.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57ae0.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_57ae0.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_57ae0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57ae0.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_57ae0.dir/CheckIncludeFile.cxx.o -o cmTC_57ae0 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f829a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f829a.dir/build.make CMakeFiles/cmTC_f829a.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f829a.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_f829a.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f829a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f829a.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f829a.dir/CheckIncludeFile.cxx.o -o cmTC_f829a 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e0125/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e0125.dir/build.make CMakeFiles/cmTC_e0125.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e0125.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_e0125.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_e0125
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0125.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e0125.dir/CheckIncludeFile.cxx.o -o cmTC_e0125 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17b55/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17b55.dir/build.make CMakeFiles/cmTC_17b55.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17b55.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_17b55.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_17b55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17b55.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_17b55.dir/CheckIncludeFile.cxx.o -o cmTC_17b55 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9dae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9dae.dir/build.make CMakeFiles/cmTC_b9dae.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9dae.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_b9dae.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_b9dae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9dae.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b9dae.dir/CheckIncludeFile.cxx.o -o cmTC_b9dae 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f9790/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f9790.dir/build.make CMakeFiles/cmTC_f9790.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f9790.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_f9790.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f9790
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9790.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f9790.dir/CheckIncludeFile.cxx.o -o cmTC_f9790 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/syscall.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0a010/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a010.dir/build.make CMakeFiles/cmTC_0a010.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0a010.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_0a010.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_0a010
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a010.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_0a010.dir/CheckIncludeFile.cxx.o -o cmTC_0a010 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_967df/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_967df.dir/build.make CMakeFiles/cmTC_967df.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_967df.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_967df.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_967df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_967df.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_967df.dir/CheckIncludeFile.cxx.o -o cmTC_967df 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9d260/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d260.dir/build.make CMakeFiles/cmTC_9d260.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9d260.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_9d260.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_9d260
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d260.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_9d260.dir/CheckIncludeFile.cxx.o -o cmTC_9d260 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/utsname.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12504/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12504.dir/build.make CMakeFiles/cmTC_12504.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12504.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_12504.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_12504
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12504.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_12504.dir/CheckIncludeFile.cxx.o -o cmTC_12504 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e56f2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e56f2.dir/build.make CMakeFiles/cmTC_e56f2.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e56f2.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_e56f2.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_e56f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e56f2.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e56f2.dir/CheckIncludeFile.cxx.o -o cmTC_e56f2 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syscall.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ba33f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ba33f.dir/build.make CMakeFiles/cmTC_ba33f.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba33f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_ba33f.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_ba33f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba33f.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ba33f.dir/CheckIncludeFile.cxx.o -o cmTC_ba33f 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c785b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c785b.dir/build.make CMakeFiles/cmTC_c785b.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c785b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_c785b.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_c785b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c785b.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_c785b.dir/CheckIncludeFile.cxx.o -o cmTC_c785b 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ucontext.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ccb7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ccb7b.dir/build.make CMakeFiles/cmTC_ccb7b.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ccb7b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_ccb7b.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_ccb7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccb7b.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ccb7b.dir/CheckIncludeFile.cxx.o -o cmTC_ccb7b 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_41fa3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41fa3.dir/build.make CMakeFiles/cmTC_41fa3.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_41fa3.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_41fa3.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_41fa3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41fa3.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_41fa3.dir/CheckIncludeFile.cxx.o -o cmTC_41fa3 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/hash_map exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_174a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_174a1.dir/build.make CMakeFiles/cmTC_174a1.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_174a1.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_174a1.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/11/ext/hash_map:60,
+                 from /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/11/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+Linking CXX executable cmTC_174a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_174a1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_174a1.dir/CheckIncludeFile.cxx.o -o cmTC_174a1 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/hash_set exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9def/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9def.dir/build.make CMakeFiles/cmTC_d9def.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d9def.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_d9def.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/11/ext/hash_set:60,
+                 from /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/11/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+Linking CXX executable cmTC_d9def
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9def.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_d9def.dir/CheckIncludeFile.cxx.o -o cmTC_d9def 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/slist exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_32e4c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_32e4c.dir/build.make CMakeFiles/cmTC_32e4c.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_32e4c.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_32e4c.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_32e4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32e4c.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_32e4c.dir/CheckIncludeFile.cxx.o -o cmTC_32e4c 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file tr1/unordered_map exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6e78/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f6e78.dir/build.make CMakeFiles/cmTC_f6e78.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6e78.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_f6e78.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f6e78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6e78.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f6e78.dir/CheckIncludeFile.cxx.o -o cmTC_f6e78 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file tr1/unordered_set exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6983e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6983e.dir/build.make CMakeFiles/cmTC_6983e.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6983e.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_6983e.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_6983e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6983e.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_6983e.dir/CheckIncludeFile.cxx.o -o cmTC_6983e 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unordered_map exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bb1de/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bb1de.dir/build.make CMakeFiles/cmTC_bb1de.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bb1de.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_bb1de.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_bb1de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb1de.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_bb1de.dir/CheckIncludeFile.cxx.o -o cmTC_bb1de 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unordered_set exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6062/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6062.dir/build.make CMakeFiles/cmTC_a6062.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a6062.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_a6062.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_a6062
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6062.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_a6062.dir/CheckIncludeFile.cxx.o -o cmTC_a6062 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e503/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e503.dir/build.make CMakeFiles/cmTC_4e503.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e503.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_4e503.dir/CheckIncludeFile.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_4e503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e503.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_4e503.dir/CheckIncludeFile.cxx.o -o cmTC_4e503 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of u_int16_t passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4fafa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4fafa.dir/build.make CMakeFiles/cmTC_4fafa.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4fafa.dir/HAVE_U_INT16_T.cpp.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_4fafa.dir/HAVE_U_INT16_T.cpp.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CheckTypeSize/HAVE_U_INT16_T.cpp
+Linking CXX executable cmTC_4fafa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fafa.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_4fafa.dir/HAVE_U_INT16_T.cpp.o -o cmTC_4fafa 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_856bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_856bc.dir/build.make CMakeFiles/cmTC_856bc.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_856bc.dir/HAVE_UINT16_T.cpp.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_856bc.dir/HAVE_UINT16_T.cpp.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CheckTypeSize/HAVE_UINT16_T.cpp
+Linking CXX executable cmTC_856bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_856bc.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_856bc.dir/HAVE_UINT16_T.cpp.o -o cmTC_856bc 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function dladdr exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9daff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9daff.dir/build.make CMakeFiles/cmTC_9daff.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9daff.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dladdr -fPIE -o CMakeFiles/cmTC_9daff.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9daff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9daff.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dladdr CMakeFiles/cmTC_9daff.dir/CheckFunctionExists.c.o -o cmTC_9daff 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c8ee6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c8ee6.dir/build.make CMakeFiles/cmTC_c8ee6.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8ee6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fcntl -fPIE -o CMakeFiles/cmTC_c8ee6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8ee6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8ee6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fcntl CMakeFiles/cmTC_c8ee6.dir/CheckFunctionExists.c.o -o cmTC_c8ee6 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pread exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_904a6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_904a6.dir/build.make CMakeFiles/cmTC_904a6.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_904a6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pread -fPIE -o CMakeFiles/cmTC_904a6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_904a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_904a6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pread CMakeFiles/cmTC_904a6.dir/CheckFunctionExists.c.o -o cmTC_904a6 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pwrite exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cfd3c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cfd3c.dir/build.make CMakeFiles/cmTC_cfd3c.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfd3c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pwrite -fPIE -o CMakeFiles/cmTC_cfd3c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cfd3c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfd3c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pwrite CMakeFiles/cmTC_cfd3c.dir/CheckFunctionExists.c.o -o cmTC_cfd3c 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6c9b6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c9b6.dir/build.make CMakeFiles/cmTC_6c9b6.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c9b6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sigaction -fPIE -o CMakeFiles/cmTC_6c9b6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6c9b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c9b6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sigaction CMakeFiles/cmTC_6c9b6.dir/CheckFunctionExists.c.o -o cmTC_6c9b6 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaltstack exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_760ae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_760ae.dir/build.make CMakeFiles/cmTC_760ae.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_760ae.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sigaltstack -fPIE -o CMakeFiles/cmTC_760ae.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_760ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_760ae.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sigaltstack CMakeFiles/cmTC_760ae.dir/CheckFunctionExists.c.o -o cmTC_760ae 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_DEPRECATED succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d3e26/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d3e26.dir/build.make CMakeFiles/cmTC_d3e26.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d3e26.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_NO_DEPRECATED  -fPIE   -Wdeprecated -o CMakeFiles/cmTC_d3e26.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d3e26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3e26.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_d3e26.dir/src.cxx.o -o cmTC_d3e26 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71af3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71af3.dir/build.make CMakeFiles/cmTC_71af3.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71af3.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_71af3.dir/CheckSymbolExists.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_71af3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71af3.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_71af3.dir/CheckSymbolExists.cxx.o -o cmTC_71af3 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+File /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <cstdio>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE___ATTRIBUTE__ succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_772bb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_772bb.dir/build.make CMakeFiles/cmTC_772bb.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_772bb.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___ATTRIBUTE__  -fPIE -o CMakeFiles/cmTC_772bb.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_772bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_772bb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_772bb.dir/src.cxx.o -o cmTC_772bb 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <cstdlib>
+static void foo(void) __attribute__ ((unused));
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_DEFAULT succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3bea2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3bea2.dir/build.make CMakeFiles/cmTC_3bea2.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3bea2.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___ATTRIBUTE__VISIBILITY_DEFAULT  -fPIE -o CMakeFiles/cmTC_3bea2.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx:3:61: warning: ‘visibility’ attribute ignored [-Wattributes]
+    3 | static void foo(void) __attribute__ ((visibility("default")));
+      |                                                             ^
+Linking CXX executable cmTC_3bea2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bea2.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_3bea2.dir/src.cxx.o -o cmTC_3bea2 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <cstdlib>
+static void foo(void) __attribute__ ((visibility("default")));
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d55cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d55cb.dir/build.make CMakeFiles/cmTC_d55cb.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d55cb.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___ATTRIBUTE__VISIBILITY_HIDDEN  -fPIE -o CMakeFiles/cmTC_d55cb.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx:3:60: warning: ‘visibility’ attribute ignored [-Wattributes]
+    3 | static void foo(void) __attribute__ ((visibility("hidden")));
+      |                                                            ^
+Linking CXX executable cmTC_d55cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d55cb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_d55cb.dir/src.cxx.o -o cmTC_d55cb 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <cstdlib>
+static void foo(void) __attribute__ ((visibility("hidden")));
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test HAVE___BUILTIN_EXPECT succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7dee9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7dee9.dir/build.make CMakeFiles/cmTC_7dee9.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7dee9.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___BUILTIN_EXPECT  -fPIE -o CMakeFiles/cmTC_7dee9.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7dee9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7dee9.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_7dee9.dir/src.cxx.o -o cmTC_7dee9 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+int main(void) { if (__builtin_expect(0, 0)) return 1; return 0; }
+
+Performing C++ SOURCE FILE Test HAVE___SYNC_VAL_COMPARE_AND_SWAP succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a9528/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a9528.dir/build.make CMakeFiles/cmTC_a9528.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9528.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___SYNC_VAL_COMPARE_AND_SWAP  -fPIE -o CMakeFiles/cmTC_a9528.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a9528
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9528.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_a9528.dir/src.cxx.o -o cmTC_a9528 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+int main(void)
+{
+  int a; if (__sync_val_compare_and_swap(&a, 0, 1)) return 1; return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_RWLOCK succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1f736/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1f736.dir/build.make CMakeFiles/cmTC_1f736.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1f736.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_RWLOCK  -fPIE -o CMakeFiles/cmTC_1f736.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1f736
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f736.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_1f736.dir/src.cxx.o -o cmTC_1f736 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#define _XOPEN_SOURCE 500
+#include <pthread.h>
+int main(void)
+{
+  pthread_rwlock_t l;
+  pthread_rwlock_init(&l, NULL);
+  pthread_rwlock_rdlock(&l);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test STL_STD_NAMESPACE succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_04b6a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_04b6a.dir/build.make CMakeFiles/cmTC_04b6a.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_04b6a.dir/src.cxx.o
+/usr/bin/c++ -DSTL_STD_NAMESPACE  -fPIE -o CMakeFiles/cmTC_04b6a.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_04b6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04b6a.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_04b6a.dir/src.cxx.o -o cmTC_04b6a 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <vector>
+std::vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_USING_OPERATOR succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2365b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2365b.dir/build.make CMakeFiles/cmTC_2365b.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2365b.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_USING_OPERATOR  -fPIE -o CMakeFiles/cmTC_2365b.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2365b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2365b.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_2365b.dir/src.cxx.o -o cmTC_2365b 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <iostream>
+std::ostream& operator<<(std::ostream&, struct s);
+using ::operator<<;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_NAMESPACES succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd950/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fd950.dir/build.make CMakeFiles/cmTC_fd950.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd950.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_NAMESPACES  -fPIE -o CMakeFiles/cmTC_fd950.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fd950
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd950.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_fd950.dir/src.cxx.o -o cmTC_fd950 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+namespace Outer { namespace Inner { int i = 0; }}
+using namespace Outer::Inner;;
+int main() { return i; }
+
+Performing C++ SOURCE FILE Test HAVE_GCC_TLS succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_780d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_780d7.dir/build.make CMakeFiles/cmTC_780d7.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_780d7.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_GCC_TLS  -fPIE -o CMakeFiles/cmTC_780d7.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_780d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_780d7.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_780d7.dir/src.cxx.o -o cmTC_780d7 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+__thread int tls;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_TLS succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e17c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e17c0.dir/build.make CMakeFiles/cmTC_e17c0.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e17c0.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX11_TLS  -fPIE -o CMakeFiles/cmTC_e17c0.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e17c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e17c0.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e17c0.dir/src.cxx.o -o cmTC_e17c0 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+thread_local int tls;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_ALIGNED_STORAGE succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9eeb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9eeb.dir/build.make CMakeFiles/cmTC_b9eeb.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9eeb.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_ALIGNED_STORAGE  -fPIE -o CMakeFiles/cmTC_b9eeb.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b9eeb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9eeb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b9eeb.dir/src.cxx.o -o cmTC_b9eeb 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+std::aligned_storage<sizeof(char), alignof(char)>::type data;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_ATOMIC succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ca342/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ca342.dir/build.make CMakeFiles/cmTC_ca342.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca342.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX11_ATOMIC  -fPIE -o CMakeFiles/cmTC_ca342.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ca342
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca342.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ca342.dir/src.cxx.o -o cmTC_ca342 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <atomic>
+std::atomic<int> i;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_CONSTEXPR succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1d706/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1d706.dir/build.make CMakeFiles/cmTC_1d706.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d706.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX11_CONSTEXPR  -fPIE -o CMakeFiles/cmTC_1d706.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1d706
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d706.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_1d706.dir/src.cxx.o -o cmTC_1d706 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+constexpr int x = 0;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_CHRONO succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_465ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_465ef.dir/build.make CMakeFiles/cmTC_465ef.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_465ef.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX11_CHRONO  -fPIE -o CMakeFiles/cmTC_465ef.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_465ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_465ef.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_465ef.dir/src.cxx.o -o cmTC_465ef 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <chrono>
+std::chrono::seconds s;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_NULLPTR_T succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7a2b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7a2b.dir/build.make CMakeFiles/cmTC_b7a2b.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7a2b.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX11_NULLPTR_T  -fPIE -o CMakeFiles/cmTC_b7a2b.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b7a2b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7a2b.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b7a2b.dir/src.cxx.o -o cmTC_b7a2b 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <cstddef>
+void foo(std::nullptr_t) {}
+int main(void) { foo(nullptr); }
+
+Performing C++ SOURCE FILE Test HAVE_LOCALTIME_R succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c13ff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c13ff.dir/build.make CMakeFiles/cmTC_c13ff.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c13ff.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_LOCALTIME_R  -fPIE -o CMakeFiles/cmTC_c13ff.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c13ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c13ff.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_c13ff.dir/src.cxx.o -o cmTC_c13ff 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <cstdlib>
+#include <ctime>
+int main()
+{
+    time_t timep;
+    struct tm result;
+    localtime_r(&timep, &result);
+    return EXIT_SUCCESS;
+}
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_41d45/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41d45.dir/build.make CMakeFiles/cmTC_41d45.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_41d45.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_41d45.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_41d45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41d45.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_41d45.dir/src.cxx.o -o cmTC_41d45 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_500bb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_500bb.dir/build.make CMakeFiles/cmTC_500bb.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_500bb.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_500bb.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_500bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_500bb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_500bb.dir/src.cxx.o -o cmTC_500bb 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_37d75/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37d75.dir/build.make CMakeFiles/cmTC_37d75.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37d75.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -fPIE -o CMakeFiles/cmTC_37d75.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                         ~~~~~~~~^~
+/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+Linking CXX executable cmTC_37d75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37d75.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_37d75.dir/src.cxx.o -o cmTC_37d75 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+Determining if the include file getopt.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_433b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_433b2.dir/build.make CMakeFiles/cmTC_433b2.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_433b2.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_433b2.dir/CheckIncludeFile.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_433b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_433b2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_433b2.dir/CheckIncludeFile.c.o -o cmTC_433b2 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05a82/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05a82.dir/build.make CMakeFiles/cmTC_05a82.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05a82.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_05a82.dir/CheckIncludeFile.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_05a82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05a82.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_05a82.dir/CheckIncludeFile.c.o -o cmTC_05a82 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getpid exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4882f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4882f.dir/build.make CMakeFiles/cmTC_4882f.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4882f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid -fPIE -o CMakeFiles/cmTC_4882f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4882f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4882f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpid CMakeFiles/cmTC_4882f.dir/CheckFunctionExists.c.o -o cmTC_4882f 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function syscall exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c71a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c71a8.dir/build.make CMakeFiles/cmTC_c71a8.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c71a8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syscall -fPIE -o CMakeFiles/cmTC_c71a8.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c71a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c71a8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syscall CMakeFiles/cmTC_c71a8.dir/CheckFunctionExists.c.o -o cmTC_c71a8 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function isinf exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b48f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b48f.dir/build.make CMakeFiles/cmTC_7b48f.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b48f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isinf -fPIE -o CMakeFiles/cmTC_7b48f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘isinf’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘isinf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_7b48f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b48f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isinf CMakeFiles/cmTC_7b48f.dir/CheckFunctionExists.c.o -o cmTC_7b48f 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function isnan exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83d84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83d84.dir/build.make CMakeFiles/cmTC_83d84.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83d84.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isnan -fPIE -o CMakeFiles/cmTC_83d84.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘isnan’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘isnan’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_83d84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83d84.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isnan CMakeFiles/cmTC_83d84.dir/CheckFunctionExists.c.o -o cmTC_83d84 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c0f04/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0f04.dir/build.make CMakeFiles/cmTC_c0f04.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0f04.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday -fPIE -o CMakeFiles/cmTC_c0f04.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c0f04
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0f04.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday CMakeFiles/cmTC_c0f04.dir/CheckFunctionExists.c.o -o cmTC_c0f04 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function qsort_r exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80f8c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80f8c.dir/build.make CMakeFiles/cmTC_80f8c.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80f8c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=qsort_r -fPIE -o CMakeFiles/cmTC_80f8c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_80f8c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f8c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=qsort_r CMakeFiles/cmTC_80f8c.dir/CheckFunctionExists.c.o -o cmTC_80f8c 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function time exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d101c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d101c.dir/build.make CMakeFiles/cmTC_d101c.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d101c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=time -fPIE -o CMakeFiles/cmTC_d101c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d101c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d101c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=time CMakeFiles/cmTC_d101c.dir/CheckFunctionExists.c.o -o cmTC_d101c 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function copysign exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_347a2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_347a2.dir/build.make CMakeFiles/cmTC_347a2.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_347a2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=copysign -fPIE -o CMakeFiles/cmTC_347a2.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘copysign’; expected ‘double(double,  double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘copysign’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_347a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_347a2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=copysign CMakeFiles/cmTC_347a2.dir/CheckFunctionExists.c.o -o cmTC_347a2 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getopt exists passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c49e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c49e2.dir/build.make CMakeFiles/cmTC_c49e2.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c49e2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getopt -fPIE -o CMakeFiles/cmTC_c49e2.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c49e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c49e2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getopt CMakeFiles/cmTC_c49e2.dir/CheckFunctionExists.c.o -o cmTC_c49e2 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f95be/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f95be.dir/build.make CMakeFiles/cmTC_f95be.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f95be.dir/SIZEOF_UINT32_T.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_f95be.dir/SIZEOF_UINT32_T.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CheckTypeSize/SIZEOF_UINT32_T.c
+Linking C executable cmTC_f95be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f95be.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_f95be.dir/SIZEOF_UINT32_T.c.o -o cmTC_f95be 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3f2bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3f2bc.dir/build.make CMakeFiles/cmTC_3f2bc.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f2bc.dir/SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3f2bc.dir/SIZEOF_UNSIGNED_INT.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTC_3f2bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f2bc.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3f2bc.dir/SIZEOF_UNSIGNED_INT.c.o -o cmTC_3f2bc 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0487d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0487d.dir/build.make CMakeFiles/cmTC_0487d.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0487d.dir/SIZEOF_UNSIGNED_LONG.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_0487d.dir/SIZEOF_UNSIGNED_LONG.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG.c
+Linking C executable cmTC_0487d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0487d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_0487d.dir/SIZEOF_UNSIGNED_LONG.c.o -o cmTC_0487d 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sqrt exists in the m passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_33fac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33fac.dir/build.make CMakeFiles/cmTC_33fac.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33fac.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sqrt -fPIE -o CMakeFiles/cmTC_33fac.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘sqrt’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘sqrt’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_33fac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33fac.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sqrt CMakeFiles/cmTC_33fac.dir/CheckFunctionExists.c.o -o cmTC_33fac  -lm 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_THREAD_LOCAL_STORAGE succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1a1c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1a1c.dir/build.make CMakeFiles/cmTC_c1a1c.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1a1c.dir/src.c.o
+/usr/bin/cc -DHAVE_THREAD_LOCAL_STORAGE  -fPIE -o CMakeFiles/cmTC_c1a1c.dir/src.c.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c1a1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1a1c.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c1a1c.dir/src.c.o -o cmTC_c1a1c 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+    __thread int tls;
+
+    int main(void) {
+        return 0;
+    }
+Determining if the __cplusplus exist passed with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2d6f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b2d6f.dir/build.make CMakeFiles/cmTC_b2d6f.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b2d6f.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -fPIE -o CMakeFiles/cmTC_b2d6f.dir/CheckSymbolExists.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_b2d6f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2d6f.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b2d6f.dir/CheckSymbolExists.cxx.o -o cmTC_b2d6f 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+File /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <ciso646>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __cplusplus
+  return ((int*)(&__cplusplus))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test SUPPORTS_STDCXX11 succeeded with the following output:
+Change Dir: /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ae413/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ae413.dir/build.make CMakeFiles/cmTC_ae413.dir/build
+gmake[1]: Entering directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ae413.dir/src.cxx.o
+/usr/bin/c++ -DSUPPORTS_STDCXX11  -fPIE   -std=c++11 -o CMakeFiles/cmTC_ae413.dir/src.cxx.o -c /home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ae413
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae413.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ae413.dir/src.cxx.o -o cmTC_ae413 
+gmake[1]: Leaving directory '/home/developer/aerostack2_ws/build/as2_behaviors_trajectory_generation/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

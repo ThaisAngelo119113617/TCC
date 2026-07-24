@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/as2_behavior.dir/src/behavior_server.cpp.o[0m
+[ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 50%] Built target gtest_main
+[ 62%] [32m[1mLinking CXX shared library libas2_behavior.so[0m
+[ 62%] Built target as2_behavior
+[ 75%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 75%] Built target gtest
+[ 87%] [32mBuilding CXX object tests/CMakeFiles/as2_behavior_as2_behavior_gtest.dir/as2_behavior_gtest.cpp.o[0m
+[100%] [32m[1mLinking CXX executable as2_behavior_as2_behavior_gtest[0m
+[100%] Built target as2_behavior_as2_behavior_gtest
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/include/as2_behavior/__detail/behavior_server__class.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/include/as2_behavior/__impl/behavior_server__impl.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/include/as2_behavior/as2_basic_behavior.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/include/as2_behavior/behavior_server.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/include/as2_behavior/behavior_utils.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/library_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/library_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/ament_index/resource_index/package_run_dependencies/as2_behavior
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/ament_index/resource_index/parent_prefix_path/as2_behavior
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/ament_prefix_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/ament_prefix_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/environment/path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/local_setup.bash
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/local_setup.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/local_setup.zsh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/local_setup.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/package.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/ament_index/resource_index/packages/as2_behavior
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/as2_behaviorConfig.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/as2_behaviorConfig-version.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/package.xml
+-- Installing: /home/developer/aerostack2_ws/install/as2_behavior/lib/libas2_behavior.so
+-- Set runtime path of "/home/developer/aerostack2_ws/install/as2_behavior/lib/libas2_behavior.so" to ""
+-- Installing: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/export_as2_behaviorExport.cmake
+-- Installing: /home/developer/aerostack2_ws/install/as2_behavior/share/as2_behavior/cmake/export_as2_behaviorExport-release.cmake

@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[  7%] [32mBuilding CXX object CMakeFiles/as2_map_server.dir/src/map_server_node.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/as2_map_server.dir/src/map_server.cpp.o[0m
+[ 28%] Built target gtest_main
+[ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 42%] Built target as2_map_server_base
+[ 50%] [32mBuilding CXX object plugins/scan2occ_grid/CMakeFiles/scan2occ_grid.dir/src/scan2occ_grid.cpp.o[0m
+[ 57%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 57%] Built target gtest
+[ 64%] [32m[1mLinking CXX shared library libas2_map_server.so[0m
+[ 64%] Built target as2_map_server
+[ 78%] [32mBuilding CXX object CMakeFiles/as2_map_server_node.dir/src/map_server_node.cpp.o[0m
+[ 78%] [32mBuilding CXX object tests/CMakeFiles/as2_map_server_map_server_gtest.dir/map_server_gtest.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable as2_map_server_node[0m
+[ 85%] Built target as2_map_server_node
+[ 92%] [32m[1mLinking CXX executable as2_map_server_map_server_gtest[0m
+[100%] [32m[1mLinking CXX shared library libscan2occ_grid.so[0m
+[100%] Built target as2_map_server_map_server_gtest
+[100%] Built target scan2occ_grid
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/include/as2_map_server/map_server.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/include/as2_map_server/plugin_base.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/library_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/library_path.dsv
+-- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_map_server/include/as2_map_server/map_server.hpp
+-- Up-to-date symlink: /home/developer/aerostack2_ws/install/as2_map_server/include/as2_map_server/plugin_base.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/lib/as2_map_server/as2_map_server_node
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/include/scan2occ_grid.hpp
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server//plugins.xml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/launch/map_server.launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/launch/scan2occ_grid-map_server.launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/plugins/scan2occ_grid/config/plugin_default.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/launch/depth2occ_grid-map_server.launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/plugins/depth2occ_grid/config/plugin_default.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/launch/point_cloud2occ_grid-map_server.launch.py
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/plugins/point_cloud2occ_grid/config/plugin_default.yaml
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/ament_index/resource_index/package_run_dependencies/as2_map_server
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/ament_index/resource_index/parent_prefix_path/as2_map_server
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/ament_prefix_path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/ament_prefix_path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/path.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/environment/path.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/local_setup.bash
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/local_setup.sh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/local_setup.zsh
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/local_setup.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/package.dsv
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/ament_index/resource_index/packages/as2_map_server
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/ament_index/resource_index/as2_map_server__pluginlib__plugin/as2_map_server
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/as2_map_serverConfig.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/as2_map_serverConfig-version.cmake
+-- Symlinking: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/package.xml
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/lib/libas2_map_server_base.so
+-- Set runtime path of "/home/developer/aerostack2_ws/install/as2_map_server/lib/libas2_map_server_base.so" to ""
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/lib/libas2_map_server.so
+-- Set runtime path of "/home/developer/aerostack2_ws/install/as2_map_server/lib/libas2_map_server.so" to ""
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/export_as2_map_server_baseExport.cmake
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/export_as2_map_server_baseExport-release.cmake
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/export_as2_map_serverExport.cmake
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/share/as2_map_server/cmake/export_as2_map_serverExport-release.cmake
+-- Installing: /home/developer/aerostack2_ws/install/as2_map_server/lib/libscan2occ_grid.so
+-- Set runtime path of "/home/developer/aerostack2_ws/install/as2_map_server/lib/libscan2occ_grid.so" to ""

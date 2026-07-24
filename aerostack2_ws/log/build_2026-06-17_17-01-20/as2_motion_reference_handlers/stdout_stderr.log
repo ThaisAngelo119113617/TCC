@@ -1,0 +1,17 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/basic_motion_references.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/trajectory_motion.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/hover_motion.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/speed_motion.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/acro_motion.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/position_motion.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/as2_motion_reference_handlers.dir/src/speed_in_a_plane_motion.cpp.o[0m
+[ 87%] Built target ament_cmake_python_symlink_as2_motion_reference_handlers
+running egg_info
+creating as2_motion_reference_handlers.egg-info
+writing as2_motion_reference_handlers.egg-info/PKG-INFO
+writing dependency_links to as2_motion_reference_handlers.egg-info/dependency_links.txt
+writing top-level names to as2_motion_reference_handlers.egg-info/top_level.txt
+writing manifest file 'as2_motion_reference_handlers.egg-info/SOURCES.txt'
+reading manifest file 'as2_motion_reference_handlers.egg-info/SOURCES.txt'
+writing manifest file 'as2_motion_reference_handlers.egg-info/SOURCES.txt'
+[ 87%] Built target ament_cmake_python_build_as2_motion_reference_handlers_egg

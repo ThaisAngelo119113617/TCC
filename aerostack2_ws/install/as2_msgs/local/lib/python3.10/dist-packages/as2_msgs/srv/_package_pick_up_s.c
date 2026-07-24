@@ -1,0 +1,1 @@
+/home/developer/aerostack2_ws/build/as2_msgs/rosidl_generator_py/as2_msgs/srv/_package_pick_up_s.c
