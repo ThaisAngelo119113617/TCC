@@ -67,5 +67,5 @@ WORKDIR /home/developer/aerostack2_ws
 RUN echo "source /opt/ros/\${ROS_DISTRO}/setup.bash" >> /home/developer/.bashrc \
     && echo "source /home/developer/dependencias_px4/install/setup.bash" >> /home/developer/.bashrc \
     && echo "export GZ_VERSION=harmonic" >> /home/developer/.bashrc \
-    && echo "export GZ_SIM_RESOURCE_PATH=\$GZ_SIM_RESOURCE_PATH:/home/developer/aerostack2_ws/src/models" >> /home/developer/.bashrc
-    && echo "export AEROSTACK2_PATH=/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca" >> /home/developer/.bashrc
+    && echo "export GZ_SIM_RESOURCE_PATH=\$GZ_SIM_RESOURCE_PATH:/home/developer/aerostack2_ws/src/aerostack2_ws/src/models" >> /home/developer/.bashrc \
+    && echo "export AEROSTACK2_PATH=/home/developer/aerostack2_ws/src/aerostack2_ws/src/aerostack2-tcc_lucca" >> /home/developer/.bashrc
