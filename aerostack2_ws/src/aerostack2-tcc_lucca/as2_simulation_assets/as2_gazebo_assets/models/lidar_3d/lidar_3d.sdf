@@ -1,48 +1,89 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <sdf version="1.9">
-    <model name="lidar_3d">
-        <link name="lidar_3d">
-            <inertial>
-                <mass>0.005</mass>
-                <inertia>
-                    <ixx>8.33e-06</ixx>
-                    <ixy>0</ixy>
-                    <ixz>0</ixz>
-                    <iyy>8.33e-06</iyy>
-                    <iyz>0</iyz>
-                    <izz>8.33e-06</izz>
-                </inertia>
-            </inertial>
-            <sensor name="gpu_ray" type="gpu_ray">
-                <update_rate>10</update_rate>
-                <lidar>
-                    <scan>
-                        <horizontal>
-                            <samples>1800</samples>
-                            <resolution>1</resolution>
-                            <min_angle>-3.14159</min_angle>
-                            <max_angle>3.14159</max_angle>
-                        </horizontal>
-                        <vertical>
-                            <samples>16</samples>
-                            <resolution>1</resolution>
-                            <min_angle>-0.261799</min_angle>
-                            <max_angle>0.261799</max_angle>
-                        </vertical>
-                    </scan>
-                    <range>
-                        <min>0.05</min>
-                        <max>100</max>
-                        <resolution>0.01</resolution>
-                    </range>
-                    <noise>
-                        <type>gaussian</type>
-                        <mean>0</mean>
-                        <stddev>0.01</stddev>
-                    </noise>
-                </lidar>
-            </sensor>
-        </link>
-        <frame name="mount_point"/>
-    </model>
+  <model name="livox_avia">
+    <static>false</static>
+    <link name="link">
+      <inertial>
+        <mass>0.498</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.0912 0.0612 0.0648</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.0912 0.0612 0.0648</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!--
+        Aproximação do LiDAR Livox Avia (905nm, Classe 1 eye-safe).
+        LIMITAÇÃO CONHECIDA: o plugin gpu_lidar do Gazebo simula varredura
+        em grade fixa (linhas regulares), não reproduz o padrão real de
+        varredura circular não-repetitiva do Avia. Os parâmetros abaixo
+        aproximam alcance, FOV e densidade de pontos equivalente, para fins
+        de teste geométrico do solo (detecção de plano/inclinação).
+
+        Specs de referência (datasheet Livox Avia):
+          - FOV horizontal: 70.4°
+          - FOV vertical (modo não-repetitivo): 4.5° a 77.2°
+          - Alcance: 320-450 m (dependente de iluminação)
+          - Precisão: ±2 cm (1sigma @ 20m)
+          - Taxa: até 720.000 pts/s (triple return)
+      -->
+      <sensor name="livox_avia" type="gpu_lidar">
+        <pose>0 0 0 0 0 0</pose>
+        <topic>lidar</topic>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.61436</min_angle>   <!-- -35.2 deg -->
+              <max_angle>0.61436</max_angle>    <!-- +35.2 deg -->
+            </horizontal>
+            <vertical>
+              <samples>200</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.6737</min_angle>    <!-- -38.6 deg -->
+              <max_angle>0.6737</max_angle>     <!-- +38.6 deg -->
+            </vertical>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>450.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.02</stddev>
+          </noise>
+        </lidar>
+        <plugin
+          filename="gz-sim-sensors-system"
+          name="gz::sim::systems::Sensors">
+        </plugin>
+      </sensor>
+    </link>
+  </model>
 </sdf>

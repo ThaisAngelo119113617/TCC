@@ -10,11 +10,21 @@ services:
     network_mode: host
     ipc: host
     pid: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     environment:
       - DISPLAY=${DISPLAY}
       - QT_X11_NO_MITSHM=1
-      # ESTA LINHA ABAIXO É O SEGREDO: ela aponta para a models local do TCC automaticamente
       - GZ_SIM_RESOURCE_PATH=/home/developer/aerostack2_ws/src/aerostack2_ws/src/project_landing-tcc_lucca/models
+      - __NV_PRIME_RENDER_OFFLOAD=1
+      - __GLX_VENDOR_LIBRARY_NAME=nvidia
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - .:/home/developer/aerostack2_ws/src
