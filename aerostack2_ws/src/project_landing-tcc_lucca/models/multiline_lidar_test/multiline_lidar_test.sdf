@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
-  <model name="livox_avia">
+  <model name="multiline_lidar_test">
     <static>false</static>
-    <link name="lidar_3d">
+    <link name="link">
       <inertial>
         <mass>0.498</mass>
         <inertia>
@@ -29,24 +29,28 @@
       </collision>
 
       <!--
-        Aproximacao do LiDAR Livox Avia usando N sensores gpu_lidar
-        independentes, cada um SO com varredura horizontal (sem tag
-        <vertical>), empilhados em pitches diferentes, ao inves de um
-        unico sensor com <horizontal> + <vertical> (que crasha de forma
-        reproduzivel neste ambiente: gz-sim Harmonic + Docker + NVIDIA).
-        Ver: https://github.com/gazebosim/gz-sensors/issues/370
-             https://github.com/gazebosim/gz-sim/issues/2851
+        TESTE: aproximação de LiDAR multi-linha (estilo Velodyne/Livox) usando
+        N sensores gpu_lidar independentes, cada um SÓ com varredura horizontal
+        (sem tag <vertical>), inclinados em pitches diferentes.
 
-        N = 4 (deve bater com LIDAR_3D_NUM_ROWS em payload.py).
-        O no de percepcao deve assinar os N topicos
-        sensor_measurements/livox_avia/row_0..row_3/points
-        e somar o pitch conhecido de cada linha (comentario <pose> abaixo)
-        para reconstruir a nuvem de pontos 3D combinada.
+        Motivo: sensores gpu_lidar com <vertical> (varredura 2D/3D real) crasham
+        de forma sistemática e reproduzível nesse ambiente (Gazebo Harmonic +
+        Docker + NVIDIA), ver issues:
+          https://github.com/gazebosim/gz-sensors/issues/370
+          https://github.com/gazebosim/gz-sim/issues/2851
+        Sensores só-horizontais (sem <vertical>) se mostraram estáveis em todos
+        os testes. Este modelo empilha N deles para reconstituir uma nuvem 3D,
+        de forma análoga a como LiDARs mecânicos multi-linha reais são
+        construídos internamente (feixes laser empilhados).
+
+        Nó de percepção deve assinar os N tópicos lidar/row_0..row_2,
+        e somar o pitch conhecido de cada sensor (ver comentário <pose> de cada
+        um) para reconstruir a nuvem de pontos 3D combinada.
       -->
 
-      <sensor name="row_0" type="gpu_lidar">
+      <sensor name="lidar_row_0" type="gpu_lidar">
         <pose>0 0 0 0 -0.67370 0</pose> <!-- pitch: -38.6 deg -->
-        <topic>x500_px4/livox_avia/row_0</topic>
+        <topic>lidar/row_0</topic>
         <update_rate>10</update_rate>
         <always_on>true</always_on>
         <visualize>false</visualize>
@@ -71,9 +75,9 @@
           </noise>
         </lidar>
       </sensor>
-      <sensor name="row_1" type="gpu_lidar">
-        <pose>0 0 0 0 -0.22457 0</pose> <!-- pitch: -12.9 deg -->
-        <topic>x500_px4/livox_avia/row_1</topic>
+      <sensor name="lidar_row_1" type="gpu_lidar">
+        <pose>0 0 0 0 0.00000 0</pose> <!-- pitch: 0.0 deg -->
+        <topic>lidar/row_1</topic>
         <update_rate>10</update_rate>
         <always_on>true</always_on>
         <visualize>false</visualize>
@@ -98,36 +102,9 @@
           </noise>
         </lidar>
       </sensor>
-      <sensor name="row_2" type="gpu_lidar">
-        <pose>0 0 0 0 0.22457 0</pose> <!-- pitch: 12.9 deg -->
-        <topic>x500_px4/livox_avia/row_2</topic>
-        <update_rate>10</update_rate>
-        <always_on>true</always_on>
-        <visualize>false</visualize>
-        <lidar>
-          <scan>
-            <horizontal>
-              <samples>90</samples>
-              <resolution>1</resolution>
-              <min_angle>-0.61436</min_angle>
-              <max_angle>0.61436</max_angle>
-            </horizontal>
-          </scan>
-          <range>
-            <min>0.1</min>
-            <max>450.0</max>
-            <resolution>0.01</resolution>
-          </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.02</stddev>
-          </noise>
-        </lidar>
-      </sensor>
-      <sensor name="row_3" type="gpu_lidar">
+      <sensor name="lidar_row_2" type="gpu_lidar">
         <pose>0 0 0 0 0.67370 0</pose> <!-- pitch: 38.6 deg -->
-        <topic>x500_px4/livox_avia/row_3</topic>
+        <topic>lidar/row_2</topic>
         <update_rate>10</update_rate>
         <always_on>true</always_on>
         <visualize>false</visualize>

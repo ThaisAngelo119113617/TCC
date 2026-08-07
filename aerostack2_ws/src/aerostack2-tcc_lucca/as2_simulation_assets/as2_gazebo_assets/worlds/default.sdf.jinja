@@ -80,5 +80,18 @@
         <include>
             <uri>model://grass_patch</uri>
         </include>
+
+        {% for m in embedded_models -%}
+        <!-- Embedded directly at world load time (not spawned later via the
+             ros_gz_sim `create` service) to avoid a known gz-sim race condition
+             that crashes when models with multi-row raycast sensors (gpu_lidar
+             or CPU 2D/3D ray) are created after the world is already running.
+             See https://github.com/gazebosim/gz-sensors/issues/370 -->
+        <include>
+            <uri>file://{{ m.path }}</uri>
+            <name>{{ m.name }}</name>
+            <pose>{{ m.pose }}</pose>
+        </include>
+        {% endfor -%}
     </world>
 </sdf>

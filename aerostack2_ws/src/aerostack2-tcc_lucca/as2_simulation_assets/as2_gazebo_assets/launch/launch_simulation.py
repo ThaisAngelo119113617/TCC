@@ -106,8 +106,18 @@ def simulation(world_name: str, gui_config: str = '', headless: bool = False,
 
 
 def spawn(world: World) -> List[Node]:
-    """Spawn models (drones and objects) of world."""
-    models = world.drones + world.objects
+    """
+    Spawn models (objects) of world.
+
+    Drones are NOT spawned here anymore: they are embedded directly into the
+    generated world SDF (see World.check_world_values() in world.py) so they
+    exist from the moment gz sim boots, instead of being created afterwards
+    via the `ros_gz_sim create` service. This avoids a known gz-sim race
+    condition that segfaults when a model with a multi-row raycast sensor
+    (gpu_lidar or CPU 2D/3D ray) is spawned after the world has already
+    loaded. See https://github.com/gazebosim/gz-sensors/issues/370
+    """
+    models = world.objects
     launch_processes = []
     for model in models:
         # ros2 run ros_gz_sim create -world ARG -file FILE

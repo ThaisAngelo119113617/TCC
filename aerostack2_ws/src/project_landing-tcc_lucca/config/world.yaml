@@ -23,11 +23,11 @@ drones:
   #   rpy:
   #     - 0.0
   #     - 1.5707
-  #     - 0.0
-  # - model_type: "lidar_3d"
-  #   model_name: "livox_avia"
-  #   xyz: [0.0, 0.0, 0.05]
-  #   rpy: [0.0, 0.0, 0.0]
+      # - 0.0
+  - model_type: "lidar_3d"
+    model_name: "livox_avia"
+    xyz: [0.0, 0.0, 0.05]
+    rpy: [0.0, 0.0, 0.0]
 objects:
 - model_name: "ariel_marker"
   model_type: "ariel_marker"

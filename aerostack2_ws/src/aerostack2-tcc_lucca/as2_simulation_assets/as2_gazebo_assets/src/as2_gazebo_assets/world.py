@@ -52,6 +52,13 @@ except ModuleNotFoundError:
     from pydantic import BaseModel, root_validator
 
 
+class _DroneIndexShim:
+    """Minimal stand-in for World, used only so Drone.generate() can call get_index()."""
+
+    def __init__(self, drones: List):
+        self.drones = drones
+
+
 class Origin(BaseModel):
     """GPS Point."""
 
@@ -73,8 +80,29 @@ class World(BaseModel):
         """Get world jinja file if exists."""
         is_jinja, jinja_templ_path = cls.get_world_file(values['world_name'])
         if is_jinja:
+            # Generate each drone's own SDF (with its payload/sensors already
+            # nested inside) *before* rendering the world file, so that the
+            # world can embed them directly via <include>. This avoids
+            # spawning drones later through the `ros_gz_sim create` service,
+            # which is what triggers a known gz-sim race condition/crash when
+            # a model with a multi-row raycast sensor (gpu_lidar or 2D/3D CPU
+            # ray) is created after the world has already loaded.
+            # See https://github.com/gazebosim/gz-sensors/issues/370
+            embedded_models = []
+            drones = values.get('drones', [])
+            for idx, drone in enumerate(drones):
+                _, drone_sdf_path = drone.generate(_DroneIndexShim(drones))
+                x, y, z = drone.xyz
+                roll, pitch, yaw = drone.rpy
+                embedded_models.append({
+                    'path': drone_sdf_path,
+                    'name': drone.model_name,
+                    'pose': f'{x} {y} {z} {roll} {pitch} {yaw}',
+                })
+
             _, values['world_path'] = cls.generate(
-                values['world_name'], values['origin'], jinja_templ_path
+                values['world_name'], values['origin'], jinja_templ_path,
+                embedded_models=embedded_models,
             )
         return values
 
@@ -130,7 +158,8 @@ class World(BaseModel):
 
     @staticmethod
     def generate(
-        world_name: str, origin: Origin, jinja_template_path: Path
+        world_name: str, origin: Origin, jinja_template_path: Path,
+        embedded_models: List[dict] = None,
     ) -> tuple[str, str]:
         """
         Generate SDF by executing JINJA and populating templates.
@@ -149,6 +178,10 @@ class World(BaseModel):
         if origin is not None:
             origin_str += f'{origin.latitude} {origin.longitude} {origin.altitude}'
 
+        embedded_models_str = ''
+        for m in (embedded_models or []):
+            embedded_models_str += f"{m['path']} {m['name']} {m['pose']} "
+
         output_file_sdf = f'/tmp/{world_name}.sdf'
         command = [
             'python3',
@@ -157,6 +190,8 @@ class World(BaseModel):
             f'{env_dir}',
             '--origin',
             f'{origin_str}',
+            '--embedded-models',
+            f'{embedded_models_str}',
             '--output-file',
             f'{output_file_sdf}',
         ]

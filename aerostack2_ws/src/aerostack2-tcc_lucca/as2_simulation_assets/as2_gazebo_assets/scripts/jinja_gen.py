@@ -96,6 +96,40 @@ def get_sensors(sensors_array: list[str]) -> dict[str, str]:
     return sensors
 
 
+def get_embedded_models(embedded_array: list[str]) -> list[dict[str, str]]:
+    """
+    Get models to embed directly into the world SDF (as <include> blocks).
+
+    Each model is described by 8 consecutive tokens:
+    path name x y z roll pitch yaw
+
+    This is used to embed already-generated drone SDF files (with all their
+    payload sensors nested inside) directly into the world file at boot time,
+    instead of spawning them later via the `ros_gz_sim create` service.
+
+    Rationale: spawning models containing multi-row (2D/3D) raycast sensors
+    (gpu_lidar or CPU ray with horizontal AND vertical scan) via the `create`
+    service AFTER the world has already loaded triggers a known upstream race
+    condition in gz-sim's rendering scene setup (SensorsPrivate::RenderThread
+    vs the GUI's RenderUtil), causing a segfault in SceneManager::CreateLight/
+    CreateMaterial/CreateScene. Models that are part of the world SDF from the
+    start do not trigger this bug. See:
+      - https://github.com/gazebosim/gz-sensors/issues/370
+      - https://github.com/gazebosim/gz-sim/issues/2851
+    """
+    models = []
+    while embedded_array and embedded_array[0]:
+        path = embedded_array.pop(0)
+        name = embedded_array.pop(0)
+        pose, embedded_array = embedded_array[:6], embedded_array[6:]
+        models.append({
+            'path': path,
+            'name': name,
+            'pose': ' '.join(pose),
+        })
+    return models
+
+
 def get_origin(origin_array: list[str]) -> tuple[dict[str, float], bool]:
     """Get GPS origin."""
     origin = {}
@@ -124,6 +158,10 @@ def main():
     parser.add_argument('--origin', default='',
                         help='Set world origin values: lat, lon, alt')
     parser.add_argument('--sensors', default='', help='Drone model sensors')
+    parser.add_argument('--embedded-models', default='',
+                         help='Models (e.g. drones) to embed directly into the world SDF, '
+                              'as file://<uri> <include> blocks, instead of spawning them '
+                              'later via the ros_gz_sim create service.')
     parser.add_argument('--no-odom', action='store_false',
                         dest='odom', help='Disable odometry plugin on model')
     parser.add_argument('--battery', dest='bat_capacity', default=0.0,
@@ -140,11 +178,14 @@ def main():
 
     origin, use_origin = get_origin(str(args.origin).split(sep=' '))
 
+    embedded_models = get_embedded_models(str(args.embedded_models).split(sep=' '))
+
     dict_ = {'namespace': args.namespace, 'sensors': sensors, 'odom_plugin': args.odom,
              'battery_plugin': bool(float(args.bat_capacity)),
              'velocity_controller': args.enable_velocity_control,
              'acro_controller': args.enable_acro_control,
-             'capacity': float(args.bat_capacity), 'origin': origin, 'use_origin': use_origin}
+             'capacity': float(args.bat_capacity), 'origin': origin, 'use_origin': use_origin,
+             'embedded_models': embedded_models}
     result = template.render(dict_)
 
     if args.stdout:
