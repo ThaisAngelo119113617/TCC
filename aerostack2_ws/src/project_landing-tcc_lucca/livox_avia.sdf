@@ -43,7 +43,7 @@
           - Precisão: ±2 cm (1sigma @ 20m)
           - Taxa: até 720.000 pts/s (triple return)
       -->
-      <sensor name="lidar" type="gpu_ray">
+      <sensor name="livox_avia" type="gpu_lidar">
         <pose>0 0 0 0 0 0</pose>
         <topic>lidar</topic>
         <update_rate>10</update_rate>
@@ -52,7 +52,7 @@
         <lidar>
           <scan>
             <horizontal>
-              <samples>90</samples>
+              <samples>360</samples>
               <resolution>1</resolution>
               <min_angle>-0.61436</min_angle>   <!-- -35.2 deg -->
               <max_angle>0.61436</max_angle>    <!-- +35.2 deg -->
