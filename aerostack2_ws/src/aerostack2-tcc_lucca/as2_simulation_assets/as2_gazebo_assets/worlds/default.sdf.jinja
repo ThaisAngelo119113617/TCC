@@ -36,6 +36,9 @@
         <plugin entity_name="*" entity_type="world" filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
         <render_engine>ogre2</render_engine>
         </plugin>
+        <plugin name='rgl::RGLServerPluginManager' filename='RGLServerPluginManager'>
+            <do_ignore_entities_in_lidar_link>true</do_ignore_entities_in_lidar_link>
+        </plugin>
 
         <!-- Uncomment this if you want to use SuctionGripper model -->
         <plugin
