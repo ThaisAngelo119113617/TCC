@@ -12,7 +12,7 @@ RUN apt remove ignition* -y && apt autoremove -y
 RUN apt-get update && apt-get install -y lsb-release wget gnupg nano git tmux tmuxinator python3-pip python3-rosdep ros-dev-tools
 RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
-RUN apt-get update && apt-get install -y -q gz-harmonic ros-humble-ros-gzharmonic
+RUN apt-get update && apt-get install -y -q gz-harmonic ros-humble-ros-gzharmonic mesa-vulkan-drivers vulkan-tools
 
 # 3. Instalar o Micro-XRCE-DDS-Agent (Ponte de comunicação com o PX4)
 RUN git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git && \

@@ -28,6 +28,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - .:/home/developer/aerostack2_ws/src
+      - /usr/share/vulkan/icd.d/nvidia_icd.json:/usr/share/vulkan/icd.d/nvidia_icd.json:ro
     user: developer
     stdin_open: true
     tty: true
