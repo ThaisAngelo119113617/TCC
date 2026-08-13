@@ -46,11 +46,6 @@ from as2_gazebo_assets.models.entity import Entity
 
 from launch_ros.actions import Node
 
-# Number of horizontal-only gpu_lidar sensors ("rows") stacked at different
-# pitch angles that make up the LIDAR_3D model (lidar_3d.sdf). Must match the
-# number of <sensor name="row_N"> elements defined there.
-LIDAR_3D_NUM_ROWS = 4
-
 try:
     from pydantic.v1 import validator
     PYDANTIC_V2 = True
@@ -181,6 +176,8 @@ class DepthCameraTypeEnum(str, Enum):
         return bridges
 
 
+
+
 class LidarTypeEnum(str, Enum):
     """Valid lidar model types."""
 
@@ -206,33 +203,6 @@ class LidarTypeEnum(str, Enum):
         :param model_prefix: ros model prefix, defaults to ''
         :return: list with bridges
         """
-        if sensor_model_type == LidarTypeEnum.LIDAR_3D.value:
-            # lidar_3d.sdf implements a 3D lidar as LIDAR_3D_NUM_ROWS
-            # independent horizontal-only gpu_lidar sensors stacked at
-            # different pitch angles (instead of a single sensor with a
-            # <vertical> scan block), to avoid a reproducible gz-sim crash.
-            # See https://github.com/gazebosim/gz-sensors/issues/370
-            # Each row publishes on a fixed gz topic
-            # 'x500_px4/livox_avia/row_<i>' (must match lidar_3d.sdf).
-            bridges = []
-            for i in range(LIDAR_3D_NUM_ROWS):
-                gz_topic_base = f'x500_px4/livox_avia/row_{i}'
-                bridges.append(Bridge(
-                    gz_topic=gz_topic_base,
-                    ros_topic=f'sensor_measurements/{sensor_model_prefix}/row_{i}/scan',
-                    gz_type='ignition.msgs.LaserScan',
-                    ros_type='sensor_msgs/msg/LaserScan',
-                    direction=BridgeDirection.GZ_TO_ROS,
-                ))
-                bridges.append(Bridge(
-                    gz_topic=f'{gz_topic_base}/points',
-                    ros_topic=f'sensor_measurements/{sensor_model_prefix}/row_{i}/points',
-                    gz_type='ignition.msgs.PointCloudPacked',
-                    ros_type='sensor_msgs/msg/PointCloud2',
-                    direction=BridgeDirection.GZ_TO_ROS,
-                ))
-            return bridges
-
         bridges = [
             gz_bridges.lidar_scan(
                 world_name, drone_model_name, sensor_model_name,
@@ -242,7 +212,6 @@ class LidarTypeEnum(str, Enum):
                 sensor_model_type, sensor_model_prefix)
         ]
         return bridges
-
 
 class GpsTypeEnum(str, Enum):
     """Valid GPS model types."""
