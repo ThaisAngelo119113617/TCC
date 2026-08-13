@@ -1,9 +1,0 @@
-[  7%] [32mBuilding CXX object CMakeFiles/as2_map_server.dir/src/map_server.cpp.o[0m
-[ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
-[ 21%] [32m[1mLinking CXX shared library libas2_map_server_base.so[0m
-[ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
-[ 35%] [32mBuilding CXX object CMakeFiles/as2_map_server.dir/src/map_server_node.cpp.o[0m
-[ 35%] Built target as2_map_server_base
-[ 42%] [32mBuilding CXX object plugins/scan2occ_grid/CMakeFiles/scan2occ_grid.dir/src/scan2occ_grid.cpp.o[0m
-[ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
-[ 50%] Built target gtest_main

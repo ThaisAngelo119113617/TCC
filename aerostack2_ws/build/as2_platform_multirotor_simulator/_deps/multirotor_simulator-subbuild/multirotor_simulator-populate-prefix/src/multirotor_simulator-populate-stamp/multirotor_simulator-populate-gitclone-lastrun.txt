@@ -1,3 +1,0 @@
-repository='https://github.com/RPS98/multirotor_simulator.git'
-module=''
-tag='origin'

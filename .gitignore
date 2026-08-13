@@ -1,1 +1,14 @@
 *.zip
+build/
+install/
+log/
+aerostack2_ws/log/
+.devcontainer/
+core
+core.*
+aerostack2_ws/build/
+aerostack2_ws/install/
+aerostack2_ws/log/
+core
+core.*
+.devcontainer/

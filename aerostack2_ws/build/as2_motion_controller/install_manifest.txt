@@ -1,4 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_motion_controller/lib/libas2_motion_controller.so
-/home/developer/aerostack2_ws/install/as2_motion_controller/lib/libas2_motion_controller_plugin_base.so
-/home/developer/aerostack2_ws/install/as2_motion_controller/lib/libdifferential_flatness_controller.so
-/home/developer/aerostack2_ws/install/as2_motion_controller/lib/libpid_speed_controller.so

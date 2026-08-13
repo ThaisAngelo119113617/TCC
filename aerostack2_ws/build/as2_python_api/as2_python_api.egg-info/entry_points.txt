@@ -1,3 +1,0 @@
-[console_scripts]
-mission_executor = as2_python_api.mission_interpreter.ros2_adapter:main
-

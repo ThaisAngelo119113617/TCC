@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_behaviors/as2_behaviors_swarm_flocking/include/as2_behaviors_swarm_flocking/drone_swarm.hpp

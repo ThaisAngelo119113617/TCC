@@ -1,5 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_behaviors_payload/lib/libgripper_behavior_lib.so
-/home/developer/aerostack2_ws/install/as2_behaviors_payload/lib/libgripper_behavior_plugin_base.so
-/home/developer/aerostack2_ws/install/as2_behaviors_payload/lib/libtwo_fingers.so
-/home/developer/aerostack2_ws/install/as2_behaviors_payload/lib/libdc_servo.so
-/home/developer/aerostack2_ws/install/as2_behaviors_payload/lib/libpoint_gimbal_behavior.so

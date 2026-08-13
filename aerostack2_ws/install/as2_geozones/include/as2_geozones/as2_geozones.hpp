@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_utilities/as2_geozones/include/as2_geozones/as2_geozones.hpp

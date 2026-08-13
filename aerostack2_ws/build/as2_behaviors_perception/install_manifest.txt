@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_behaviors_perception/lib/libpoint_gimbal_behavior.so

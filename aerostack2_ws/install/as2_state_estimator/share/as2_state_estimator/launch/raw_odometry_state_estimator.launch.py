@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_state_estimator/launch/raw_odometry_state_estimator.launch.py

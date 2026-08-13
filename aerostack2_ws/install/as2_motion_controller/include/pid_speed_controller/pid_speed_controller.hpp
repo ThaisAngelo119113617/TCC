@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_motion_controller/plugins/pid_speed_controller/include/pid_speed_controller/pid_speed_controller.hpp

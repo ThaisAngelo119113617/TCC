@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/build/as2_msgs/rosidl_typesupport_introspection_c/as2_msgs/srv/detail/list_control_modes__rosidl_typesupport_introspection_c.h

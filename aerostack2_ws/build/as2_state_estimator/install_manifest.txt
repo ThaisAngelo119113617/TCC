@@ -1,6 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libas2_state_estimator.so
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libas2_state_estimator_plugin_base.so
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libraw_odometry.so
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libground_truth.so
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libmocap_pose.so
-/home/developer/aerostack2_ws/install/as2_state_estimator/lib/libground_truth_odometry_fuse.so

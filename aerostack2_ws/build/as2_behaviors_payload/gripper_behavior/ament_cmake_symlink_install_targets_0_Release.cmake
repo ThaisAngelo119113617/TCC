@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/developer/aerostack2_ws/build/as2_behaviors_payload/gripper_behavior/as2_gripper_behavior_node" "TARGETS" "as2_gripper_behavior_node" "DESTINATION" "lib/as2_behaviors_payload")

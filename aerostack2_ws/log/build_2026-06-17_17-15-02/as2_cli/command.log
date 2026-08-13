@@ -1,4 +1,0 @@
-Invoking command in '/home/developer/aerostack2_ws/build/as2_cli': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_cli -- -j20 -l20
-Invoked command in '/home/developer/aerostack2_ws/build/as2_cli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/developer/aerostack2_ws/build/as2_cli -- -j20 -l20
-Invoking command in '/home/developer/aerostack2_ws/build/as2_cli': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_cli
-Invoked command in '/home/developer/aerostack2_ws/build/as2_cli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/developer/aerostack2_ws/build/as2_cli

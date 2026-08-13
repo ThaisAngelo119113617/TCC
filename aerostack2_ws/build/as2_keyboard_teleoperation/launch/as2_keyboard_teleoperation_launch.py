@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/src/aerostack2-tcc_lucca/as2_user_interfaces/as2_keyboard_teleoperation/launch/as2_keyboard_teleoperation_launch.py

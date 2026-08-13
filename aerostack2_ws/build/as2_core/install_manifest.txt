@@ -1,6 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//aerial_platform/mock_aerial_platform.hpp
-/home/developer/aerostack2_ws/install/as2_core/include/as2_core/mocks//executor_thread_util/executor_thread_util.hpp
-/home/developer/aerostack2_ws/install/as2_core/lib/libas2_core.a
-/home/developer/aerostack2_ws/install/as2_core/lib/libmocks.so
-/home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/export_as2_coreExport.cmake
-/home/developer/aerostack2_ws/install/as2_core/share/as2_core/cmake/export_as2_coreExport-release.cmake

@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/build/as2_keyboard_teleoperation/as2_keyboard_teleoperation/main_window.py

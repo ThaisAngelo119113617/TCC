@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/build/as2_core/ament_cmake_environment_hooks/pythonpath.sh

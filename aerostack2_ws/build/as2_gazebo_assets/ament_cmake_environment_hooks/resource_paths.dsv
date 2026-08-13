@@ -1,6 +1,0 @@
-set;GZ_VERSION;harmonic
-prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/models
-prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/developer/aerostack2_ws/install/as2_gazebo_assets/share/as2_gazebo_assets/worlds
-prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;/home/developer/aerostack2_ws/install/as2_gazebo_assets/lib
-
-prepend-non-duplicate;LD_LIBRARY_PATH;/home/developer/aerostack2_ws/install/as2_gazebo_assets/lib

@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/build/as2_msgs/rosidl_generator_py/as2_msgs/action/_point_gimbal_s.c

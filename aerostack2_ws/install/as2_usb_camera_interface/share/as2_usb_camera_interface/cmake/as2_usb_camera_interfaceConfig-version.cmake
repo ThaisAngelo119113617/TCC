@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/build/as2_usb_camera_interface/ament_cmake_core/as2_usb_camera_interfaceConfig-version.cmake

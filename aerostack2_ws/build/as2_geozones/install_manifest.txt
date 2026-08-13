@@ -1,1 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_geozones/lib/libas2_geozones.a

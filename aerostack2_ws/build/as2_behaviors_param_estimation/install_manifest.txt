@@ -1,2 +1,0 @@
-/home/developer/aerostack2_ws/install/as2_behaviors_param_estimation/lib/libmass_estimation_behavior.so
-/home/developer/aerostack2_ws/install/as2_behaviors_param_estimation/lib/libforce_estimation_behavior.so
