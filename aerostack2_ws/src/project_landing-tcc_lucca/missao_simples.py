@@ -101,8 +101,8 @@ Como rodar (dentro do container, com a simulação já aberta):
 from mission_base import SimpleMission
 
 DRONE_NAMESPACE = 'x500_px4'
-ALTURA_DECOLAGEM = 2.0  # metros
-TEMPO_PAIRADO = 8.0     # segundos parado no ar antes de pousar
+ALTURA_DECOLAGEM = 10.0  # metros
+TEMPO_PAIRADO = 15.0     # segundos parado no ar antes de pousar
 
 
 def main():
