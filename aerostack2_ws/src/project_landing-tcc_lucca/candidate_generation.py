@@ -54,6 +54,19 @@ class CandidateGenerationNode(Node):
         self.declare_parameter('grid_cell_size', 1.0)           # metros -- tamanho da celula do grid coarse
         self.declare_parameter('grid_max_height_range', 0.30)   # metros -- variacao de altura maxima aceita por celula
 
+        # --- Novos parametros (Algorithm 1, Loureiro et al. 2021) ---
+        self.declare_parameter('n_search_points', 30)   # quantos pontos aleatorios testar por ciclo
+        self.declare_parameter('r_min', 0.3)             # raio inicial (metros)
+        self.declare_parameter('r_max', 3.0)             # raio maximo (metros)
+        self.declare_parameter('r_step', 0.2)            # incremento do raio a cada iteracao
+        self.declare_parameter('n_min_points', 4)        # minimo de pontos p/ aceitar tentar PCA
+
+        self.n_search_points = self.get_parameter('n_search_points').value
+        self.r_min = self.get_parameter('r_min').value
+        self.r_max = self.get_parameter('r_max').value
+        self.r_step = self.get_parameter('r_step').value
+        self.n_min_points = self.get_parameter('n_min_points').value
+
         self.max_roughness = self.get_parameter('max_roughness').value
         self.grid_cell_size = self.get_parameter('grid_cell_size').value
         self.grid_max_height_range = self.get_parameter('grid_max_height_range').value
@@ -227,32 +240,24 @@ class CandidateGenerationNode(Node):
         if points_coarse.shape[0] < 3:
             return
 
-        # 3. PCA explicita por ponto (KDTree), dando normal + rugosidade juntos
-        normals, roughness = self._pca_normal_and_roughness(points_coarse)
-        valid = ~np.isnan(roughness)
-        if not valid.any():
-            return
+        # 3. Raio expansivel (Algorithm 1, Loureiro et al. 2021):
+        #    amostra pontos aleatorios, cresce o raio enquanto plano for valido
+        candidates = self._grow_candidates(points_coarse)
 
-        # 4. Validacao geometrica: inclinacao + rugosidade
-        vertical = np.array([0.0, 0.0, 1.0])
-        cos_angle = np.clip(np.abs(normals[valid] @ vertical), -1.0, 1.0)
-        angle_deg = np.degrees(np.arccos(cos_angle))
-        rough_valid = roughness[valid]
+        if candidates:
+            radii = [c['radius'] for c in candidates]
+            angles = [c['inclination_deg'] for c in candidates]
+            self.get_logger().info(
+                f'{len(candidates)}/{self.n_search_points} candidatos validos | '
+                f'raio min/media/max: {min(radii):.2f}/{np.mean(radii):.2f}/{max(radii):.2f}m | '
+                f'inclinacao media: {np.mean(angles):.1f} graus',
+                throttle_duration_sec=2.0)
+        else:
+            self.get_logger().info('0 candidatos validos', throttle_duration_sec=2.0)
 
-        self.get_logger().info(
-            f'angulos -- min: {angle_deg.min():.1f} max: {angle_deg.max():.1f} '
-            f'mediana: {np.median(angle_deg):.1f} graus | '
-            f'rugosidade -- min: {rough_valid.min()*100:.1f} max: {rough_valid.max()*100:.1f} '
-            f'mediana: {np.median(rough_valid)*100:.1f} cm',
-            throttle_duration_sec=2.0)
-
-        safe_mask = (angle_deg <= self.max_inclination_deg) & (rough_valid <= self.max_roughness)
-        candidate_points = points_coarse[valid][safe_mask]
-
-        self.get_logger().info(
-            f'-> {candidate_points.shape[0]} candidatos finais (inclinacao <= '
-            f'{self.max_inclination_deg} graus, rugosidade <= {self.max_roughness*100:.0f}cm)',
-            throttle_duration_sec=2.0)
+        candidate_points = (
+            np.array([c['center'] for c in candidates]) if candidates else np.empty((0, 3))
+        )
 
         header_world = Header()
         header_world.stamp = msg.header.stamp
@@ -283,43 +288,104 @@ class CandidateGenerationNode(Node):
 
         return cell_ok[inverse]
 
-    def _pca_normal_and_roughness(self, points: np.ndarray):
-        """
-        PCA explicita por ponto via KDTree: para cada ponto, busca vizinhos
-        no raio configurado, calcula a matriz de covariancia, e extrai:
-          - normal = autovetor do menor autovalor
-          - rugosidade = sqrt(menor autovalor) = RMS da distancia ao plano
+    # def _pca_normal_and_roughness(self, points: np.ndarray):
+    #     """
+    #     PCA explicita por ponto via KDTree: para cada ponto, busca vizinhos
+    #     no raio configurado, calcula a matriz de covariancia, e extrai:
+    #       - normal = autovetor do menor autovalor
+    #       - rugosidade = sqrt(menor autovalor) = RMS da distancia ao plano
 
-        Pontos sem vizinhos suficientes recebem NaN (descartados depois).
+    #     Pontos sem vizinhos suficientes recebem NaN (descartados depois).
+    #     """
+    #     pcd = o3d.geometry.PointCloud()
+    #     pcd.points = o3d.utility.Vector3dVector(points)
+    #     kdtree = o3d.geometry.KDTreeFlann(pcd)
+
+    #     n = points.shape[0]
+    #     normals = np.full((n, 3), np.nan)
+    #     roughness = np.full(n, np.nan)
+    #     min_neighbors = 4
+
+    #     for i in range(n):
+    #         _, idx, _ = kdtree.search_radius_vector_3d(points[i], self.normal_search_radius)
+    #         if len(idx) < min_neighbors:
+    #             continue
+
+    #         neighborhood = points[np.asarray(idx)]
+    #         centroid = neighborhood.mean(axis=0)
+    #         centered = neighborhood - centroid
+    #         cov = (centered.T @ centered) / centered.shape[0]
+
+    #         eigvals, eigvecs = np.linalg.eigh(cov)  # ordenado crescente
+    #         normal = eigvecs[:, 0]
+    #         if normal[2] < 0:
+    #             normal = -normal  # orienta pra cima
+
+    #         normals[i] = normal
+    #         roughness[i] = np.sqrt(max(eigvals[0], 0.0))
+
+    #     return normals, roughness
+
+    def _grow_candidates(self, points: np.ndarray) -> list:
+        """
+        Algorithm 1 (Loureiro et al. 2021): para n_search_points pontos
+        aleatorios, cresce o raio de busca enquanto a inclinacao continuar
+        dentro do limite. Retorna uma lista de candidatos, cada um com
+        centro, raio final (tamanho da area plana), normal e rugosidade.
         """
         pcd = o3d.geometry.PointCloud()
         pcd.points = o3d.utility.Vector3dVector(points)
         kdtree = o3d.geometry.KDTreeFlann(pcd)
 
         n = points.shape[0]
-        normals = np.full((n, 3), np.nan)
-        roughness = np.full(n, np.nan)
-        min_neighbors = 4
+        if n == 0:
+            return []
 
-        for i in range(n):
-            _, idx, _ = kdtree.search_radius_vector_3d(points[i], self.normal_search_radius)
-            if len(idx) < min_neighbors:
-                continue
+        sample_idx = np.random.choice(n, size=min(self.n_search_points, n), replace=False)
+        candidates = []
 
-            neighborhood = points[np.asarray(idx)]
-            centroid = neighborhood.mean(axis=0)
-            centered = neighborhood - centroid
-            cov = (centered.T @ centered) / centered.shape[0]
+        for i in sample_idx:
+            center = points[i]
+            best = None  # (radius, normal, roughness)
+            r = self.r_min
 
-            eigvals, eigvecs = np.linalg.eigh(cov)  # ordenado crescente
-            normal = eigvecs[:, 0]
-            if normal[2] < 0:
-                normal = -normal  # orienta pra cima
+            while r <= self.r_max:
+                _, idx, _ = kdtree.search_radius_vector_3d(center, r)
+                if len(idx) < self.n_min_points:
+                    break  # sem pontos suficientes nem nesse raio -- para de crescer
 
-            normals[i] = normal
-            roughness[i] = np.sqrt(max(eigvals[0], 0.0))
+                neighborhood = points[np.asarray(idx)]
+                centroid = neighborhood.mean(axis=0)
+                centered = neighborhood - centroid
+                cov = (centered.T @ centered) / centered.shape[0]
+                eigvals, eigvecs = np.linalg.eigh(cov)
+                normal = eigvecs[:, 0]
+                if normal[2] < 0:
+                    normal = -normal
+                roughness = float(np.sqrt(max(eigvals[0], 0.0)))
 
-        return normals, roughness
+                cos_angle = np.clip(abs(normal @ np.array([0.0, 0.0, 1.0])), -1.0, 1.0)
+                angle_deg = float(np.degrees(np.arccos(cos_angle)))
+
+                if angle_deg <= self.max_inclination_deg:
+                    # continua plano nesse raio -- guarda como melhor valido, tenta crescer mais
+                    best = (r, normal, roughness, angle_deg)
+                    r += self.r_step
+                else:
+                    break  # estourou o limite -- para, mantem o ultimo 'best' valido
+
+            if best is not None:
+                radius, normal, roughness, angle_deg = best
+                if roughness <= self.max_roughness:
+                    candidates.append({
+                        'center': center,
+                        'radius': radius,
+                        'normal': normal,
+                        'inclination_deg': angle_deg,
+                        'roughness': roughness,
+                    })
+
+        return candidates
 
     def _apply_transform(self, points: np.ndarray, transform) -> np.ndarray:
         """Aplica manualmente a transformacao rigida (rotacao + translacao) do TF."""
