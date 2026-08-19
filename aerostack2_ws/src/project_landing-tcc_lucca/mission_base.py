@@ -20,9 +20,12 @@ Uso básico:
 """
 
 from time import sleep
+import time
 
 import rclpy
 from as2_python_api.drone_interface import DroneInterface
+from geometry_msgs.msg import PointStamped
+
 
 
 class SimpleMission:
@@ -49,6 +52,10 @@ class SimpleMission:
             use_sim_time=self.use_sim_time,
             verbose=self.verbose,
         )
+        # Captura a posicao inicial (antes de decolar), pra poder voltar depois
+        sleep(1.0)  # da um tempo pro DroneInterface receber a primeira pose
+        self.home_position = self._get_current_position()
+        self._log(f'Posicao inicial (home) capturada: {self.home_position}')
         return self
 
     def __exit__(self, exc_type, exc_value, traceback) -> bool:
@@ -111,3 +118,142 @@ class SimpleMission:
     def _log(self, message: str) -> None:
         if self.verbose:
             print(f'[{self.__class__.__name__}] {message}')
+
+    # def go_to(self, x: float, y: float, z: float, speed: float = 0.5) -> None:
+    #     """Move o drone ate a posicao (x, y, z) especificada, em linha reta."""
+    #     self._log(f'Indo para posicao ({x:.2f}, {y:.2f}, {z:.2f})...')
+    #     self.drone.go_to.go_to_point([x, y, z], speed=speed)
+    #     self._log('Chegou na posicao de destino!')
+
+    # def go_to(self, x: float, y: float, z: float, speed: float = 0.5,
+    #           tolerance: float = 0.3, timeout: float = 30.0) -> None:
+    #     """Move o drone ate (x, y, z), esperando ativamente ate chegar perto o suficiente."""
+    #     self._log(f'Indo para posicao ({x:.2f}, {y:.2f}, {z:.2f})...')
+    #     success = self.drone.go_to.go_to_point([x, y, z], speed=speed)
+    #     if not success:
+    #         self._log('AVISO: comando de movimento foi rejeitado!')
+    #         return
+
+    #     start = time.time()
+    #     target = np.array([x, y, z])
+    #     chegou = False
+    #     while time.time() - start < timeout:
+    #         current = np.array(self.drone.position)
+    #         distancia = np.linalg.norm(current - target)
+    #         if distancia <= tolerance:
+    #             chegou = True
+    #             break
+    #         sleep(0.5)
+
+    #     if chegou:
+    #         self._log('Chegou na posicao de destino!')
+    #     else:
+    #         self._log(
+    #             f'AVISO: nao chegou perto o suficiente em {timeout}s '
+    #             f'(ficou em {self.drone.position}, alvo era {target.tolist()}).'
+    #         )
+
+    def go_to(self, x: float, y: float, z: float, speed: float = 0.5,
+              tolerance: float = 0.3, timeout: float = 30.0) -> None:
+        self._log(f'Indo para posicao ({x:.2f}, {y:.2f}, {z:.2f})...')
+        success = self.drone.go_to.go_to_point([x, y, z], speed=speed)
+        if not success:
+            self._log('AVISO: comando de movimento foi rejeitado!')
+            return
+
+        start = time.time()
+        target = np.array([x, y, z])
+        chegou = False
+        last_log = 0.0
+        while time.time() - start < timeout:
+            current = np.array(self.drone.position)
+            distancia = np.linalg.norm(current - target)
+            if distancia <= tolerance:
+                chegou = True
+                break
+
+            # log periodico de diagnostico, a cada 2s
+            elapsed = time.time() - start
+            if elapsed - last_log >= 2.0:
+                self._log(f'  ... posicao atual: {current.tolist()}, distancia ao alvo: {distancia:.2f}m')
+                last_log = elapsed
+
+            sleep(0.5)
+
+        if chegou:
+            self._log('Chegou na posicao de destino!')
+        else:
+            self._log(
+                f'AVISO: nao chegou perto o suficiente em {timeout}s '
+                f'(ficou em {self.drone.position}, alvo era {target.tolist()}).'
+            )
+
+    def _get_current_position(self) -> tuple:
+            """Le a posicao atual do drone. Ajustar conforme atributo real do DroneInterface."""
+            pos = self.drone.position  # <-- confirma se esse e o nome certo com o comando acima
+            return (pos[0], pos[1], pos[2])
+
+    def go_home(self, altitude: float = None, speed: float = 0.5) -> None:
+        """Volta para a posicao (x,y) de onde a missao comecou, mantendo altitude atual (ou a especificada)."""
+        x, y, _ = self.home_position
+        z = altitude if altitude is not None else self.drone.position[2]
+        self.go_to(x, y, z, speed=speed)
+    
+    #  def wait_for_landing_candidate(self, timeout: float = 30.0):
+    #     """
+    #     Espera receber um candidato de pouso no topico de percepcao.
+    #     Retorna (x, y, z) ou None se estourar o timeout.
+    #     """
+    #     self._log(f'Esperando candidato de pouso (timeout {timeout}s)...')
+    #     result = {'point': None}
+
+    #     def callback(msg: PointStamped):
+    #         result['point'] = (msg.point.x, msg.point.y, msg.point.z)
+
+    #     sub = self.drone.create_subscription(
+    #         PointStamped, '/perception/landing_candidates/best', callback, 10)
+
+    #     start = time.time()
+    #     while result['point'] is None and (time.time() - start) < timeout:
+    #         rclpy.spin_once(self.drone, timeout_sec=0.5)
+
+    #     self.drone.destroy_subscription(sub)
+
+    #     if result['point'] is None:
+    #         self._log('Nenhum candidato encontrado dentro do timeout!')
+    #         return None
+
+    #     self._log(f'Candidato recebido: {result["point"]}')
+    #     return result['point']
+
+    def wait_for_landing_candidate(self, timeout: float = 30.0):
+        """
+        Espera receber um candidato de pouso no topico de percepcao.
+        Retorna (x, y, z) ou None se estourar o timeout.
+        """
+        self._log(f'Esperando candidato de pouso (timeout {timeout}s)...')
+        result = {'point': None}
+
+        def callback(msg: PointStamped):
+            result['point'] = (msg.point.x, msg.point.y, msg.point.z)
+
+        sub = self.drone.create_subscription(
+            PointStamped, '/perception/landing_candidates/best', callback, 10)
+
+        start = time.time()
+        while result['point'] is None and (time.time() - start) < timeout:
+            time.sleep(0.2)  # NAO chama spin_once aqui -- o auto_spin do
+                              # DroneInterface ja processa a subscription sozinho
+
+        self.drone.destroy_subscription(sub)
+
+        if result['point'] is None:
+            self._log('Nenhum candidato encontrado dentro do timeout!')
+            return None
+
+        self._log(f'Candidato recebido: {result["point"]}')
+        return result['point']
+
+
+
+

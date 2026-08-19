@@ -34,6 +34,7 @@ from sensor_msgs_py import point_cloud2 as pc2
 from std_msgs.msg import Header
 from tf2_ros import Buffer, TransformListener, LookupException, ExtrapolationException
 # from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
+from geometry_msgs.msg import PointStamped
 
 class CandidateGenerationNode(Node):
     """No ROS2 que gera candidatos geometricos de pouso a partir do LiDAR."""
@@ -52,7 +53,7 @@ class CandidateGenerationNode(Node):
 
         self.declare_parameter('max_roughness', 0.10)          # metros (RMS ao plano) -- Loureiro: 0.05-0.20m
         self.declare_parameter('grid_cell_size', 1.0)           # metros -- tamanho da celula do grid coarse
-        self.declare_parameter('grid_max_height_range', 0.30)   # metros -- variacao de altura maxima aceita por celula
+        self.declare_parameter('grid_max_height_range', 0.50)   # metros -- variacao de altura maxima aceita por celula
 
         # --- Novos parametros (Algorithm 1, Loureiro et al. 2021) ---
         self.declare_parameter('n_search_points', 30)   # quantos pontos aleatorios testar por ciclo
@@ -83,6 +84,7 @@ class CandidateGenerationNode(Node):
         self.sub = self.create_subscription(
             PointCloud2, input_topic, self.cloud_callback, qos_profile_sensor_data)
         self.pub = self.create_publisher(PointCloud2, output_topic, 10)
+        self.best_pub = self.create_publisher(PointStamped, '/perception/landing_candidates/best', 10)
 
         self.get_logger().info(
             f'Inscrito em {input_topic}, publicando candidatos em {output_topic}. '
@@ -207,6 +209,7 @@ class CandidateGenerationNode(Node):
         try:
             transform = self.tf_buffer.lookup_transform(
                 self.world_frame, msg.header.frame_id, msg.header.stamp)
+                
         except (LookupException, ExtrapolationException) as e:
             self.get_logger().warn(f'TF nao disponivel ainda: {e}', throttle_duration_sec=2.0)
             return
@@ -252,6 +255,21 @@ class CandidateGenerationNode(Node):
                 f'raio min/media/max: {min(radii):.2f}/{np.mean(radii):.2f}/{max(radii):.2f}m | '
                 f'inclinacao media: {np.mean(angles):.1f} graus',
                 throttle_duration_sec=2.0)
+
+              # Publica o primeiro candidato valido encontrado nesse frame
+            first = candidates[0]
+            pt = PointStamped()
+            pt.header.stamp = msg.header.stamp
+            pt.header.frame_id = self.world_frame
+            pt.point.x = float(first['center'][0])
+            pt.point.y = float(first['center'][1])
+            pt.point.z = float(first['center'][2])
+            self.best_pub.publish(pt)
+            self.get_logger().info(
+                f'PRIMEIRA AREA VALIDA: ({pt.point.x:.2f}, {pt.point.y:.2f}, {pt.point.z:.2f}) '
+                f'raio={first["radius"]:.2f}m',
+                throttle_duration_sec=2.0)   
+
         else:
             self.get_logger().info('0 candidatos validos', throttle_duration_sec=2.0)
 

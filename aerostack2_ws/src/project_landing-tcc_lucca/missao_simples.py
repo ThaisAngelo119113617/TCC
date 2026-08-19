@@ -103,12 +103,14 @@ from mission_base import SimpleMission
 DRONE_NAMESPACE = 'x500_px4'
 ALTURA_DECOLAGEM = 10.0  # metros
 TEMPO_PAIRADO = 15.0     # segundos parado no ar antes de pousar
+POSICAO_ORIGEM = (0.0, 0.0, ALTURA_DECOLAGEM)
 
 
 def main():
     with SimpleMission(DRONE_NAMESPACE) as mission:
-        mission.takeoff(ALTURA_DECOLAGEM)
-        mission.hover(TEMPO_PAIRADO)
+        # mission.takeoff(ALTURA_DECOLAGEM)
+        # mission.hover(TEMPO_PAIRADO)
+        # mission.go_home(speed=1.0)
         mission.land()
 
 
