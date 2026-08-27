@@ -25,7 +25,7 @@ import time
 import rclpy
 from as2_python_api.drone_interface import DroneInterface
 from geometry_msgs.msg import PointStamped
-
+import numpy as np
 
 
 class SimpleMission:
@@ -101,7 +101,7 @@ class SimpleMission:
         self.offboard()
         self._log(f'Decolando até {height} m...')
         self.drone.takeoff(height=height, speed=speed)
-        self._log('Decolagem concluída!')
+        self._log(f'Decolagem concluída até {height}!')
 
     def hover(self, seconds: float) -> None:
         """Paira (fica parado no ar) pelo tempo especificado."""
@@ -153,40 +153,50 @@ class SimpleMission:
     #             f'(ficou em {self.drone.position}, alvo era {target.tolist()}).'
     #         )
 
-    def go_to(self, x: float, y: float, z: float, speed: float = 0.5,
-              tolerance: float = 0.3, timeout: float = 30.0) -> None:
+    # def go_to(self, x: float, y: float, z: float, speed: float = 0.5,
+    #           tolerance: float = 0.3, timeout: float = 60.0) -> None:
+    #     self._log(f'Indo para posicao ({x:.2f}, {y:.2f}, {z:.2f})...')
+    #     success = self.drone.go_to.go_to_point([x, y, z], speed=speed)
+    #     if not success:
+    #         self._log('AVISO: comando de movimento foi rejeitado!')
+    #         return
+
+    #     start = time.time()
+    #     target = np.array([x, y, z])
+    #     chegou = False
+    #     last_log = 0.0
+    #     while time.time() - start < timeout:
+    #         current = np.array(self.drone.position)
+    #         distancia = np.linalg.norm(current - target)
+    #         if distancia <= tolerance:
+    #             chegou = True
+    #             break
+
+    #         # log periodico de diagnostico, a cada 2s
+    #         elapsed = time.time() - start
+    #         if elapsed - last_log >= 2.0:
+    #             self._log(f'  ... posicao atual: {current.tolist()}, distancia ao alvo: {distancia:.2f}m')
+    #             last_log = elapsed
+
+    #         sleep(0.5)
+
+    #     if chegou:
+    #         self._log('Chegou na posicao de destino!')
+    #     else:
+    #         self._log(
+    #             f'AVISO: nao chegou perto o suficiente em {timeout}s '
+    #             f'(ficou em {self.drone.position}, alvo era {target.tolist()}).'
+    #         )
+
+    def go_to(self, x: float, y: float, z: float, speed: float = 0.5) -> None:
+        """Move o drone ate (x, y, z). Bloqueia ate o behavior confirmar sucesso."""
         self._log(f'Indo para posicao ({x:.2f}, {y:.2f}, {z:.2f})...')
         success = self.drone.go_to.go_to_point([x, y, z], speed=speed)
-        if not success:
-            self._log('AVISO: comando de movimento foi rejeitado!')
-            return
-
-        start = time.time()
-        target = np.array([x, y, z])
-        chegou = False
-        last_log = 0.0
-        while time.time() - start < timeout:
-            current = np.array(self.drone.position)
-            distancia = np.linalg.norm(current - target)
-            if distancia <= tolerance:
-                chegou = True
-                break
-
-            # log periodico de diagnostico, a cada 2s
-            elapsed = time.time() - start
-            if elapsed - last_log >= 2.0:
-                self._log(f'  ... posicao atual: {current.tolist()}, distancia ao alvo: {distancia:.2f}m')
-                last_log = elapsed
-
-            sleep(0.5)
-
-        if chegou:
+        if success:
             self._log('Chegou na posicao de destino!')
         else:
-            self._log(
-                f'AVISO: nao chegou perto o suficiente em {timeout}s '
-                f'(ficou em {self.drone.position}, alvo era {target.tolist()}).'
-            )
+            self._log('AVISO: comando de movimento foi rejeitado ou falhou!')
+        sleep(1.0)  # pequena pausa antes do proximo comando
 
     def _get_current_position(self) -> tuple:
             """Le a posicao atual do drone. Ajustar conforme atributo real do DroneInterface."""

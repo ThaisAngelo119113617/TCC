@@ -2,7 +2,7 @@
 # Versao simplificada de launch_sim.bash
 # Sobe a simulacao SEM PX4 real: usa as2_platform_gazebo em vez de
 # PX4-Autopilot + MicroXRCEAgent + as2_platform_pixhawk.
-# Mesmo modelo de drone (x500_px4) e mesmo mundo (config/world.yaml).
+# Mesmo modelo de drone (x500_px4) e mesmo mundo (config/world_env1_grama.yaml).
 #
 # Uso:
 #   ./launch_sim_simples.bash

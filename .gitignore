@@ -12,3 +12,5 @@ aerostack2_ws/log/
 core
 core.*
 .devcontainer/
+px4_worlds/
+aerostack2_ws/src/project_landing-tcc_lucca/rgl_plugin/

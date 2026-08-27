@@ -29,6 +29,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - .:/home/developer/aerostack2_ws/src
       - /usr/share/vulkan/icd.d/nvidia_icd.json:/usr/share/vulkan/icd.d/nvidia_icd.json:ro
+      - ./px4_worlds:/home/developer/px4_worlds
     user: developer
     stdin_open: true
     tty: true

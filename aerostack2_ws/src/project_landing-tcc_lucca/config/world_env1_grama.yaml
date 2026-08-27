@@ -1,0 +1,35 @@
+world_name: default
+origin:
+  latitude: -22.8627458
+  longitude: -43.2297722
+  altitude: 2
+drones:
+- model_type: "x500"
+  model_name: "x500_px4"
+  flight_time: 60
+  xyz:
+  - 9.0
+  - 0.0
+  - 0.3
+  payload:
+  - model_type: "gps"
+    model_name: "gps"
+  - model_type: "hd_camera"
+    model_name: "hd_camera"
+    xyz:
+      - 0.00
+      - 0.04
+      - -0.045
+    rpy:
+      - 0.0
+      - 1.5707
+      - 0.0
+  - model_type: "lidar_3d"
+    model_name: "livox_avia"
+    xyz: [-0.04, 0.0, -0.045]
+    rpy: [0.0, 1.5707, 0.0]
+objects:
+  - model_name: "grama_alta_terreno"
+    model_type: "grama_alta"
+    xyz: [0.0, 0.0, 0.0]
+    rpy: [0.0, 0.0, 0.0]

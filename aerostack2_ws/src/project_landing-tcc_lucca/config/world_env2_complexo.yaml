@@ -1,0 +1,77 @@
+world_name: default
+origin:
+  latitude: -22.8627458
+  longitude: -43.2297722
+  altitude: 2
+drones:
+- model_type: "x500"
+  model_name: "x500_px4"
+  flight_time: 60
+  xyz:
+  - 0.0
+  - 0.0
+  - 0.3
+  payload:
+  - model_type: "gps"
+    model_name: "gps"
+  - model_type: "hd_camera"
+    model_name: "hd_camera"
+    xyz:
+      - 0.00
+      - 0.04
+      - -0.045
+    rpy:
+      - 0.0
+      - 1.5707
+      - 0.0
+  - model_type: "lidar_3d"
+    model_name: "livox_avia"
+    xyz: [-0.04, 0.0, -0.045]
+    rpy: [0.0, 1.5707, 0.0]
+objects:
+# - model_name: "ariel_marker"
+#   model_type: "ariel_marker"
+#   rpy: [0.0, 0.0, 0.98]
+#   xyz: [2.9, -2.9, 0.02]
+
+# --- lago (obstáculo de área não-pousável) ---
+- model_name: "lago_1"
+  model_type: "lake"
+  xyz: [-15.0, 10.0, 0.0]
+  rpy: [0.0, 0.0, 0.3]
+
+# --- rampas de inclinação conhecida ---
+- model_name: "ridge_10deg"
+  model_type: "slope_ridge"
+  xyz: [15.0, -15.0, 0.0]
+  rpy: [1.5708, 0.0, 0.0]
+- model_name: "ridge_20deg"
+  model_type: "slope_ridge"
+  xyz: [25.0, 10.0, 0.0]
+  rpy: [1.5708, 0.0, 0.0]
+
+# --- zona BOA (plana, livre, longe de obstáculo — ground truth positivo forte) ---
+# nenhum model aqui: coordenada (0,0) fica livre de propósito
+
+# --- zona MEDIANA (plana mas perto de árvores — score deve ser menor que a boa) ---
+- model_name: "tree_perto_1"
+  model_type: "tree_obstacle"
+  xyz: [8.0, 3.0, 0.0]
+  rpy: [0.0, 0.0, 0.0]
+- model_name: "tree_perto_2"
+  model_type: "tree_obstacle"
+  xyz: [9.5, 4.5, 0.0]
+  rpy: [0.0, 0.0, 0.0]
+# zona mediana livre em (10, 0) — plana, mas com árvores próximas
+
+# --- zona RUIM (rugosidade alta, ainda passa no filtro mas score baixo) ---
+- model_name: "rough_ruim_1"
+  model_type: "rough_patch"
+  xyz: [-10.0, -8.0, 0.0]
+  rpy: [0.0, 0.0, 0.0]
+
+# --- obstáculo genérico extra ---
+- model_name: "box_1"
+  model_type: "box_obstacle"
+  xyz: [5.0, -10.0, 0.0]
+  rpy: [0.0, 0.0, 0.5]
