@@ -91,120 +91,6 @@ class CandidateGenerationNode(Node):
             f'voxel_size={self.voxel_size}m, normal_search_radius={self.normal_search_radius}m, '
             f'max_inclination={self.max_inclination_deg} graus.')
 
-    # def cloud_callback(self, msg: PointCloud2) -> None:
-    #     try:
-    #         transform = self.tf_buffer.lookup_transform(
-    #             self.world_frame, msg.header.frame_id, msg.header.stamp)
-    #     except (LookupException, ExtrapolationException) as e:
-    #         self.get_logger().warn(f'TF nao disponivel ainda: {e}', throttle_duration_sec=2.0)
-    #         return
-
-    #     msg_world = do_transform_cloud(msg, transform)
-
-
-    #     points = self._pointcloud2_to_numpy(msg)
-    #     if points.shape[0] == 0:
-    #         return
-
-    #     pcd = o3d.geometry.PointCloud()
-    #     pcd.points = o3d.utility.Vector3dVector(points)
-
-    #     # 1. Voxel Grid downsampling
-    #     pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
-    #     if len(pcd_down.points) < 3:
-    #         return
-
-    #     # 2. Estimacao de normais via PCA em vizinhanca esferica (KDTree, Open3D)
-    #     pcd_down.estimate_normals(
-    #         search_param=o3d.geometry.KDTreeSearchParamRadius(
-    #             radius=self.normal_search_radius)
-    #     )
-    #     # Orienta as normais para "cima" (+Z), consistente com pouso
-    #     pcd_down.orient_normals_to_align_with_direction(
-    #         orientation_reference=np.array([0.0, 0.0, 1.0]))
-
-    #     # 3. Validacao geometrica: inclinacao (angulo entre normal e vertical)
-    #     normals = np.asarray(pcd_down.normals)
-    #     vertical = np.array([0.0, 0.0, 1.0])
-    #     cos_angle = np.clip(normals @ vertical, -1.0, 1.0)
-    #     angle_deg = np.degrees(np.arccos(np.abs(cos_angle)))
-
-    #     safe_mask = angle_deg <= self.max_inclination_deg
-    #     candidate_points = np.asarray(pcd_down.points)[safe_mask]
-
-    #     self.get_logger().info(
-    #         f'{len(pcd_down.points)} pontos apos voxel -> '
-    #         f'{candidate_points.shape[0]} candidatos (inclinacao <= '
-    #         f'{self.max_inclination_deg} graus)',
-    #         throttle_duration_sec=2.0)
-
-    #     self.get_logger().info(
-    #         f'angulos -- min: {angle_deg.min():.1f} graus, '
-    #         f'media: {angle_deg.mean():.1f} graus, '
-    #         f'max: {angle_deg.max():.1f} graus, '
-    #         f'mediana: {np.median(angle_deg):.1f} graus',
-    #         throttle_duration_sec=2.0)
-
-    #     header_world = msg_world.header
-    #     self._publish_candidates(candidate_points, msg.header)
-
-    # def cloud_callback(self, msg: PointCloud2) -> None:
-    #     try:
-    #         transform = self.tf_buffer.lookup_transform(
-    #             self.world_frame, msg.header.frame_id, msg.header.stamp)
-    #     except (LookupException, ExtrapolationException) as e:
-    #         self.get_logger().warn(f'TF nao disponivel ainda: {e}', throttle_duration_sec=2.0)
-    #         return
-
-    #     points_sensor = self._pointcloud2_to_numpy(msg)
-    #     if points_sensor.shape[0] == 0:
-    #         return
-
-    #     points_world = self._apply_transform(points_sensor, transform)
-
-    #     pcd = o3d.geometry.PointCloud()
-    #     pcd.points = o3d.utility.Vector3dVector(points_world)
-
-    #     # 1. Voxel Grid downsampling
-    #     pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
-    #     if len(pcd_down.points) < 3:
-    #         return
-
-    #     # 2. Estimacao de normais via PCA em vizinhanca esferica (KDTree, Open3D)
-    #     pcd_down.estimate_normals(
-    #         search_param=o3d.geometry.KDTreeSearchParamRadius(
-    #             radius=self.normal_search_radius)
-    #     )
-    #     pcd_down.orient_normals_to_align_with_direction(
-    #         orientation_reference=np.array([0.0, 0.0, 1.0]))
-
-    #     # 3. Validacao geometrica: inclinacao (agora em coordenadas do MUNDO)
-    #     normals = np.asarray(pcd_down.normals)
-    #     vertical = np.array([0.0, 0.0, 1.0])
-    #     cos_angle = np.clip(normals @ vertical, -1.0, 1.0)
-    #     angle_deg = np.degrees(np.arccos(np.abs(cos_angle)))
-
-    #     self.get_logger().info(
-    #         f'angulos -- min: {angle_deg.min():.1f} graus, '
-    #         f'media: {angle_deg.mean():.1f} graus, '
-    #         f'max: {angle_deg.max():.1f} graus, '
-    #         f'mediana: {np.median(angle_deg):.1f} graus',
-    #         throttle_duration_sec=2.0)
-
-    #     safe_mask = angle_deg <= self.max_inclination_deg
-    #     candidate_points = np.asarray(pcd_down.points)[safe_mask]
-
-    #     self.get_logger().info(
-    #         f'{len(pcd_down.points)} pontos apos voxel -> '
-    #         f'{candidate_points.shape[0]} candidatos (inclinacao <= '
-    #         f'{self.max_inclination_deg} graus)',
-    #         throttle_duration_sec=2.0)
-
-    #     header_world = Header()
-    #     header_world.stamp = msg.header.stamp
-    #     header_world.frame_id = self.world_frame
-    #     self._publish_candidates(candidate_points, header_world)
-
     def cloud_callback(self, msg: PointCloud2) -> None:
         try:
             transform = self.tf_buffer.lookup_transform(
@@ -220,8 +106,28 @@ class CandidateGenerationNode(Node):
 
         points_world = self._apply_transform(points_sensor, transform)
 
+           
+        # --- Filtro de sanidade: remove pontos NaN/Inf ou absurdamente distantes ---
+        # (protege contra transformacoes TF ruins pontuais, que geram pontos "fantasma")
+        valid_mask = np.all(np.isfinite(points_world), axis=1)
+        LIMITE_RAZOAVEL_M = 200.0  # nenhum ponto real deveria estar a mais de 200m da origem
+        valid_mask &= np.all(np.abs(points_world) < LIMITE_RAZOAVEL_M, axis=1)
+
+        if not np.all(valid_mask):
+            n_removidos = (~valid_mask).sum()
+            self.get_logger().warn(
+                f'{n_removidos} pontos invalidos/absurdos removidos antes do voxel',
+                throttle_duration_sec=2.0)
+            points_world = points_world[valid_mask]
+
+        if points_world.shape[0] == 0:
+            return
+
         pcd = o3d.geometry.PointCloud()
-        pcd.points = o3d.utility.Vector3dVector(points_world)
+        pcd.points = o3d.utility.Vector3dVector(points_world) 
+
+        # pcd = o3d.geometry.PointCloud()
+        # pcd.points = o3d.utility.Vector3dVector(points_world)
 
         # 1. Voxel Grid downsampling
         pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
@@ -305,44 +211,6 @@ class CandidateGenerationNode(Node):
         cell_ok = height_range <= self.grid_max_height_range
 
         return cell_ok[inverse]
-
-    # def _pca_normal_and_roughness(self, points: np.ndarray):
-    #     """
-    #     PCA explicita por ponto via KDTree: para cada ponto, busca vizinhos
-    #     no raio configurado, calcula a matriz de covariancia, e extrai:
-    #       - normal = autovetor do menor autovalor
-    #       - rugosidade = sqrt(menor autovalor) = RMS da distancia ao plano
-
-    #     Pontos sem vizinhos suficientes recebem NaN (descartados depois).
-    #     """
-    #     pcd = o3d.geometry.PointCloud()
-    #     pcd.points = o3d.utility.Vector3dVector(points)
-    #     kdtree = o3d.geometry.KDTreeFlann(pcd)
-
-    #     n = points.shape[0]
-    #     normals = np.full((n, 3), np.nan)
-    #     roughness = np.full(n, np.nan)
-    #     min_neighbors = 4
-
-    #     for i in range(n):
-    #         _, idx, _ = kdtree.search_radius_vector_3d(points[i], self.normal_search_radius)
-    #         if len(idx) < min_neighbors:
-    #             continue
-
-    #         neighborhood = points[np.asarray(idx)]
-    #         centroid = neighborhood.mean(axis=0)
-    #         centered = neighborhood - centroid
-    #         cov = (centered.T @ centered) / centered.shape[0]
-
-    #         eigvals, eigvecs = np.linalg.eigh(cov)  # ordenado crescente
-    #         normal = eigvecs[:, 0]
-    #         if normal[2] < 0:
-    #             normal = -normal  # orienta pra cima
-
-    #         normals[i] = normal
-    #         roughness[i] = np.sqrt(max(eigvals[0], 0.0))
-
-    #     return normals, roughness
 
     def _grow_candidates(self, points: np.ndarray) -> list:
         """
