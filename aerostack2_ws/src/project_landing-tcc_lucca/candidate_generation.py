@@ -35,6 +35,8 @@ from std_msgs.msg import Header
 from tf2_ros import Buffer, TransformListener, LookupException, ExtrapolationException
 # from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
 from geometry_msgs.msg import PointStamped
+from visualization_msgs.msg import Marker
+from std_srvs.srv import Trigger
 
 class CandidateGenerationNode(Node):
     """No ROS2 que gera candidatos geometricos de pouso a partir do LiDAR."""
@@ -58,7 +60,7 @@ class CandidateGenerationNode(Node):
         # --- Novos parametros (Algorithm 1, Loureiro et al. 2021) ---
         self.declare_parameter('n_search_points', 30)   # quantos pontos aleatorios testar por ciclo
         self.declare_parameter('r_min', 0.3)             # raio inicial (metros)
-        self.declare_parameter('r_max', 3.0)             # raio maximo (metros)
+        self.declare_parameter('r_max', 1.0)             # raio maximo (metros)
         self.declare_parameter('r_step', 0.2)            # incremento do raio a cada iteracao
         self.declare_parameter('n_min_points', 4)        # minimo de pontos p/ aceitar tentar PCA
 
@@ -71,6 +73,33 @@ class CandidateGenerationNode(Node):
         self.max_roughness = self.get_parameter('max_roughness').value
         self.grid_cell_size = self.get_parameter('grid_cell_size').value
         self.grid_max_height_range = self.get_parameter('grid_max_height_range').value
+
+        ###############
+
+        # --- Filtro de densidade minima (protege contra raio grande com poucos pontos) ---
+        self.declare_parameter('density_minima', 3.0)   # pontos por m^2, ajustar empiricamente
+        self.density_minima = self.get_parameter('density_minima').value
+
+        # --- Acumulacao espacial de areas conhecidas (memoria entre frames) ---
+        self.declare_parameter('match_radius', 1.0)   # raio de erro p/ considerar mesma area (metros)
+        # --- Limite do cenario de teste (heightmap 15x15m centrado em 0,0) ---
+        self.declare_parameter('limite_cenario', 7.0)   # metros, com margem de seguranca da borda
+        self.limite_cenario = self.get_parameter('limite_cenario').value
+      
+        self.match_radius = self.get_parameter('match_radius').value
+        self.known_areas = {}       # id -> dict com estatisticas da area
+        self._next_area_id = 0
+
+        # --- Pesos do spotgrade (Eq. 6, Loureiro et al. 2021) -- decisao de projeto ---
+        self.declare_parameter('spotgrade_w_radius', 0.3)
+        self.declare_parameter('spotgrade_w_inclination', 1.0)
+        self.declare_parameter('spotgrade_w_roughness', 1.0)
+        self.declare_parameter('spotgrade_w_distance', 0.0)  # 0 = desabilitado por ora (d_v fora do escopo por enquanto)
+        self.w_radius = self.get_parameter('spotgrade_w_radius').value
+        self.w_inclination = self.get_parameter('spotgrade_w_inclination').value
+        self.w_roughness = self.get_parameter('spotgrade_w_roughness').value
+        self.w_distance = self.get_parameter('spotgrade_w_distance').value
+        ##################
 
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -85,6 +114,9 @@ class CandidateGenerationNode(Node):
             PointCloud2, input_topic, self.cloud_callback, qos_profile_sensor_data)
         self.pub = self.create_publisher(PointCloud2, output_topic, 10)
         self.best_pub = self.create_publisher(PointStamped, '/perception/landing_candidates/best', 10)
+        self.marker_pub = self.create_publisher(Marker, '/perception/landing_candidates/marker', 10)
+
+        self.reset_srv = self.create_service(Trigger, '/perception/reset_candidates', self._reset_callback)
 
         self.get_logger().info(
             f'Inscrito em {input_topic}, publicando candidatos em {output_topic}. '
@@ -153,6 +185,22 @@ class CandidateGenerationNode(Node):
         #    amostra pontos aleatorios, cresce o raio enquanto plano for valido
         candidates = self._grow_candidates(points_coarse)
 
+         # Filtro de limites do cenario: descarta candidatos fora da area de
+        # teste conhecida (heightmap grama_alta, 15x15m centrado em 0,0).
+        # Evita que o chao padrao do Gazebo (fora do heightmap, plano trivial
+        # e sem limites) seja escolhido como "melhor area" por padrao.
+        if candidates:
+            n_antes = len(candidates)
+            candidates = [c for c in candidates
+                          if abs(c['center'][0]) <= self.limite_cenario
+                          and abs(c['center'][1]) <= self.limite_cenario]
+            n_descartados = n_antes - len(candidates)
+            if n_descartados > 0:
+                self.get_logger().warn(
+                    f'{n_descartados} candidatos descartados por estarem fora '
+                    f'do cenario de teste (limite ±{self.limite_cenario}m)',
+                    throttle_duration_sec=5.0)
+
         if candidates:
             radii = [c['radius'] for c in candidates]
             angles = [c['inclination_deg'] for c in candidates]
@@ -162,19 +210,73 @@ class CandidateGenerationNode(Node):
                 f'inclinacao media: {np.mean(angles):.1f} graus',
                 throttle_duration_sec=2.0)
 
-              # Publica o primeiro candidato valido encontrado nesse frame
-            first = candidates[0]
-            pt = PointStamped()
-            pt.header.stamp = msg.header.stamp
-            pt.header.frame_id = self.world_frame
-            pt.point.x = float(first['center'][0])
-            pt.point.y = float(first['center'][1])
-            pt.point.z = float(first['center'][2])
-            self.best_pub.publish(pt)
-            self.get_logger().info(
-                f'PRIMEIRA AREA VALIDA: ({pt.point.x:.2f}, {pt.point.y:.2f}, {pt.point.z:.2f}) '
-                f'raio={first["radius"]:.2f}m',
-                throttle_duration_sec=2.0)   
+            #   # Publica o primeiro candidato valido encontrado nesse frame
+            # first = candidates[0]
+            # pt = PointStamped()
+            # pt.header.stamp = msg.header.stamp
+            # pt.header.frame_id = self.world_frame
+            # pt.point.x = float(first['center'][0])
+            # pt.point.y = float(first['center'][1])
+            # pt.point.z = float(first['center'][2])
+            # self.best_pub.publish(pt)
+            # self.get_logger().info(
+            #     f'PRIMEIRA AREA VALIDA: ({pt.point.x:.2f}, {pt.point.y:.2f}, {pt.point.z:.2f}) '
+            #     f'raio={first["radius"]:.2f}m',
+            #     throttle_duration_sec=2.0)   
+
+                        # Atualiza a memoria espacial de areas conhecidas (nao publica ainda o primeiro)
+            for c in candidates:
+                score = self._compute_spotgrade(c)
+                self._update_known_areas(c, score, msg.header.stamp)
+
+            # Publica a area de MAIOR spotgrade entre TODAS as ja conhecidas
+            # (nao so as detectadas neste frame) -- e por isso que o drone
+            # deve mirar na area detectada la de cima, mesmo descendo depois
+            # if self.known_areas:
+            #     best_id = max(self.known_areas, key=lambda k: self.known_areas[k]['spotgrade'])
+            #     best = self.known_areas[best_id]
+
+            if self.known_areas:
+                MIN_CONFIRMATIONS = 10
+                areas_confiaveis = {k: v for k, v in self.known_areas.items()
+                                     if v['confirmations'] >= MIN_CONFIRMATIONS}
+                pool = areas_confiaveis if areas_confiaveis else self.known_areas
+                best_id = max(pool, key=lambda k: pool[k]['spotgrade'])
+                best = self.known_areas[best_id]
+
+                pt = PointStamped()
+                pt.header.stamp = msg.header.stamp
+                pt.header.frame_id = self.world_frame
+                pt.point.x = float(best['center_earth'][0])
+                pt.point.y = float(best['center_earth'][1])
+                pt.point.z = float(best['center_earth'][2])
+                self.best_pub.publish(pt)
+                self.get_logger().info(
+                    f'MELHOR AREA (id={best_id}, {len(self.known_areas)} conhecidas): '
+                    f'({pt.point.x:.2f}, {pt.point.y:.2f}, {pt.point.z:.2f}) '
+                    f'raio={best["radius"]:.2f}m score={best["spotgrade"]:.3f} '
+                    f'confirmacoes={best["confirmations"]}',
+                    throttle_duration_sec=2.0)
+
+                marker = Marker()
+                marker.header.stamp = msg.header.stamp
+                marker.header.frame_id = self.world_frame
+                marker.ns = 'best_landing_area'
+                marker.id = 0
+                marker.type = Marker.CYLINDER
+                marker.action = Marker.ADD
+                marker.pose.position.x = float(best['center_earth'][0])
+                marker.pose.position.y = float(best['center_earth'][1])
+                marker.pose.position.z = float(best['center_earth'][2])
+                marker.pose.orientation.w = 1.0
+                marker.scale.x = best['radius'] * 2.0
+                marker.scale.y = best['radius'] * 2.0
+                marker.scale.z = 0.05
+                marker.color.r = 0.0
+                marker.color.g = 0.3
+                marker.color.b = 1.0
+                marker.color.a = 0.5
+                self.marker_pub.publish(marker)
 
         else:
             self.get_logger().info('0 candidatos validos', throttle_duration_sec=2.0)
@@ -235,10 +337,19 @@ class CandidateGenerationNode(Node):
             best = None  # (radius, normal, roughness)
             r = self.r_min
 
+            # while r <= self.r_max:
+            #     _, idx, _ = kdtree.search_radius_vector_3d(center, r)
+            #     if len(idx) < self.n_min_points:
+            #         break  # sem pontos suficientes nem nesse raio -- para de crescer
             while r <= self.r_max:
                 _, idx, _ = kdtree.search_radius_vector_3d(center, r)
-                if len(idx) < self.n_min_points:
-                    break  # sem pontos suficientes nem nesse raio -- para de crescer
+
+                area_circulo = np.pi * r * r
+                min_pontos_necessarios = max(self.n_min_points, int(self.density_minima * area_circulo))
+
+                if len(idx) < min_pontos_necessarios:
+                    break  # densidade insuficiente nesse raio -- para de crescer, mantem ultimo 'best'
+
 
                 neighborhood = points[np.asarray(idx)]
                 centroid = neighborhood.mean(axis=0)
@@ -272,6 +383,69 @@ class CandidateGenerationNode(Node):
                     })
 
         return candidates
+
+
+    def _compute_spotgrade(self, candidate: dict) -> float:
+
+        """
+        Spotgrade (Eq. 6, Loureiro et al. 2021): score ponderado em [0,1].
+        g_n normalizados em [0,20]; pesos sao decisao de projeto (o proprio
+        Loureiro et al. nao publica os valores usados nos experimentos deles).
+        """
+        g1 = min(20.0, 20.0 * candidate['radius'] / self.r_max)  # raio maior = melhor
+        g2 = np.clip(20.0 * (1.0 - candidate['inclination_deg'] / self.max_inclination_deg), 0.0, 20.0)
+        g3 = np.clip(20.0 * (1.0 - candidate['roughness'] / self.max_roughness), 0.0, 20.0)
+        g4 = 0.0  # distancia ao UAV -- fora do escopo por enquanto (w_distance=0)
+
+        w_sum = self.w_radius + self.w_inclination + self.w_roughness + self.w_distance
+        if w_sum == 0.0:
+            return 0.0
+
+        score = (g1 * self.w_radius + g2 * self.w_inclination +
+                 g3 * self.w_roughness + g4 * self.w_distance) / (20.0 * w_sum)
+        return float(score)
+
+    def _match_known_area(self, center_earth: np.ndarray) -> int:
+        """Retorna o id da area conhecida mais proxima dentro de match_radius, ou None."""
+        for area_id, area in self.known_areas.items():
+            dist = np.linalg.norm(center_earth - area['center_earth'])
+            if dist <= self.match_radius:
+                return area_id
+        return None
+
+    def _update_known_areas(self, candidate: dict, spotgrade: float, stamp) -> None:
+        """
+        Acumulacao espacial: se o candidato corresponde a uma area ja conhecida,
+        atualiza (estrategia 'melhor observacao': so substitui se o novo score
+        for maior). Caso contrario, registra como area nova.
+        """
+        center = candidate['center']
+        matched_id = self._match_known_area(center)
+
+        if matched_id is None:
+            area_id = self._next_area_id
+            self._next_area_id += 1
+            self.known_areas[area_id] = {
+                'center_earth': center,
+                'radius': candidate['radius'],
+                'inclination_deg': candidate['inclination_deg'],
+                'roughness': candidate['roughness'],
+                'spotgrade': spotgrade,
+                'confirmations': 1,
+                'last_seen_stamp': stamp,
+            }
+        else:
+            area = self.known_areas[matched_id]
+            area['confirmations'] += 1
+            area['last_seen_stamp'] = stamp
+            if spotgrade > area['spotgrade']:
+                # melhor observacao supera a anterior -- substitui as metricas
+                area['center_earth'] = center
+                area['radius'] = candidate['radius']
+                area['inclination_deg'] = candidate['inclination_deg']
+                area['roughness'] = candidate['roughness']
+                area['spotgrade'] = spotgrade
+
 
     def _apply_transform(self, points: np.ndarray, transform) -> np.ndarray:
         """Aplica manualmente a transformacao rigida (rotacao + translacao) do TF."""
@@ -309,6 +483,17 @@ class CandidateGenerationNode(Node):
         ]
         cloud_msg = pc2.create_cloud(header, fields, points.astype(np.float32))
         self.pub.publish(cloud_msg)
+
+
+    def _reset_callback(self, request, response):
+        """Limpa a memoria espacial -- chamado pela missao ao iniciar a trajetoria de busca."""
+        n_antes = len(self.known_areas)
+        self.known_areas.clear()
+        self._next_area_id = 0
+        self.get_logger().info(f'known_areas resetado ({n_antes} areas descartadas)')
+        response.success = True
+        response.message = f'{n_antes} areas descartadas'
+        return response
 
 
 def main(args=None):
