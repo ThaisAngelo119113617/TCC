@@ -21,6 +21,7 @@ Uso básico:
 
 from time import sleep
 import time
+import math
 
 import rclpy
 from as2_python_api.drone_interface import DroneInterface
@@ -56,6 +57,12 @@ class SimpleMission:
         # Captura a posicao inicial (antes de decolar), pra poder voltar depois
         sleep(1.0)  # da um tempo pro DroneInterface receber a primeira pose
         self.home_position = self._get_current_position()
+        retry = 0
+        while any(math.isnan(v) for v in self.home_position) and retry < 10:
+            self._log('Home position invalida (NaN), tentando novamente...')
+            sleep(0.5)
+            self.home_position = self._get_current_position()
+            retry += 1
         self._log(f'Posicao inicial (home) capturada: {self.home_position}')
         return self
 
@@ -116,6 +123,19 @@ class SimpleMission:
         self._log('Pouso concluído!')
         sleep(2.0)  # aguarda confirmação de pouso
 
+    # def land(self, speed: float = 0.3, max_retries: int = 2) -> None:
+    #     """Pousa o drone, verificando de fato se chegou perto do chao."""
+    #     for attempt in range(max_retries + 1):
+    #         self._log(f'Pousando (tentativa {attempt + 1})...')
+    #         self.drone.land(speed=speed)
+    #         sleep(1.0)
+    #         pose = self._get_pose_now()
+    #         if pose is not None and pose[2] < 0.3:
+    #             self._log(f'Pouso concluido de verdade! z={pose[2]:.3f}')
+    #             return
+    #         self._log(f'AVISO: land() retornou mas z={pose[2] if pose else "?"} ainda alto, tentando de novo...')
+    #     self._log('AVISO: pouso pode nao ter completado apos todas as tentativas!')
+
     def _log(self, message: str) -> None:
         if self.verbose:
             print(f'[{self.__class__.__name__}] {message}')
@@ -141,6 +161,17 @@ class SimpleMission:
         x, y, _ = self.home_position
         z = altitude if altitude is not None else self.drone.position[2]
         self.go_to(x, y, z, speed=speed)
+
+    def land_in_place(self, x: float, y: float, start_z: float,
+                        step: float = 0.5, speed: float = 0.2) -> None:
+        """Pouso manual: desce em pequenos passos de altitude, mantendo x,y fixos,
+        evitando o LandBehavior nativo (que parece disparar RTL nesse setup)."""
+        z = start_z
+        while z > 0.3:
+            z = max(0.3, z - step)
+            self.go_to(x, y, z, speed=speed)
+        self._log('Descida manual concluida, desarmando...')
+        self.drone.disarm()   
     
 
     # def wait_for_landing_candidate(self, timeout: float = 30.0):
@@ -227,4 +258,22 @@ class SimpleMission:
         self._log('AVISO: reset falhou ou nao confirmou')
         return False
 
+    def _get_pose_now(self) -> tuple:
+        """Le a pose atual direto do topico self_localization (nao a interna do DroneInterface)."""
+        from geometry_msgs.msg import PoseStamped
+        result = {'pose': None}
 
+        def callback(msg):
+            result['pose'] = (msg.pose.position.x, msg.pose.position.y, msg.pose.position.z)
+
+        # sub = self.drone.create_subscription(
+        #     PoseStamped, '/x500_px4/self_localization/pose', callback, 10)
+        from rclpy.qos import qos_profile_sensor_data
+        sub = self.drone.create_subscription(
+            PoseStamped, '/x500_px4/self_localization/pose', callback,
+            qos_profile_sensor_data)
+        start = time.time()
+        while result['pose'] is None and (time.time() - start) < 3.0:
+            time.sleep(0.1)
+        self.drone.destroy_subscription(sub)
+        return result['pose']

@@ -17,9 +17,8 @@
   # State Estimator
   state_estimator:
     ros__parameters:
-      plugin_name: "raw_odometry"
-      use_gazebo_tf: true
       plugin_name: "ground_truth"
+      use_gazebo_tf: true
       ## Outdoor (GPS)
       use_gps: true
       set_origin_on_start: true # Set origin on start
@@ -27,14 +26,17 @@
   # Behaviors Motion
   TakeoffBehavior:
     ros__parameters:
-      takeoff_plugin_name: "takeoff_plugin_speed"
-      # takeoff_plugin_name: "takeoff_plugin_position"
+      # takeoff_plugin_name: "takeoff_plugin_speed"
+      takeoff_plugin_name: "takeoff_plugin_position"
       # takeoff_plugin_name: "takeoff_plugin_trajectory"
       # takeoff_plugin_name: "takeoff_plugin_platform"
   LandBehavior:
     ros__parameters:
-      land_plugin_name: "land_plugin_speed"
-      # land_plugin_name: "land_plugin_trajectory"
+      # land_plugin_name: "land_plugin_speed"
+      land_plugin_name: "land_plugin_trajectory"
+      land_speed_condition_percentage: 0.1   # velocidade residual (fracao) que conta como "parado"
+      land_speed_condition_height: 4.0       # altura minima descida antes de checar condicao de parada (m)
+      land_trajectory_height: -0.05          # altura alvo da trajetoria (m, relativo/absoluto conforme frame earth) -- levemente abaixo do solo, evita land_height_=-10.0 (default perigoso)
   GoToBehavior:
     ros__parameters:
       go_to_plugin_name: "go_to_plugin_position"

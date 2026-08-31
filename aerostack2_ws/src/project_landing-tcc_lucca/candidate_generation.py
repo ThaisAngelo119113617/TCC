@@ -34,8 +34,8 @@ from sensor_msgs_py import point_cloud2 as pc2
 from std_msgs.msg import Header
 from tf2_ros import Buffer, TransformListener, LookupException, ExtrapolationException
 # from tf2_sensor_msgs.tf2_sensor_msgs import do_transform_cloud
-from geometry_msgs.msg import PointStamped
-from visualization_msgs.msg import Marker
+from geometry_msgs.msg import PointStamped, Point
+from visualization_msgs.msg import Marker, MarkerArray
 from std_srvs.srv import Trigger
 
 class CandidateGenerationNode(Node):
@@ -47,7 +47,7 @@ class CandidateGenerationNode(Node):
         # --- Parametros (ajustaveis via ROS2 param, defaults do doc de escolha de tecnicas) ---
         self.declare_parameter('input_topic', '/x500_px4/sensor_measurements/livox_avia/points')
         self.declare_parameter('output_topic', '/perception/landing_candidates/points')
-        self.declare_parameter('voxel_size', 0.15)            # metros
+        self.declare_parameter('voxel_size', 0.06)            # metros
         self.declare_parameter('normal_search_radius', 0.5)   # metros (raio inicial da PCA)
         self.declare_parameter('max_inclination_deg', 15.0)   # limiar de consenso da literatura
         self.declare_parameter('world_frame', 'earth')
@@ -58,9 +58,9 @@ class CandidateGenerationNode(Node):
         self.declare_parameter('grid_max_height_range', 0.50)   # metros -- variacao de altura maxima aceita por celula
 
         # --- Novos parametros (Algorithm 1, Loureiro et al. 2021) ---
-        self.declare_parameter('n_search_points', 30)   # quantos pontos aleatorios testar por ciclo
+        self.declare_parameter('n_search_points', 50)   # quantos pontos aleatorios testar por ciclo
         self.declare_parameter('r_min', 0.3)             # raio inicial (metros)
-        self.declare_parameter('r_max', 1.0)             # raio maximo (metros)
+        self.declare_parameter('r_max', 0.8)             # raio maximo (metros)
         self.declare_parameter('r_step', 0.2)            # incremento do raio a cada iteracao
         self.declare_parameter('n_min_points', 4)        # minimo de pontos p/ aceitar tentar PCA
 
@@ -80,8 +80,7 @@ class CandidateGenerationNode(Node):
         self.declare_parameter('density_minima', 3.0)   # pontos por m^2, ajustar empiricamente
         self.density_minima = self.get_parameter('density_minima').value
 
-        # --- Acumulacao espacial de areas conhecidas (memoria entre frames) ---
-        self.declare_parameter('match_radius', 1.0)   # raio de erro p/ considerar mesma area (metros)
+        self.declare_parameter('match_radius', 0.5)   # raio de erro p/ considerar mesma area (metros)
         # --- Limite do cenario de teste (heightmap 15x15m centrado em 0,0) ---
         self.declare_parameter('limite_cenario', 7.0)   # metros, com margem de seguranca da borda
         self.limite_cenario = self.get_parameter('limite_cenario').value
@@ -91,10 +90,10 @@ class CandidateGenerationNode(Node):
         self._next_area_id = 0
 
         # --- Pesos do spotgrade (Eq. 6, Loureiro et al. 2021) -- decisao de projeto ---
-        self.declare_parameter('spotgrade_w_radius', 0.3)
+        self.declare_parameter('spotgrade_w_radius', 0.5)
         self.declare_parameter('spotgrade_w_inclination', 1.0)
         self.declare_parameter('spotgrade_w_roughness', 1.0)
-        self.declare_parameter('spotgrade_w_distance', 0.0)  # 0 = desabilitado por ora (d_v fora do escopo por enquanto)
+        self.declare_parameter('spotgrade_w_distance', 0.9)  # 0 = desabilitado por ora (d_v fora do escopo por enquanto)
         self.w_radius = self.get_parameter('spotgrade_w_radius').value
         self.w_inclination = self.get_parameter('spotgrade_w_inclination').value
         self.w_roughness = self.get_parameter('spotgrade_w_roughness').value
@@ -115,6 +114,20 @@ class CandidateGenerationNode(Node):
         self.pub = self.create_publisher(PointCloud2, output_topic, 10)
         self.best_pub = self.create_publisher(PointStamped, '/perception/landing_candidates/best', 10)
         self.marker_pub = self.create_publisher(Marker, '/perception/landing_candidates/marker', 10)
+        self.gt_marker_pub = self.create_publisher(MarkerArray, '/perception/ground_truth_zones', 10)
+
+        # Zonas planas conhecidas (ground truth, gerar_heightmap_grama.py),
+        # convertidas de pixel para coordenadas earth (aproximado -- ajustar
+        # se a orientacao linha/coluna estiver invertida na pratica)
+        self.ground_truth_zones = [
+            {'center': (-4.28,  4.28), 'size': (1.76, 1.76)},
+            {'center': (-3.11, -2.17), 'size': (1.76, 1.76)},
+            {'center': ( 3.34,  1.35), 'size': (1.76, 1.76)},
+        ]
+        # Publica o contorno periodicamente (garante visibilidade mesmo se
+        # o RViz conectar depois do primeiro frame)
+        self.create_timer(2.0, self._publish_ground_truth_zones)
+
 
         self.reset_srv = self.create_service(Trigger, '/perception/reset_candidates', self._reset_callback)
 
@@ -483,6 +496,45 @@ class CandidateGenerationNode(Node):
         ]
         cloud_msg = pc2.create_cloud(header, fields, points.astype(np.float32))
         self.pub.publish(cloud_msg)
+
+    def _publish_ground_truth_zones(self) -> None:
+        """Publica o contorno das zonas planas conhecidas (ground truth), fixo."""
+        marker_array = MarkerArray()
+        for i, zone in enumerate(self.ground_truth_zones):
+            cx, cy = zone['center']
+            sx, sy = zone['size']
+            half_x, half_y = sx / 2.0, sy / 2.0
+
+            marker = Marker()
+            marker.header.stamp = self.get_clock().now().to_msg()
+            marker.header.frame_id = self.world_frame
+            marker.ns = 'ground_truth_zones'
+            marker.id = i
+            marker.type = Marker.LINE_STRIP
+            marker.action = Marker.ADD
+            marker.pose.orientation.w = 1.0
+            marker.scale.x = 0.05  # espessura da linha
+
+            # Contorno do retangulo (5 pontos, fecha o loop)
+            corners = [
+                (cx - half_x, cy - half_y, 0.05),
+                (cx + half_x, cy - half_y, 0.05),
+                (cx + half_x, cy + half_y, 0.05),
+                (cx - half_x, cy + half_y, 0.05),
+                (cx - half_x, cy - half_y, 0.05),
+            ]
+            for x, y, z in corners:
+                p = Point()
+                p.x, p.y, p.z = x, y, z
+                marker.points.append(p)
+
+            marker.color.r = 0.0
+            marker.color.g = 1.0
+            marker.color.b = 0.0
+            marker.color.a = 1.0
+            marker_array.markers.append(marker)
+
+        self.gt_marker_pub.publish(marker_array)
 
 
     def _reset_callback(self, request, response):

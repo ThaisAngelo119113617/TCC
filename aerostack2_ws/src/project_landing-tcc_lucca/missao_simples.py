@@ -101,17 +101,32 @@ Como rodar (dentro do container, com a simulação já aberta):
 from mission_base import SimpleMission
 
 DRONE_NAMESPACE = 'x500_px4'
-ALTURA_DECOLAGEM = 10.0  # metros
-TEMPO_PAIRADO = 10.0     # segundos parado no ar antes de pousar
+ALTURA_DECOLAGEM = 5.0  # metros
+TEMPO_PAIRADO = 5.0     # segundos parado no ar antes de pousar
 POSICAO_ORIGEM = (0.0, 0.0, ALTURA_DECOLAGEM)
+
 
 
 def main():
     with SimpleMission(DRONE_NAMESPACE) as mission:
-        mission.takeoff(ALTURA_DECOLAGEM)
+        print(f'[DEBUG] Home position: {mission.home_position}')
+
+        print(f'[DEBUG] Pose antes de armar: {mission._get_pose_now()}')
+        mission.arm()
+        print(f'[DEBUG] Pose apos armar: {mission._get_pose_now()}')
+
+        mission.offboard()
+        print(f'[DEBUG] Pose apos offboard: {mission._get_pose_now()}')
+
+        print(f'[DEBUG] Decolando ate {ALTURA_DECOLAGEM}m...')
+        mission.drone.takeoff(height=ALTURA_DECOLAGEM, speed=0.5)
+        print(f'[DEBUG] Pose apos takeoff: {mission._get_pose_now()}')
+
         mission.hover(TEMPO_PAIRADO)
-        # mission.go_home(speed=1.0)
+        print(f'[DEBUG] Pose apos hover: {mission._get_pose_now()}')
+
         mission.land()
+        print(f'[DEBUG] Pose apos land: {mission._get_pose_now()}')
 
 
 if __name__ == '__main__':

@@ -54,13 +54,14 @@ windows:
         - ros2 launch as2_behaviors_motion motion_behaviors_launch.py
             namespace:=<%= drone_namespace %>
             config_file:=config/config.yaml
+        - ros2 launch as2_behaviors_trajectory_generation        generate_polynomial_trajectory_behavior_launch.py
+            namespace:=<%= drone_namespace %>
 
   # Mission monitoring
   - mission_monitoring:
       layout: tiled
       panes:
-        - ros2 run as2_alphanumeric_viewer as2_alphanumeric_viewer_node
-            --ros-args -r  __ns:=/<%= drone_namespace %>
+        - echo "as2_alphanumeric_viewer nao disponivel neste fork"
 
   # User: janela livre para rodar missao_simples.py ou qualquer script
   - user:

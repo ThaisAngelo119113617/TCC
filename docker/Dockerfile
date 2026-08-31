@@ -20,7 +20,7 @@ RUN git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git && \
     cmake .. && make && make install && ldconfig /usr/local/lib/
 
 # 4. Ajustar pacotes Python necessários
-RUN pip3 install numpy==1.24.4 PySimpleGUI-4-foss
+RUN pip3 install numpy==1.24.4 PySimpleGUI-4-foss open3d pillow scipy 
 
 # 5. Criar o usuário 'developer' para não dar erro de permissão gráfica nem de escrita
 RUN useradd -m developer && echo "developer:developer" | chpasswd && adduser developer sudo

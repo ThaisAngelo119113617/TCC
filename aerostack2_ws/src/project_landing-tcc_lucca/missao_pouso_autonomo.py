@@ -12,11 +12,12 @@ Como rodar:
 """
 
 from mission_base import SimpleMission
+import time
 
 DRONE_NAMESPACE = 'x500_px4'
 ALTURA_DECOLAGEM = 5.0
 TEMPO_BUSCA = 30.0  # segundos esperando candidato estavel apos a varredura
-VELOCIDADE_VARREDURA = 0.8  # m/s -- ajustar conforme necessidade
+VELOCIDADE_VARREDURA = 0.6  # m/s -- ajustar conforme necessidade
 
 # Trajetoria "cobra" cobrindo o quadrado 15x15m (x,y de -6 a +6, com margem
 # de seguranca das bordas do heightmap). Passa perto das 3 zonas planas
@@ -40,6 +41,7 @@ WAYPOINTS_VARREDURA = [
 def main():
     with SimpleMission(DRONE_NAMESPACE) as mission:
         mission.takeoff(ALTURA_DECOLAGEM)
+        print(f'[DEBUG] Home position capturada: {mission.home_position}')
 
         # Zera a memoria de areas conhecidas -- so a partir daqui as
         # observacoes contam, evitando vies do que foi visto parado
@@ -59,10 +61,23 @@ def main():
             mission.land()
         else:
             x, y, z_candidato = candidato
-            print(f'[missao] Indo pousar em ({x:.2f}, {y:.2f})')
+            print(f'[missao] Indo verificar area em ({x:.2f}, {y:.2f})')
             mission.go_to(x, y, ALTURA_DECOLAGEM)
+
+            pose_apos_goto = mission._get_pose_now()
+            print(f'[DEBUG] Alvo: ({x:.2f}, {y:.2f}) | Pose apos go_to: {pose_apos_goto}')
+
+            print('[missao] Pairando 5s sobre a area candidata antes de pousar...')
+            for i in range(5):
+                time.sleep(1.0)
+                pose_hover = mission._get_pose_now()
+                print(f'[DEBUG] Pose durante hover (s={i+1}): {pose_hover}')
+
+            print('[missao] Pouso confirmado.')
             mission.land()
 
+            pose_apos_land = mission._get_pose_now()
+            print(f'[DEBUG] Pose apos land: {pose_apos_land}')
 
 if __name__ == '__main__':
     main()
