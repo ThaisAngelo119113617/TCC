@@ -7,7 +7,7 @@
 # Uso:
 #   ./launch_sim_simples.bash
 
-simulation_config="config/world_env1_grama.yaml"
+simulation_config="config/world_rugosidade_grossa.yaml"
 
 drones_namespace_comma=$(python3 utils/get_drones.py -p "${simulation_config}" --sep ',')
 IFS=',' read -r -a drone_namespaces <<< "$drones_namespace_comma"

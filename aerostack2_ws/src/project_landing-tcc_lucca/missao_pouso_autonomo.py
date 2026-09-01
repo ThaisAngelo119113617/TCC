@@ -54,6 +54,7 @@ def main():
         print('[missao] Varredura concluida.')
 
         candidato = mission.wait_for_landing_candidate(timeout=TEMPO_BUSCA)
+        # candidato = (-4.28, 4.28, 0.0)  # forca teste na Zona 1 conhecida
 
         if candidato is None:
             print('[missao] Nenhuma area segura encontrada. Pousando na origem.')

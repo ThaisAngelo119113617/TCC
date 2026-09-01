@@ -252,7 +252,7 @@ private:
   double land_speed_condition_percentage_;
   double land_speed_condition_height_;
   float speed_condition_;
-  double time_condition_ = 0.5;
+  double time_condition_ = 0.2;
   float initial_height_;
   float land_height_ = -10.0f;
 

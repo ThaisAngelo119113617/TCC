@@ -115,6 +115,7 @@ class CandidateGenerationNode(Node):
         self.best_pub = self.create_publisher(PointStamped, '/perception/landing_candidates/best', 10)
         self.marker_pub = self.create_publisher(Marker, '/perception/landing_candidates/marker', 10)
         self.gt_marker_pub = self.create_publisher(MarkerArray, '/perception/ground_truth_zones', 10)
+        self.known_areas_pub = self.create_publisher(MarkerArray, '/perception/known_areas', 10)
 
         # Zonas planas conhecidas (ground truth, gerar_heightmap_grama.py),
         # convertidas de pixel para coordenadas earth (aproximado -- ajustar
@@ -136,11 +137,21 @@ class CandidateGenerationNode(Node):
             f'voxel_size={self.voxel_size}m, normal_search_radius={self.normal_search_radius}m, '
             f'max_inclination={self.max_inclination_deg} graus.')
 
+        self.declare_parameter('debug_csv_path', '')
+        debug_csv_path = self.get_parameter('debug_csv_path').value
+        self.debug_csv = None
+        if debug_csv_path:
+            import csv
+            self.debug_csv_file = open(debug_csv_path, 'w', newline='')
+            self.debug_csv = csv.writer(self.debug_csv_file)
+            self.debug_csv.writerow(['x', 'y', 'z', 'radius', 'inclination_deg',
+                                      'roughness', 'normal_x', 'normal_y', 'normal_z'])
+
+
     def cloud_callback(self, msg: PointCloud2) -> None:
         try:
             transform = self.tf_buffer.lookup_transform(
                 self.world_frame, msg.header.frame_id, msg.header.stamp)
-                
         except (LookupException, ExtrapolationException) as e:
             self.get_logger().warn(f'TF nao disponivel ainda: {e}', throttle_duration_sec=2.0)
             return
@@ -151,11 +162,9 @@ class CandidateGenerationNode(Node):
 
         points_world = self._apply_transform(points_sensor, transform)
 
-           
         # --- Filtro de sanidade: remove pontos NaN/Inf ou absurdamente distantes ---
-        # (protege contra transformacoes TF ruins pontuais, que geram pontos "fantasma")
         valid_mask = np.all(np.isfinite(points_world), axis=1)
-        LIMITE_RAZOAVEL_M = 200.0  # nenhum ponto real deveria estar a mais de 200m da origem
+        LIMITE_RAZOAVEL_M = 200.0
         valid_mask &= np.all(np.abs(points_world) < LIMITE_RAZOAVEL_M, axis=1)
 
         if not np.all(valid_mask):
@@ -169,10 +178,7 @@ class CandidateGenerationNode(Node):
             return
 
         pcd = o3d.geometry.PointCloud()
-        pcd.points = o3d.utility.Vector3dVector(points_world) 
-
-        # pcd = o3d.geometry.PointCloud()
-        # pcd.points = o3d.utility.Vector3dVector(points_world)
+        pcd.points = o3d.utility.Vector3dVector(points_world)
 
         # 1. Voxel Grid downsampling
         pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
@@ -180,8 +186,7 @@ class CandidateGenerationNode(Node):
         if points_down.shape[0] < 3:
             return
 
-        # 2. Grid-map 2D coarse: descarta celulas com muita variacao de altura
-        #    ANTES de gastar PCA nelas (filtro barato, primeiro estagio)
+        # 2. Grid-map 2D coarse
         coarse_mask = self._grid_coarse_filter(points_down)
         points_coarse = points_down[coarse_mask]
 
@@ -194,14 +199,10 @@ class CandidateGenerationNode(Node):
         if points_coarse.shape[0] < 3:
             return
 
-        # 3. Raio expansivel (Algorithm 1, Loureiro et al. 2021):
-        #    amostra pontos aleatorios, cresce o raio enquanto plano for valido
+        # 3. Raio expansivel (Algorithm 1, Loureiro et al. 2021)
         candidates = self._grow_candidates(points_coarse)
 
-         # Filtro de limites do cenario: descarta candidatos fora da area de
-        # teste conhecida (heightmap grama_alta, 15x15m centrado em 0,0).
-        # Evita que o chao padrao do Gazebo (fora do heightmap, plano trivial
-        # e sem limites) seja escolhido como "melhor area" por padrao.
+        # Filtro de limites do cenario
         if candidates:
             n_antes = len(candidates)
             candidates = [c for c in candidates
@@ -223,31 +224,10 @@ class CandidateGenerationNode(Node):
                 f'inclinacao media: {np.mean(angles):.1f} graus',
                 throttle_duration_sec=2.0)
 
-            #   # Publica o primeiro candidato valido encontrado nesse frame
-            # first = candidates[0]
-            # pt = PointStamped()
-            # pt.header.stamp = msg.header.stamp
-            # pt.header.frame_id = self.world_frame
-            # pt.point.x = float(first['center'][0])
-            # pt.point.y = float(first['center'][1])
-            # pt.point.z = float(first['center'][2])
-            # self.best_pub.publish(pt)
-            # self.get_logger().info(
-            #     f'PRIMEIRA AREA VALIDA: ({pt.point.x:.2f}, {pt.point.y:.2f}, {pt.point.z:.2f}) '
-            #     f'raio={first["radius"]:.2f}m',
-            #     throttle_duration_sec=2.0)   
-
-                        # Atualiza a memoria espacial de areas conhecidas (nao publica ainda o primeiro)
+            # Atualiza a memoria espacial de areas conhecidas
             for c in candidates:
                 score = self._compute_spotgrade(c)
                 self._update_known_areas(c, score, msg.header.stamp)
-
-            # Publica a area de MAIOR spotgrade entre TODAS as ja conhecidas
-            # (nao so as detectadas neste frame) -- e por isso que o drone
-            # deve mirar na area detectada la de cima, mesmo descendo depois
-            # if self.known_areas:
-            #     best_id = max(self.known_areas, key=lambda k: self.known_areas[k]['spotgrade'])
-            #     best = self.known_areas[best_id]
 
             if self.known_areas:
                 MIN_CONFIRMATIONS = 10
@@ -291,6 +271,40 @@ class CandidateGenerationNode(Node):
                 marker.color.a = 0.5
                 self.marker_pub.publish(marker)
 
+                # Visualiza TODAS as areas com confirmacoes suficientes
+                MIN_CONFIRMATIONS_VIZ = 10
+                areas_viz = {k: v for k, v in self.known_areas.items()
+                             if v['confirmations'] >= MIN_CONFIRMATIONS_VIZ}
+                marker_array = MarkerArray()
+                for area_id, area in areas_viz.items():
+                    m = Marker()
+                    m.header.stamp = msg.header.stamp
+                    m.header.frame_id = self.world_frame
+                    m.ns = 'known_areas'
+                    m.id = area_id
+                    m.type = Marker.CYLINDER
+                    m.action = Marker.ADD
+                    m.pose.position.x = float(area['center_earth'][0])
+                    m.pose.position.y = float(area['center_earth'][1])
+                    m.pose.position.z = float(area['center_earth'][2])
+                    m.pose.orientation.w = 1.0
+                    m.scale.x = area['radius'] * 2.0
+                    m.scale.y = area['radius'] * 2.0
+                    m.scale.z = 0.03
+                    m.color.r = 1.0 - area['spotgrade']
+                    m.color.g = area['spotgrade']
+                    m.color.b = 0.0
+                    m.color.a = 0.4
+                    marker_array.markers.append(m)
+                self.known_areas_pub.publish(marker_array)
+
+                n_total = len(self.known_areas)
+                n_confirmadas = len(areas_viz)
+                self.get_logger().info(
+                    f'[CALIBRACAO] voxel={self.voxel_size}m | total_areas={n_total} | '
+                    f'areas_confirmadas(>=10)={n_confirmadas}',
+                    throttle_duration_sec=3.0)
+
         else:
             self.get_logger().info('0 candidatos validos', throttle_duration_sec=2.0)
 
@@ -302,6 +316,8 @@ class CandidateGenerationNode(Node):
         header_world.stamp = msg.header.stamp
         header_world.frame_id = self.world_frame
         self._publish_candidates(candidate_points, header_world)
+
+
 
     def _grid_coarse_filter(self, points: np.ndarray) -> np.ndarray:
         """
@@ -384,11 +400,32 @@ class CandidateGenerationNode(Node):
                 else:
                     break  # estourou o limite -- para, mantem o ultimo 'best' valido
 
+            # if best is not None:
+            #     radius, normal, roughness, angle_deg = best
+            #     if roughness <= self.max_roughness:
+            #         candidates.append({
+            #             'center': center,
+            #             'radius': radius,
+            #             'normal': normal,
+            #             'inclination_deg': angle_deg,
+            #             'roughness': roughness,
+            #         })
             if best is not None:
                 radius, normal, roughness, angle_deg = best
+
+                # Log TODOS os candidatos (mesmo os rejeitados) para calibracao offline
+                if self.debug_csv is not None:
+                    self.debug_csv.writerow([
+                        float(center[0]), float(center[1]), float(center[2]),
+                        radius, angle_deg, roughness,
+                        float(normal[0]), float(normal[1]), float(normal[2]),
+                    ])
+                    self.debug_csv_file.flush()
+
                 if roughness <= self.max_roughness:
                     candidates.append({
-                        'center': center,
+                        #'center': center,
+                        'center': centroid_final,
                         'radius': radius,
                         'normal': normal,
                         'inclination_deg': angle_deg,
@@ -547,6 +584,26 @@ class CandidateGenerationNode(Node):
         response.message = f'{n_antes} areas descartadas'
         return response
 
+    def _dump_known_areas(self, path: str) -> None:
+        """Salva snapshot completo do known_areas em JSON, para analise offline."""
+        import json
+        data = []
+        for area_id, area in self.known_areas.items():
+            data.append({
+                'id': area_id,
+                'x': float(area['center_earth'][0]),
+                'y': float(area['center_earth'][1]),
+                'z': float(area['center_earth'][2]),
+                'radius': area['radius'],
+                'inclination_deg': area['inclination_deg'],
+                'roughness': area['roughness'],
+                'spotgrade': area['spotgrade'],
+                'confirmations': area['confirmations'],
+            })
+        with open(path, 'w') as f:
+            json.dump(data, f, indent=2)
+        self.get_logger().info(f'known_areas salvo em {path} ({len(data)} areas)')
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -556,6 +613,7 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
+        node._dump_known_areas('/tmp/known_areas_final.json')
         node.destroy_node()
         rclpy.shutdown()
 
