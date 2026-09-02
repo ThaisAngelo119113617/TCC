@@ -395,7 +395,7 @@ class CandidateGenerationNode(Node):
 
                 if angle_deg <= self.max_inclination_deg:
                     # continua plano nesse raio -- guarda como melhor valido, tenta crescer mais
-                    best = (r, normal, roughness, angle_deg)
+                    best = (r, normal, roughness, angle_deg, centroid)
                     r += self.r_step
                 else:
                     break  # estourou o limite -- para, mantem o ultimo 'best' valido
@@ -411,7 +411,7 @@ class CandidateGenerationNode(Node):
             #             'roughness': roughness,
             #         })
             if best is not None:
-                radius, normal, roughness, angle_deg = best
+                radius, normal, roughness, angle_deg, centroid_final = best
 
                 # Log TODOS os candidatos (mesmo os rejeitados) para calibracao offline
                 if self.debug_csv is not None:
