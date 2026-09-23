@@ -37,6 +37,8 @@ from tf2_ros import Buffer, TransformListener, LookupException, ExtrapolationExc
 from geometry_msgs.msg import PointStamped, Point
 from visualization_msgs.msg import Marker, MarkerArray
 from std_srvs.srv import Trigger
+from geometry_msgs.msg import PoseStamped 
+import time
 
 class CandidateGenerationNode(Node):
     """No ROS2 que gera candidatos geometricos de pouso a partir do LiDAR."""
@@ -74,6 +76,13 @@ class CandidateGenerationNode(Node):
         self.grid_cell_size = self.get_parameter('grid_cell_size').value
         self.grid_max_height_range = self.get_parameter('grid_max_height_range').value
 
+        # parte do peso distancia
+        self.declare_parameter('pose_topic', '/x500_px4/self_localization/pose') # usa self_localiztion e nao groud truth
+        self.declare_parameter('spotgrade_d_max', 15.0)  # metros, distancia a partir da qual g4 satura em 0
+        self.d_max = self.get_parameter('spotgrade_d_max').value
+
+        self.current_position = None  # np.array([x, y]) -- atualizado pelo pose_callback
+
         ###############
 
         # --- Filtro de densidade minima (protege contra raio grande com poucos pontos) ---
@@ -90,10 +99,10 @@ class CandidateGenerationNode(Node):
         self._next_area_id = 0
 
         # --- Pesos do spotgrade (Eq. 6, Loureiro et al. 2021) -- decisao de projeto ---
-        self.declare_parameter('spotgrade_w_radius', 0.5)
-        self.declare_parameter('spotgrade_w_inclination', 1.0)
-        self.declare_parameter('spotgrade_w_roughness', 1.0)
-        self.declare_parameter('spotgrade_w_distance', 0.9)  # 0 = desabilitado por ora (d_v fora do escopo por enquanto)
+        self.declare_parameter('spotgrade_w_radius', 0.6)
+        self.declare_parameter('spotgrade_w_inclination', 0.8)
+        self.declare_parameter('spotgrade_w_roughness', 0.7)
+        self.declare_parameter('spotgrade_w_distance', 0.9)  
         self.w_radius = self.get_parameter('spotgrade_w_radius').value
         self.w_inclination = self.get_parameter('spotgrade_w_inclination').value
         self.w_roughness = self.get_parameter('spotgrade_w_roughness').value
@@ -117,6 +126,11 @@ class CandidateGenerationNode(Node):
         self.gt_marker_pub = self.create_publisher(MarkerArray, '/perception/ground_truth_zones', 10)
         self.known_areas_pub = self.create_publisher(MarkerArray, '/perception/known_areas', 10)
 
+
+        pose_topic = self.get_parameter('pose_topic').value
+        self.pose_sub = self.create_subscription(
+            PoseStamped, pose_topic, self._pose_callback, qos_profile_sensor_data)
+
         # Zonas planas conhecidas (ground truth, gerar_heightmap_grama.py),
         # convertidas de pixel para coordenadas earth (aproximado -- ajustar
         # se a orientacao linha/coluna estiver invertida na pratica)
@@ -125,12 +139,26 @@ class CandidateGenerationNode(Node):
             {'center': (-3.11, -2.17), 'size': (1.76, 1.76)},
             {'center': ( 3.34,  1.35), 'size': (1.76, 1.76)},
         ]
+        # self.ground_truth_zones = [
+        #     {'center': (-5.5, -5.5), 'size': (2.5, 2.5)},   # Zona A
+        #     {'center': (6.0, 0.0),   'size': (1.0, 1.0)},   # Zona B
+        # ]
+
+        # self.ground_truth_zones = [
+        # {'center': (-5.5, -5.5), 'size': (2.5, 2.5), 'color': (0.0, 1.0, 0.0)},  # Zona A -- verde (aceita)
+        # {'center': (6.0, 0.0),   'size': (1.0, 1.0), 'color': (0.0, 1.0, 0.0)},  # Zona B -- verde (aceita)
+        # {'center': (0.0, -6.0),  'size': (1.0, 1.0), 'color': (1.0, 0.0, 0.0)},  # Zona C -- vermelha (deve ser rejeitada)
+        #   ]
         # Publica o contorno periodicamente (garante visibilidade mesmo se
         # o RViz conectar depois do primeiro frame)
         self.create_timer(2.0, self._publish_ground_truth_zones)
 
 
         self.reset_srv = self.create_service(Trigger, '/perception/reset_candidates', self._reset_callback)
+
+        #sememnte fixa para testes dos pesos
+        self.declare_parameter('random_seed', 42)
+        np.random.seed(self.get_parameter('random_seed').value)
 
         self.get_logger().info(
             f'Inscrito em {input_topic}, publicando candidatos em {output_topic}. '
@@ -140,6 +168,18 @@ class CandidateGenerationNode(Node):
         self.declare_parameter('debug_csv_path', '')
         debug_csv_path = self.get_parameter('debug_csv_path').value
         self.debug_csv = None
+
+        self.t_start = time.time()
+
+        self.declare_parameter('timing_csv_path', '')
+        timing_csv_path = self.get_parameter('timing_csv_path').value
+        self.timing_csv = None
+        if timing_csv_path:
+            import csv
+            self.timing_csv_file = open(timing_csv_path, 'w', newline='')
+            self.timing_csv = csv.writer(self.timing_csv_file)
+            self.timing_csv.writerow(['sim_time_s', 'n_search_points', 'downsample_time_ms', 'pca_time_ms'])
+
         if debug_csv_path:
             import csv
             self.debug_csv_file = open(debug_csv_path, 'w', newline='')
@@ -181,7 +221,10 @@ class CandidateGenerationNode(Node):
         pcd.points = o3d.utility.Vector3dVector(points_world)
 
         # 1. Voxel Grid downsampling
+        # pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
+        t0 = time.perf_counter()
         pcd_down = pcd.voxel_down_sample(voxel_size=self.voxel_size)
+        downsample_time_ms = (time.perf_counter() - t0) * 1000.0
         points_down = np.asarray(pcd_down.points)
         if points_down.shape[0] < 3:
             return
@@ -200,7 +243,15 @@ class CandidateGenerationNode(Node):
             return
 
         # 3. Raio expansivel (Algorithm 1, Loureiro et al. 2021)
+        # candidates = self._grow_candidates(points_coarse)
+        t0 = time.perf_counter()
         candidates = self._grow_candidates(points_coarse)
+        pca_time_ms = (time.perf_counter() - t0) * 1000.0
+
+        if self.timing_csv is not None:
+            sim_time_s = time.time() - self.t_start
+            self.timing_csv.writerow([sim_time_s, self.n_search_points, downsample_time_ms, pca_time_ms])
+            self.timing_csv_file.flush()
 
         # Filtro de limites do cenario
         if candidates:
@@ -395,7 +446,7 @@ class CandidateGenerationNode(Node):
 
                 if angle_deg <= self.max_inclination_deg:
                     # continua plano nesse raio -- guarda como melhor valido, tenta crescer mais
-                    best = (r, normal, roughness, angle_deg)
+                    best = (r, normal, roughness, angle_deg, centroid)
                     r += self.r_step
                 else:
                     break  # estourou o limite -- para, mantem o ultimo 'best' valido
@@ -411,7 +462,7 @@ class CandidateGenerationNode(Node):
             #             'roughness': roughness,
             #         })
             if best is not None:
-                radius, normal, roughness, angle_deg = best
+                radius, normal, roughness, angle_deg , centroid_final= best
 
                 # Log TODOS os candidatos (mesmo os rejeitados) para calibracao offline
                 if self.debug_csv is not None:
@@ -434,6 +485,8 @@ class CandidateGenerationNode(Node):
 
         return candidates
 
+    def _pose_callback(self, msg: PoseStamped) -> None:
+        self.current_position = np.array([msg.pose.position.x, msg.pose.position.y])
 
     def _compute_spotgrade(self, candidate: dict) -> float:
 
@@ -445,7 +498,18 @@ class CandidateGenerationNode(Node):
         g1 = min(20.0, 20.0 * candidate['radius'] / self.r_max)  # raio maior = melhor
         g2 = np.clip(20.0 * (1.0 - candidate['inclination_deg'] / self.max_inclination_deg), 0.0, 20.0)
         g3 = np.clip(20.0 * (1.0 - candidate['roughness'] / self.max_roughness), 0.0, 20.0)
-        g4 = 0.0  # distancia ao UAV -- fora do escopo por enquanto (w_distance=0)
+        #g4 = 0.0  # distancia ao UAV -- fora do escopo por enquanto (w_distance=0)
+
+
+        if self.current_position is not None:
+            dist = float(np.linalg.norm(candidate['center'][:2] - self.current_position))
+            g4 = np.clip(20.0 * (1.0 - dist / self.d_max), 0.0, 20.0)
+        else:
+            # ainda nao recebemos nenhuma pose -- nao penaliza nem favorece
+            g4 = 0.0
+            self.get_logger().warn(
+                'current_position ainda nao disponivel, g4 (distancia) = 0 nesse ciclo',
+                throttle_duration_sec=5.0)
 
         w_sum = self.w_radius + self.w_inclination + self.w_roughness + self.w_distance
         if w_sum == 0.0:
@@ -541,6 +605,7 @@ class CandidateGenerationNode(Node):
             cx, cy = zone['center']
             sx, sy = zone['size']
             half_x, half_y = sx / 2.0, sy / 2.0
+            cor_r, cor_g, cor_b = zone.get('color', (0.0, 1.0, 0.0)) 
 
             marker = Marker()
             marker.header.stamp = self.get_clock().now().to_msg()
@@ -565,9 +630,9 @@ class CandidateGenerationNode(Node):
                 p.x, p.y, p.z = x, y, z
                 marker.points.append(p)
 
-            marker.color.r = 0.0
-            marker.color.g = 1.0
-            marker.color.b = 0.0
+            marker.color.r = cor_r
+            marker.color.g = cor_g
+            marker.color.b = cor_b
             marker.color.a = 1.0
             marker_array.markers.append(marker)
 

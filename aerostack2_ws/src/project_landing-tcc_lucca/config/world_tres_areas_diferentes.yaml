@@ -30,8 +30,19 @@ drones:
     rpy: [0.0, 1.5707, 0.0]
 
 objects:
-  - model_name: "grama_alta_terreno"
-    model_type: "grama_alta_grossa"
+  - model_name: "tres_areas_diferentes"
+    model_type: "tres_areas_diferentes"
     xyz: [0.0, 0.0, 0.0]
     rpy: [0.0, 0.0, 0.0]
-    
+  - model_name: "marcador_zona_a"
+    model_type: "highlight_marker_grande"
+    xyz: [-5.5, -5.5, 0.05]
+    rpy: [0.0, 0.0, 0.0]
+  - model_name: "marcador_zona_b"
+    model_type: "highlight_marker_pequeno"
+    xyz: [6.0, 0.0, 0.05]
+    rpy: [0.0, 0.0, 0.0]
+  - model_name: "marcador_zona_c"
+    model_type: "highlight_marker_rampa"
+    xyz: [0.0, -6.0, 0.175]
+    rpy: [-0.337, 0.0, 0.0]

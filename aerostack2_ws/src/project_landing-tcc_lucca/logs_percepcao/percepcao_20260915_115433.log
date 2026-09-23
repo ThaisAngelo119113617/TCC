@@ -1,0 +1,1034 @@
+[INFO] [1789473278.567332600] [candidate_generation_node]: Inscrito em /x500_px4/sensor_measurements/livox_avia/points, publicando candidatos em /perception/landing_candidates/points. voxel_size=0.06m, normal_search_radius=0.5m, max_inclination=15.0 graus.
+[INFO] [1789473280.165851548] [candidate_generation_node]: 101 pontos apos voxel -> 101 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473280.192138170] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473280.193526595] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473282.253011739] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473282.272343627] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473284.116359035] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 50.300000 but the latest data is at time 50.292000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473284.320917755] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473284.355696380] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473285.359805733] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473286.334667680] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473286.375456181] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473288.396980431] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473288.433771939] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473288.594620404] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 54.600000 but the latest data is at time 54.576000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473290.393538099] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473290.472784748] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473290.491572652] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473290.704358570] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 56.600000 but the latest data is at time 56.544000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473292.556071626] [candidate_generation_node]: 104 pontos apos voxel -> 104 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473292.571161437] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473294.622170729] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473294.654313775] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473295.405335591] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473296.726973129] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473296.757348010] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473297.007629705] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 62.700000 but the latest data is at time 62.688000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473298.850953188] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473298.884997756] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473300.765796810] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473300.797557352] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 66.400000 but the latest data is at time 66.384000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473300.907076815] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473300.939609431] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473302.976539122] [candidate_generation_node]: 118 pontos apos voxel -> 118 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473303.012706647] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473305.115779965] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473305.149381411] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473305.814287421] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473307.135381080] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473307.166428877] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473307.197400145] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 72.400000 but the latest data is at time 72.396000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473309.257453306] [candidate_generation_node]: 106 pontos apos voxel -> 106 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473309.287835452] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473310.584963968] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 75.700000 but the latest data is at time 75.672000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473310.823750947] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473311.289492887] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473311.322024349] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473312.797969222] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 77.900000 but the latest data is at time 77.892000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473313.330385426] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473313.364626178] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473315.426189784] [candidate_generation_node]: 105 pontos apos voxel -> 105 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473315.440175523] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473316.151176147] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473316.317541566] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 81.300000 but the latest data is at time 81.240000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473317.437425639] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473317.468088956] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473319.166709151] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 84.100000 but the latest data is at time 84.096000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473319.486637119] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473319.530017281] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473321.272984942] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473321.532256831] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473321.562916174] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473323.492906248] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 88.300000 but the latest data is at time 88.284000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473324.011766585] [candidate_generation_node]: 107 pontos apos voxel -> 107 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473324.043129720] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473326.129814583] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473326.161583791] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473326.477293832] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473328.203066424] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473328.226507239] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473330.300805429] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473330.334677547] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473331.211389815] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 95.900000 but the latest data is at time 95.880000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473331.770616109] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473332.438894589] [candidate_generation_node]: 106 pontos apos voxel -> 106 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473332.470156558] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473334.572519739] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473334.600788769] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473336.850244426] [candidate_generation_node]: 118 pontos apos voxel -> 118 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473336.879260205] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473336.880160016] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473337.341086042] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 101.900000 but the latest data is at time 101.892000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473338.912220348] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473338.929520055] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473339.844015189] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 104.300000 but the latest data is at time 104.232000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473340.937517602] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473340.953661896] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473341.896137951] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473343.034227278] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473343.068141845] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473343.378946157] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 107.700000 but the latest data is at time 107.616000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473345.147582728] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473345.163715945] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473346.300896432] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 110.500000 but the latest data is at time 110.496000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473346.918424188] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473347.215093972] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473347.248578565] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473348.337502364] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 112.500000 but the latest data is at time 112.464000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473349.580834669] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473349.607886859] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473351.210154754] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 115.300000 but the latest data is at time 115.284000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473351.732887380] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473351.748853024] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473351.978040504] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473353.951745146] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473353.988007123] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473355.974625879] [candidate_generation_node]: 106 pontos apos voxel -> 106 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473355.992352744] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473357.119421990] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473358.012229105] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473358.046125456] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473358.893432312] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 122.800000 but the latest data is at time 122.772000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473360.059529921] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473360.079452625] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473362.196421680] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473362.240183228] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473362.242311139] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473363.147840385] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 126.800000 but the latest data is at time 126.768000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473364.496445780] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473364.528531794] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473366.569171640] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473366.587680972] [candidate_generation_node]: 0 candidatos validos
+[WARN] [1789473367.326837172] [candidate_generation_node]: 50 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473368.585466975] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 132.100000 but the latest data is at time 132.096000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473368.685751313] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473368.717762214] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473370.721550357] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473370.787026327] [candidate_generation_node]: 1102 pontos apos voxel -> 251 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473371.402504540] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 134.700000 but the latest data is at time 134.664000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473372.421892976] [candidate_generation_node]: 48 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473372.743378188] [candidate_generation_node]: 0 candidatos validos
+[INFO] [1789473372.882103127] [candidate_generation_node]: 4557 pontos apos voxel -> 3148 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473373.917062208] [candidate_generation_node]: 2/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473373.918444963] [candidate_generation_node]: MELHOR AREA (id=0, 2 conhecidas): (6.92, -1.09, 0.04) raio=0.70m score=0.807 confirmacoes=1
+[INFO] [1789473373.919682706] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=2 | areas_confirmadas(>=10)=0
+[WARN] [1789473374.423845095] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 137.600000 but the latest data is at time 137.556000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473375.026286507] [candidate_generation_node]: 10397 pontos apos voxel -> 9239 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473375.942982315] [candidate_generation_node]: 15/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473375.947332299] [candidate_generation_node]: MELHOR AREA (id=3, 10 conhecidas): (6.67, -0.82, 0.05) raio=0.70m score=0.822 confirmacoes=17
+[INFO] [1789473377.201035178] [candidate_generation_node]: 18719 pontos apos voxel -> 17555 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473377.234693634] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=17 | areas_confirmadas(>=10)=6
+[WARN] [1789473377.525973854] [candidate_generation_node]: 37 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473377.606462012] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 140.700000 but the latest data is at time 140.628000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473378.386294780] [candidate_generation_node]: 14/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473378.390876713] [candidate_generation_node]: MELHOR AREA (id=3, 24 conhecidas): (6.67, -0.82, 0.05) raio=0.70m score=0.822 confirmacoes=26
+[INFO] [1789473379.251878755] [candidate_generation_node]: 26100 pontos apos voxel -> 25019 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473379.508969302] [candidate_generation_node]: known_areas resetado (30 areas descartadas)
+[WARN] [1789473379.661791366] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 142.700000 but the latest data is at time 142.668000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473380.362838694] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=25 | areas_confirmadas(>=10)=0
+[INFO] [1789473380.693138358] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473380.699221643] [candidate_generation_node]: MELHOR AREA (id=20, 30 conhecidas): (6.80, -0.38, 0.06) raio=0.70m score=0.823 confirmacoes=3
+[INFO] [1789473381.508034086] [candidate_generation_node]: 31563 pontos apos voxel -> 30446 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473382.315122500] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 145.300000 but the latest data is at time 145.248000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473382.572241827] [candidate_generation_node]: 30 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473382.786810682] [candidate_generation_node]: 15/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473382.794856091] [candidate_generation_node]: MELHOR AREA (id=20, 48 conhecidas): (6.80, -0.38, 0.06) raio=0.70m score=0.823 confirmacoes=4
+[INFO] [1789473383.513705547] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=56 | areas_confirmadas(>=10)=1
+[INFO] [1789473383.623824861] [candidate_generation_node]: 28898 pontos apos voxel -> 28346 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473384.324274443] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 147.300000 but the latest data is at time 147.228000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473385.502602581] [candidate_generation_node]: 32/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473385.521287633] [candidate_generation_node]: MELHOR AREA (id=1, 78 conhecidas): (6.77, 1.87, 0.07) raio=0.70m score=0.811 confirmacoes=10
+[INFO] [1789473385.734589270] [candidate_generation_node]: 27356 pontos apos voxel -> 26280 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473386.745972928] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=98 | areas_confirmadas(>=10)=11
+[WARN] [1789473387.180500962] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 150.100000 but the latest data is at time 150.048000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473387.792754479] [candidate_generation_node]: 28088 pontos apos voxel -> 27541 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473387.849051809] [candidate_generation_node]: 9 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473387.850148756] [candidate_generation_node]: 36/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473387.882136974] [candidate_generation_node]: MELHOR AREA (id=13, 112 conhecidas): (5.85, -2.50, 0.08) raio=0.70m score=0.837 confirmacoes=11
+[WARN] [1789473389.204574723] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 152.100000 but the latest data is at time 152.040000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473390.118811580] [candidate_generation_node]: 28191 pontos apos voxel -> 27083 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473390.169800676] [candidate_generation_node]: 45/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473390.201575660] [candidate_generation_node]: MELHOR AREA (id=32, 138 conhecidas): (3.85, -2.48, 0.08) raio=0.70m score=0.861 confirmacoes=12
+[INFO] [1789473390.206951990] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=138 | areas_confirmadas(>=10)=29
+[WARN] [1789473391.271743215] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 154.200000 but the latest data is at time 154.092000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473392.233044089] [candidate_generation_node]: 27860 pontos apos voxel -> 27316 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473392.287729206] [candidate_generation_node]: 46/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473392.336428845] [candidate_generation_node]: MELHOR AREA (id=32, 171 conhecidas): (3.85, -2.48, 0.08) raio=0.70m score=0.861 confirmacoes=19
+[INFO] [1789473393.333608161] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=191 | areas_confirmadas(>=10)=48
+[WARN] [1789473393.401240212] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 156.300000 but the latest data is at time 156.240000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473394.327446212] [candidate_generation_node]: 27491 pontos apos voxel -> 26936 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473394.384252301] [candidate_generation_node]: 45/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.3 graus
+[INFO] [1789473394.430860936] [candidate_generation_node]: MELHOR AREA (id=32, 205 conhecidas): (3.85, -2.48, 0.08) raio=0.70m score=0.861 confirmacoes=23
+[WARN] [1789473395.645281904] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 158.500000 but the latest data is at time 158.424000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473396.413479074] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=235 | areas_confirmadas(>=10)=65
+[INFO] [1789473396.862816964] [candidate_generation_node]: 27566 pontos apos voxel -> 26526 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473396.917063922] [candidate_generation_node]: 46/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473397.009395331] [candidate_generation_node]: MELHOR AREA (id=32, 244 conhecidas): (3.85, -2.48, 0.08) raio=0.70m score=0.861 confirmacoes=23
+[WARN] [1789473397.497550342] [candidate_generation_node]: 3 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473397.693879036] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 160.600000 but the latest data is at time 160.548000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473398.952028629] [candidate_generation_node]: 27393 pontos apos voxel -> 26819 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473399.009205394] [candidate_generation_node]: 41/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473399.098064249] [candidate_generation_node]: MELHOR AREA (id=32, 259 conhecidas): (3.85, -2.48, 0.08) raio=0.70m score=0.861 confirmacoes=23
+[INFO] [1789473399.509728162] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=263 | areas_confirmadas(>=10)=72
+[WARN] [1789473399.703232378] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 162.600000 but the latest data is at time 162.576000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473401.253569946] [candidate_generation_node]: 26662 pontos apos voxel -> 24528 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473401.335370206] [candidate_generation_node]: 26/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473401.358879557] [candidate_generation_node]: MELHOR AREA (id=208, 275 conhecidas): (-5.31, -5.45, 0.02) raio=0.70m score=0.902 confirmacoes=12
+[WARN] [1789473401.910236327] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 164.800000 but the latest data is at time 164.796000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473402.497922349] [candidate_generation_node]: 17 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473402.587390109] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=279 | areas_confirmadas(>=10)=82
+[INFO] [1789473403.387286683] [candidate_generation_node]: 25869 pontos apos voxel -> 25305 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473403.447011121] [candidate_generation_node]: 17/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473403.495413351] [candidate_generation_node]: MELHOR AREA (id=208, 284 conhecidas): (-5.38, -5.92, 0.02) raio=0.70m score=0.904 confirmacoes=15
+[WARN] [1789473404.016751063] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 166.900000 but the latest data is at time 166.788000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473405.500297282] [candidate_generation_node]: 25648 pontos apos voxel -> 23445 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473405.547073897] [candidate_generation_node]: 8/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473405.569789643] [candidate_generation_node]: MELHOR AREA (id=267, 289 conhecidas): (-5.93, -4.85, 0.02) raio=0.70m score=0.911 confirmacoes=15
+[INFO] [1789473406.092331015] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=289 | areas_confirmadas(>=10)=90
+[WARN] [1789473406.655139909] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 169.500000 but the latest data is at time 169.488000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473407.785484034] [candidate_generation_node]: 29008 pontos apos voxel -> 27908 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473407.823097458] [candidate_generation_node]: 29 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473407.823966013] [candidate_generation_node]: 15/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473407.842398437] [candidate_generation_node]: MELHOR AREA (id=267, 290 conhecidas): (-5.93, -4.85, 0.02) raio=0.70m score=0.911 confirmacoes=17
+[WARN] [1789473408.884979736] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 171.700000 but the latest data is at time 171.624000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473409.174194553] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=294 | areas_confirmadas(>=10)=98
+[INFO] [1789473409.886234101] [candidate_generation_node]: MELHOR AREA (id=228, 297 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=12
+[INFO] [1789473410.023529593] [candidate_generation_node]: 28104 pontos apos voxel -> 27562 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473410.069684278] [candidate_generation_node]: 29/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[WARN] [1789473410.992035229] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 173.700000 but the latest data is at time 173.640000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473412.090423288] [candidate_generation_node]: MELHOR AREA (id=228, 311 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473412.351649172] [candidate_generation_node]: 28529 pontos apos voxel -> 27444 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473412.391624529] [candidate_generation_node]: 25/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473412.435374403] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=313 | areas_confirmadas(>=10)=105
+[WARN] [1789473412.894866171] [candidate_generation_node]: 13 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473413.311832653] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 176.000000 but the latest data is at time 175.944000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473414.442978777] [candidate_generation_node]: MELHOR AREA (id=228, 327 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473414.703373109] [candidate_generation_node]: 26315 pontos apos voxel -> 25772 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473414.774655250] [candidate_generation_node]: 22/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[WARN] [1789473415.321892786] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 178.000000 but the latest data is at time 177.840000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473415.644424375] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=335 | areas_confirmadas(>=10)=118
+[INFO] [1789473416.652070096] [candidate_generation_node]: MELHOR AREA (id=228, 337 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473416.926261764] [candidate_generation_node]: 26651 pontos apos voxel -> 24542 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473416.964835176] [candidate_generation_node]: 28/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[WARN] [1789473417.905902441] [candidate_generation_node]: 13 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473418.031497932] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 180.600000 but the latest data is at time 180.528000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473418.923125945] [candidate_generation_node]: MELHOR AREA (id=228, 352 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473418.934954152] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=352 | areas_confirmadas(>=10)=124
+[INFO] [1789473419.373369445] [candidate_generation_node]: 28701 pontos apos voxel -> 28161 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473419.433167536] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.3 graus
+[WARN] [1789473420.347125714] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 183.000000 but the latest data is at time 182.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473421.247793390] [candidate_generation_node]: MELHOR AREA (id=228, 363 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473421.791007826] [candidate_generation_node]: 28708 pontos apos voxel -> 28159 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473421.845800864] [candidate_generation_node]: 23/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[INFO] [1789473421.942658579] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=365 | areas_confirmadas(>=10)=127
+[WARN] [1789473422.856667532] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 185.500000 but the latest data is at time 185.496000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473423.040458765] [candidate_generation_node]: 17 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473423.690072222] [candidate_generation_node]: MELHOR AREA (id=228, 379 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473423.935750499] [candidate_generation_node]: 26475 pontos apos voxel -> 25399 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473423.995554146] [candidate_generation_node]: 21/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473424.946925545] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=386 | areas_confirmadas(>=10)=134
+[WARN] [1789473424.985999971] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 187.600000 but the latest data is at time 187.464000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473425.943733331] [candidate_generation_node]: MELHOR AREA (id=228, 390 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473426.343579508] [candidate_generation_node]: 29166 pontos apos voxel -> 28644 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473426.407193477] [candidate_generation_node]: 19/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[WARN] [1789473427.060331227] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 189.500000 but the latest data is at time 189.420000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473427.981360199] [candidate_generation_node]: MELHOR AREA (id=228, 396 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473428.000191936] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=396 | areas_confirmadas(>=10)=139
+[INFO] [1789473428.347047040] [candidate_generation_node]: 29262 pontos apos voxel -> 28173 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473428.408276376] [candidate_generation_node]: 32 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473428.410219121] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[WARN] [1789473429.167311639] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 191.700000 but the latest data is at time 191.628000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473430.385767631] [candidate_generation_node]: MELHOR AREA (id=228, 405 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473430.663541048] [candidate_generation_node]: 25922 pontos apos voxel -> 23760 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473430.698993165] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473431.224921137] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=409 | areas_confirmadas(>=10)=145
+[WARN] [1789473431.236166656] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 193.700000 but the latest data is at time 193.656000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473432.540380167] [candidate_generation_node]: MELHOR AREA (id=228, 415 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473432.866342515] [candidate_generation_node]: 26655 pontos apos voxel -> 25586 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473432.929400770] [candidate_generation_node]: 27/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[WARN] [1789473433.608860621] [candidate_generation_node]: 23 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473433.671046258] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 196.200000 but the latest data is at time 196.128000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473434.481932561] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=427 | areas_confirmadas(>=10)=154
+[INFO] [1789473434.974773603] [candidate_generation_node]: 25487 pontos apos voxel -> 24384 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473435.007412293] [candidate_generation_node]: 30/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.9 graus
+[INFO] [1789473435.059972880] [candidate_generation_node]: MELHOR AREA (id=228, 430 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[WARN] [1789473435.891077013] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 198.300000 but the latest data is at time 198.240000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473437.171587769] [candidate_generation_node]: 27311 pontos apos voxel -> 26219 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473437.231477892] [candidate_generation_node]: 26/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473437.349112644] [candidate_generation_node]: MELHOR AREA (id=228, 442 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473437.812139821] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=444 | areas_confirmadas(>=10)=166
+[WARN] [1789473438.204375969] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 200.700000 but the latest data is at time 200.616000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473439.145688888] [candidate_generation_node]: 11 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473439.606902908] [candidate_generation_node]: 26894 pontos apos voxel -> 26341 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473439.661029939] [candidate_generation_node]: 36/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473439.800568011] [candidate_generation_node]: MELHOR AREA (id=228, 453 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[WARN] [1789473440.227844948] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 202.700000 but the latest data is at time 202.524000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473441.229996860] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=460 | areas_confirmadas(>=10)=174
+[INFO] [1789473441.707234934] [candidate_generation_node]: 27186 pontos apos voxel -> 26617 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473441.775496890] [candidate_generation_node]: 43/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473441.906936325] [candidate_generation_node]: MELHOR AREA (id=228, 461 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[WARN] [1789473442.384375700] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 204.800000 but the latest data is at time 204.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473443.907588458] [candidate_generation_node]: 26943 pontos apos voxel -> 25849 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473443.997174239] [candidate_generation_node]: 47/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473444.105833364] [candidate_generation_node]: MELHOR AREA (id=228, 470 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473444.609940340] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=470 | areas_confirmadas(>=10)=182
+[WARN] [1789473444.662979741] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 207.200000 but the latest data is at time 207.096000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473445.951970995] [candidate_generation_node]: 26826 pontos apos voxel -> 25724 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473446.003756894] [candidate_generation_node]: 49/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473446.116067987] [candidate_generation_node]: MELHOR AREA (id=228, 471 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[WARN] [1789473447.006904968] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 209.500000 but the latest data is at time 209.448000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473447.767074865] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=475 | areas_confirmadas(>=10)=198
+[INFO] [1789473448.171546016] [candidate_generation_node]: 27111 pontos apos voxel -> 26035 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473448.221523726] [candidate_generation_node]: 49/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473448.301067244] [candidate_generation_node]: MELHOR AREA (id=228, 476 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[WARN] [1789473449.224893347] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 211.600000 but the latest data is at time 211.536000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473450.486724214] [candidate_generation_node]: 27561 pontos apos voxel -> 26466 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473450.543692043] [candidate_generation_node]: 44/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473450.603343757] [candidate_generation_node]: MELHOR AREA (id=228, 480 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=13
+[INFO] [1789473451.076271538] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=480 | areas_confirmadas(>=10)=208
+[WARN] [1789473451.458672443] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 213.800000 but the latest data is at time 213.744000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473452.877541347] [candidate_generation_node]: 27340 pontos apos voxel -> 26806 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473452.936081431] [candidate_generation_node]: 46/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.8 graus
+[INFO] [1789473453.044613415] [candidate_generation_node]: MELHOR AREA (id=228, 485 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=15
+[WARN] [1789473453.558756092] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 215.900000 but the latest data is at time 215.868000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473454.282035686] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=485 | areas_confirmadas(>=10)=216
+[INFO] [1789473454.970635845] [candidate_generation_node]: 26927 pontos apos voxel -> 26384 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473455.012884388] [candidate_generation_node]: 44/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473455.070813650] [candidate_generation_node]: MELHOR AREA (id=228, 486 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=16
+[WARN] [1789473455.618495854] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 218.000000 but the latest data is at time 217.836000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473456.113859678] [candidate_generation_node]: 5 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473457.078498430] [candidate_generation_node]: 27163 pontos apos voxel -> 26065 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473457.141090535] [candidate_generation_node]: 36/50 candidatos validos | raio min/media/max: 0.50/0.69/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473457.188992262] [candidate_generation_node]: MELHOR AREA (id=228, 492 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=21
+[INFO] [1789473457.395406963] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=492 | areas_confirmadas(>=10)=224
+[WARN] [1789473457.772029196] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 220.200000 but the latest data is at time 220.128000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473459.473444571] [candidate_generation_node]: 26977 pontos apos voxel -> 25909 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473459.509885156] [candidate_generation_node]: 27/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473459.545504867] [candidate_generation_node]: MELHOR AREA (id=228, 494 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=27
+[WARN] [1789473459.849532462] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 222.300000 but the latest data is at time 222.156000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473460.418049821] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=494 | areas_confirmadas(>=10)=231
+[WARN] [1789473461.123319917] [candidate_generation_node]: 15 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473461.650454868] [candidate_generation_node]: 26877 pontos apos voxel -> 25788 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473461.718538300] [candidate_generation_node]: 29/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473461.751640356] [candidate_generation_node]: MELHOR AREA (id=228, 495 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473462.276330365] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 224.700000 but the latest data is at time 224.616000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473463.750091363] [candidate_generation_node]: 27928 pontos apos voxel -> 25760 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473463.797512086] [candidate_generation_node]: 25/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473463.840030077] [candidate_generation_node]: MELHOR AREA (id=228, 500 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473463.876791190] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=500 | areas_confirmadas(>=10)=236
+[WARN] [1789473464.364469102] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 226.700000 but the latest data is at time 226.644000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473466.146698941] [candidate_generation_node]: 26604 pontos apos voxel -> 25500 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473466.194739068] [candidate_generation_node]: 14 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473466.195694800] [candidate_generation_node]: 32/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473466.235235450] [candidate_generation_node]: MELHOR AREA (id=228, 502 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473466.631379312] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 229.000000 but the latest data is at time 228.936000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473466.891572180] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=506 | areas_confirmadas(>=10)=246
+[INFO] [1789473468.387433010] [candidate_generation_node]: 28460 pontos apos voxel -> 27359 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473468.456901299] [candidate_generation_node]: 23/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473468.505781614] [candidate_generation_node]: MELHOR AREA (id=228, 507 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473468.649986069] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 231.000000 but the latest data is at time 230.988000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473470.453543316] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=509 | areas_confirmadas(>=10)=253
+[INFO] [1789473470.992017613] [candidate_generation_node]: 27389 pontos apos voxel -> 26825 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473471.030869400] [candidate_generation_node]: 35/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473471.063969110] [candidate_generation_node]: MELHOR AREA (id=228, 509 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473471.104099806] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 233.400000 but the latest data is at time 233.328000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473471.485052324] [candidate_generation_node]: 6 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473473.325291253] [candidate_generation_node]: 27529 pontos apos voxel -> 26475 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473473.384531698] [candidate_generation_node]: 48/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473473.432312099] [candidate_generation_node]: MELHOR AREA (id=228, 514 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473473.462116815] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=514 | areas_confirmadas(>=10)=259
+[WARN] [1789473473.467512930] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 235.700000 but the latest data is at time 235.632000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473475.475849767] [candidate_generation_node]: 27052 pontos apos voxel -> 25965 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473475.558519301] [candidate_generation_node]: 48/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473475.630805788] [candidate_generation_node]: MELHOR AREA (id=228, 515 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473475.675239203] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 237.900000 but the latest data is at time 237.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473476.872799883] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=515 | areas_confirmadas(>=10)=266
+[INFO] [1789473477.570078642] [candidate_generation_node]: 27108 pontos apos voxel -> 26539 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473477.626547261] [candidate_generation_node]: 46/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473477.669887007] [candidate_generation_node]: MELHOR AREA (id=228, 518 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473477.714918739] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 239.900000 but the latest data is at time 239.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473479.681645804] [candidate_generation_node]: 27674 pontos apos voxel -> 26576 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473479.727410890] [candidate_generation_node]: 47/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473479.763096794] [candidate_generation_node]: MELHOR AREA (id=228, 523 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473479.847475521] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 242.100000 but the latest data is at time 242.016000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473480.183103599] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=523 | areas_confirmadas(>=10)=272
+[INFO] [1789473481.718421670] [candidate_generation_node]: 27978 pontos apos voxel -> 26887 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473481.771438467] [candidate_generation_node]: 44/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473481.876211708] [candidate_generation_node]: MELHOR AREA (id=228, 531 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473481.923870227] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 244.000000 but the latest data is at time 243.996000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473483.665008523] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=540 | areas_confirmadas(>=10)=277
+[INFO] [1789473484.240369298] [candidate_generation_node]: 27619 pontos apos voxel -> 27055 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473484.320420556] [candidate_generation_node]: 44/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473484.364410560] [candidate_generation_node]: MELHOR AREA (id=228, 541 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473484.396449301] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 246.500000 but the latest data is at time 246.420000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473486.354522087] [candidate_generation_node]: 27152 pontos apos voxel -> 26594 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473486.416256348] [candidate_generation_node]: 48/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473486.493567451] [candidate_generation_node]: MELHOR AREA (id=228, 559 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473486.526050711] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 248.700000 but the latest data is at time 248.532000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473487.051523708] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=562 | areas_confirmadas(>=10)=282
+[WARN] [1789473487.419943088] [candidate_generation_node]: 1 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473488.467627965] [candidate_generation_node]: 26692 pontos apos voxel -> 26132 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473488.517478700] [candidate_generation_node]: 44/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473488.706326699] [candidate_generation_node]: MELHOR AREA (id=228, 567 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473488.762204145] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 250.700000 but the latest data is at time 250.644000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473490.486230767] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=571 | areas_confirmadas(>=10)=291
+[INFO] [1789473490.656635937] [candidate_generation_node]: 26571 pontos apos voxel -> 25481 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473490.687088980] [candidate_generation_node]: 26/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473490.749830187] [candidate_generation_node]: MELHOR AREA (id=228, 571 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473490.799193029] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 252.900000 but the latest data is at time 252.840000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473492.799572843] [candidate_generation_node]: 27102 pontos apos voxel -> 26006 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473492.879006550] [candidate_generation_node]: 19 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473492.879941821] [candidate_generation_node]: 31/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473492.955714597] [candidate_generation_node]: MELHOR AREA (id=228, 575 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473492.992803186] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 255.100000 but the latest data is at time 254.928000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473493.638087885] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=579 | areas_confirmadas(>=10)=303
+[INFO] [1789473495.213596619] [candidate_generation_node]: 27014 pontos apos voxel -> 25923 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473495.262426789] [candidate_generation_node]: 20/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[INFO] [1789473495.362158339] [candidate_generation_node]: MELHOR AREA (id=228, 583 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473495.650625167] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 257.700000 but the latest data is at time 257.604000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473496.698769382] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=585 | areas_confirmadas(>=10)=309
+[INFO] [1789473497.215821271] [candidate_generation_node]: 25774 pontos apos voxel -> 24680 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473497.272166023] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.8 graus
+[INFO] [1789473497.374386677] [candidate_generation_node]: MELHOR AREA (id=228, 587 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473497.799192692] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 259.800000 but the latest data is at time 259.740000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473498.040241681] [candidate_generation_node]: 27 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473499.236461918] [candidate_generation_node]: 26676 pontos apos voxel -> 25582 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473499.295714339] [candidate_generation_node]: 21/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473499.375037254] [candidate_generation_node]: MELHOR AREA (id=228, 589 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473499.944144240] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=589 | areas_confirmadas(>=10)=317
+[WARN] [1789473499.953900404] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 262.000000 but the latest data is at time 261.936000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473501.822633859] [candidate_generation_node]: 26310 pontos apos voxel -> 25246 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473501.868703140] [candidate_generation_node]: 19/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.0 graus
+[INFO] [1789473501.939221078] [candidate_generation_node]: MELHOR AREA (id=228, 591 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473501.982585496] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 264.100000 but the latest data is at time 263.952000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473503.197993574] [candidate_generation_node]: 18 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473503.288982801] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=591 | areas_confirmadas(>=10)=321
+[INFO] [1789473503.939223060] [candidate_generation_node]: 26870 pontos apos voxel -> 26307 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473503.973925567] [candidate_generation_node]: 29/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473504.012863781] [candidate_generation_node]: MELHOR AREA (id=228, 592 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473504.044642205] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 266.100000 but the latest data is at time 266.028000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473506.073798370] [candidate_generation_node]: 26478 pontos apos voxel -> 25937 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473506.133336199] [candidate_generation_node]: 32/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473506.173110154] [candidate_generation_node]: MELHOR AREA (id=228, 596 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473506.209069896] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 268.200000 but the latest data is at time 268.140000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473506.559467561] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=597 | areas_confirmadas(>=10)=326
+[INFO] [1789473508.364249554] [candidate_generation_node]: 26012 pontos apos voxel -> 25423 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473508.419907940] [candidate_generation_node]: 19 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473508.421252469] [candidate_generation_node]: 28/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473508.452984123] [candidate_generation_node]: MELHOR AREA (id=228, 599 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473508.507764390] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 270.500000 but the latest data is at time 270.420000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473509.904435930] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=600 | areas_confirmadas(>=10)=331
+[INFO] [1789473510.451974796] [candidate_generation_node]: 26487 pontos apos voxel -> 25431 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473510.511932592] [candidate_generation_node]: 29/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473510.545575352] [candidate_generation_node]: MELHOR AREA (id=228, 600 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473510.631407469] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 272.700000 but the latest data is at time 272.568000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473512.781363375] [candidate_generation_node]: 26528 pontos apos voxel -> 25459 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473512.816282067] [candidate_generation_node]: 31/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473512.827923870] [candidate_generation_node]: MELHOR AREA (id=228, 601 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473512.871317758] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 274.900000 but the latest data is at time 274.836000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473513.198416498] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=601 | areas_confirmadas(>=10)=333
+[WARN] [1789473513.648711330] [candidate_generation_node]: 16 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473514.935351463] [candidate_generation_node]: 27350 pontos apos voxel -> 26788 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473514.991652026] [candidate_generation_node]: 26/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473515.015772769] [candidate_generation_node]: MELHOR AREA (id=228, 602 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473515.065035974] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 277.000000 but the latest data is at time 276.936000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473516.435722036] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=603 | areas_confirmadas(>=10)=335
+[INFO] [1789473517.123897856] [candidate_generation_node]: 26055 pontos apos voxel -> 24987 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473517.174016114] [candidate_generation_node]: 27/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473517.208800740] [candidate_generation_node]: MELHOR AREA (id=228, 604 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473517.252036132] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 279.200000 but the latest data is at time 279.132000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473518.764011313] [candidate_generation_node]: 12 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473519.464237327] [candidate_generation_node]: 28178 pontos apos voxel -> 27608 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473519.533407564] [candidate_generation_node]: 27/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473519.573050802] [candidate_generation_node]: MELHOR AREA (id=228, 606 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473519.619553973] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=606 | areas_confirmadas(>=10)=339
+[WARN] [1789473519.625430648] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 281.600000 but the latest data is at time 281.424000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473521.654572511] [candidate_generation_node]: 27854 pontos apos voxel -> 26770 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473521.707890720] [candidate_generation_node]: 19/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473521.738089975] [candidate_generation_node]: MELHOR AREA (id=228, 608 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473521.794031233] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 283.700000 but the latest data is at time 283.644000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473522.902320811] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=609 | areas_confirmadas(>=10)=343
+[WARN] [1789473523.818392679] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 285.800000 but the latest data is at time 285.780000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473523.928962186] [candidate_generation_node]: 25447 pontos apos voxel -> 23351 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473523.955231889] [candidate_generation_node]: 31 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473523.955778806] [candidate_generation_node]: 13/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473523.965776841] [candidate_generation_node]: MELHOR AREA (id=228, 610 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473526.286436183] [candidate_generation_node]: 25747 pontos apos voxel -> 23583 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473526.343555677] [candidate_generation_node]: 15/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473526.357980869] [candidate_generation_node]: MELHOR AREA (id=228, 611 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473526.388369825] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=611 | areas_confirmadas(>=10)=344
+[WARN] [1789473526.904494450] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 288.800000 but the latest data is at time 288.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473528.309120380] [candidate_generation_node]: 27663 pontos apos voxel -> 26619 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473528.344261735] [candidate_generation_node]: 20/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473528.363762812] [candidate_generation_node]: MELHOR AREA (id=228, 612 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473529.059846851] [candidate_generation_node]: 19 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473529.278002489] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 291.000000 but the latest data is at time 290.940000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473529.780937955] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=613 | areas_confirmadas(>=10)=348
+[INFO] [1789473530.454647618] [candidate_generation_node]: 25453 pontos apos voxel -> 24378 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473530.509473486] [candidate_generation_node]: 30/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473530.556131937] [candidate_generation_node]: MELHOR AREA (id=228, 614 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473531.301475226] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 293.200000 but the latest data is at time 293.172000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473532.895884207] [candidate_generation_node]: 26927 pontos apos voxel -> 25843 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473532.959492572] [candidate_generation_node]: 29/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473532.980742762] [candidate_generation_node]: MELHOR AREA (id=228, 616 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[INFO] [1789473533.009085591] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=616 | areas_confirmadas(>=10)=353
+[WARN] [1789473533.330779269] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 295.200000 but the latest data is at time 295.020000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473534.425158305] [candidate_generation_node]: 17 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473535.090697311] [candidate_generation_node]: 26244 pontos apos voxel -> 25662 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473535.156689818] [candidate_generation_node]: 32/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473535.232257960] [candidate_generation_node]: MELHOR AREA (id=228, 616 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473535.368315865] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 297.200000 but the latest data is at time 297.096000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473536.176161589] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=616 | areas_confirmadas(>=10)=356
+[INFO] [1789473537.121076220] [candidate_generation_node]: 25812 pontos apos voxel -> 25243 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473537.162876957] [candidate_generation_node]: 31/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473537.461143291] [candidate_generation_node]: MELHOR AREA (id=228, 616 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473537.529499924] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 299.200000 but the latest data is at time 299.100000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473539.152704934] [candidate_generation_node]: 26644 pontos apos voxel -> 26075 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473539.188841871] [candidate_generation_node]: 31/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473539.254561113] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=617 | areas_confirmadas(>=10)=359
+[WARN] [1789473539.582213355] [candidate_generation_node]: 11 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473539.616866841] [candidate_generation_node]: MELHOR AREA (id=228, 617 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=30
+[WARN] [1789473539.670715825] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 301.400000 but the latest data is at time 301.332000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473541.193096517] [candidate_generation_node]: 23/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473541.790306865] [candidate_generation_node]: 26861 pontos apos voxel -> 26285 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473541.880242998] [candidate_generation_node]: MELHOR AREA (id=228, 617 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=33
+[WARN] [1789473541.918543881] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 303.600000 but the latest data is at time 303.552000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473542.929150894] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=617 | areas_confirmadas(>=10)=360
+[INFO] [1789473543.356177133] [candidate_generation_node]: 34/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473544.078997790] [candidate_generation_node]: 27022 pontos apos voxel -> 26477 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473544.154344547] [candidate_generation_node]: MELHOR AREA (id=228, 618 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=38
+[WARN] [1789473544.197758012] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 305.900000 but the latest data is at time 305.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473544.818978227] [candidate_generation_node]: 10 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473545.754791761] [candidate_generation_node]: 24/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473546.291250520] [candidate_generation_node]: 26087 pontos apos voxel -> 25516 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473546.361186176] [candidate_generation_node]: MELHOR AREA (id=228, 619 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=41
+[INFO] [1789473546.389088044] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=619 | areas_confirmadas(>=10)=361
+[WARN] [1789473546.437386432] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 308.200000 but the latest data is at time 308.112000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473548.021174044] [candidate_generation_node]: 28/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473548.497049845] [candidate_generation_node]: 26114 pontos apos voxel -> 25557 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473548.619497706] [candidate_generation_node]: MELHOR AREA (id=228, 621 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=41
+[WARN] [1789473548.672994094] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 310.400000 but the latest data is at time 310.236000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473549.651420853] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=621 | areas_confirmadas(>=10)=365
+[WARN] [1789473550.279666549] [candidate_generation_node]: 19 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473550.281020851] [candidate_generation_node]: 25/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473550.713957831] [candidate_generation_node]: 25461 pontos apos voxel -> 24879 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473550.804782178] [candidate_generation_node]: MELHOR AREA (id=228, 621 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=41
+[WARN] [1789473550.841955897] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 312.500000 but the latest data is at time 312.432000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473552.835731209] [candidate_generation_node]: 27790 pontos apos voxel -> 27238 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473552.883679499] [candidate_generation_node]: 18/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473552.930237961] [candidate_generation_node]: MELHOR AREA (id=228, 621 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=41
+[INFO] [1789473552.972604013] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=621 | areas_confirmadas(>=10)=368
+[WARN] [1789473552.976933104] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 314.600000 but the latest data is at time 314.544000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473555.024875358] [candidate_generation_node]: 27133 pontos apos voxel -> 26564 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473555.085432994] [candidate_generation_node]: 21/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[INFO] [1789473555.143307827] [candidate_generation_node]: MELHOR AREA (id=228, 622 conhecidas): (-5.30, -5.22, 0.02) raio=0.70m score=0.915 confirmacoes=41
+[WARN] [1789473555.205842703] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 316.800000 but the latest data is at time 316.716000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[WARN] [1789473555.496620875] [candidate_generation_node]: 24 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[INFO] [1789473555.983289890] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=622 | areas_confirmadas(>=10)=369
+[INFO] [1789473557.123691913] [candidate_generation_node]: 25871 pontos apos voxel -> 25301 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473557.160178415] [candidate_generation_node]: 33/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473557.202684283] [candidate_generation_node]: MELHOR AREA (id=228, 622 conhecidas): (-5.11, -4.77, 0.02) raio=0.70m score=0.918 confirmacoes=42
+[WARN] [1789473557.240715031] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 318.900000 but the latest data is at time 318.828000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473559.304953237] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=622 | areas_confirmadas(>=10)=373
+[WARN] [1789473559.312447879] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 320.800000 but the latest data is at time 320.724000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473559.668670028] [candidate_generation_node]: 25278 pontos apos voxel -> 24707 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473559.722876511] [candidate_generation_node]: 21/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[INFO] [1789473559.749626156] [candidate_generation_node]: MELHOR AREA (id=228, 622 conhecidas): (-4.96, -4.86, 0.02) raio=0.70m score=0.920 confirmacoes=47
+[WARN] [1789473560.797153242] [candidate_generation_node]: 22 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473561.324567957] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 323.000000 but the latest data is at time 322.860000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473562.064331209] [candidate_generation_node]: 23122 pontos apos voxel -> 22541 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473562.122663840] [candidate_generation_node]: 31/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473562.170977914] [candidate_generation_node]: MELHOR AREA (id=228, 622 conhecidas): (-4.96, -4.86, 0.02) raio=0.70m score=0.920 confirmacoes=51
+[INFO] [1789473562.586598171] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=622 | areas_confirmadas(>=10)=375
+[WARN] [1789473563.508497112] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 325.100000 but the latest data is at time 325.032000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473564.259527909] [candidate_generation_node]: 17742 pontos apos voxel -> 17176 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473564.287849643] [candidate_generation_node]: 30/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473564.325264039] [candidate_generation_node]: MELHOR AREA (id=228, 622 conhecidas): (-4.96, -4.86, 0.02) raio=0.70m score=0.920 confirmacoes=59
+[INFO] [1789473565.769843052] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=622 | areas_confirmadas(>=10)=378
+[WARN] [1789473565.999202947] [candidate_generation_node]: 9 candidatos descartados por estarem fora do cenario de teste (limite ±7.0m)
+[WARN] [1789473566.141280112] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 327.800000 but the latest data is at time 327.660000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473566.470436020] [candidate_generation_node]: 11059 pontos apos voxel -> 10405 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473566.526175575] [candidate_generation_node]: 32/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473566.606361492] [candidate_generation_node]: MELHOR AREA (id=228, 623 conhecidas): (-5.12, -4.81, 0.02) raio=0.70m score=0.922 confirmacoes=69
+[WARN] [1789473568.558710556] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 330.000000 but the latest data is at time 329.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473568.798766323] [candidate_generation_node]: 4286 pontos apos voxel -> 3623 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473568.824841383] [candidate_generation_node]: 45/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473568.883523696] [candidate_generation_node]: MELHOR AREA (id=228, 625 conhecidas): (-5.12, -4.81, 0.02) raio=0.70m score=0.922 confirmacoes=84
+[INFO] [1789473568.915460885] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=625 | areas_confirmadas(>=10)=378
+[WARN] [1789473570.689397647] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 332.300000 but the latest data is at time 332.184000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473570.823411415] [candidate_generation_node]: 948 pontos apos voxel -> 433 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473570.852092302] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.0 graus
+[INFO] [1789473570.987052852] [candidate_generation_node]: MELHOR AREA (id=228, 625 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=154
+[INFO] [1789473572.409695858] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473572.840257803] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 334.400000 but the latest data is at time 334.224000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473573.335701370] [candidate_generation_node]: 272 pontos apos voxel -> 272 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473573.365182140] [candidate_generation_node]: 47/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473573.471336610] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473575.262955828] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 336.800000 but the latest data is at time 336.744000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473575.551000036] [candidate_generation_node]: 107 pontos apos voxel -> 107 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473575.582817967] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473575.741618122] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473575.796406906] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473577.318753819] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 338.700000 but the latest data is at time 338.652000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473577.574746882] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473577.605487951] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.6 graus
+[INFO] [1789473578.143498051] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473578.801846192] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473579.340634233] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 340.800000 but the latest data is at time 340.704000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473579.713467328] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473579.743773118] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.4 graus
+[INFO] [1789473580.471504300] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473581.378370529] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 342.700000 but the latest data is at time 342.600000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473581.937911206] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473582.307464966] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473582.377073627] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473582.589478574] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473583.575073241] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 345.000000 but the latest data is at time 344.988000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473584.775255153] [candidate_generation_node]: 103 pontos apos voxel -> 103 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473584.805499779] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 4.2 graus
+[INFO] [1789473584.954587448] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473585.001426890] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473585.917087116] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 347.300000 but the latest data is at time 347.208000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473586.986078033] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473587.015470129] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.2 graus
+[INFO] [1789473587.160024185] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473588.002890547] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473588.053816104] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 349.400000 but the latest data is at time 349.308000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473589.033624138] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473589.063460901] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[INFO] [1789473589.213345192] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473590.113117261] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 351.200000 but the latest data is at time 351.048000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473592.640639698] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473592.716418449] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[INFO] [1789473592.821057032] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473592.861901825] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473592.870670483] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 351.900000 but the latest data is at time 351.840000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473594.647054335] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473594.926885548] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 356.100000 but the latest data is at time 356.016000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473595.200980544] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.0 graus
+[INFO] [1789473595.332265766] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473596.257866737] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473596.652367629] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473597.215997729] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473597.425235483] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473597.636267285] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 358.700000 but the latest data is at time 358.620000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473598.858740676] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473599.633367014] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.8 graus
+[INFO] [1789473599.724738605] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473599.768213704] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473600.142673576] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 361.100000 but the latest data is at time 360.924000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473601.087406184] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473601.951563088] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473602.065400023] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473602.197169710] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 363.200000 but the latest data is at time 363.120000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473603.129150985] [candidate_generation_node]: 118 pontos apos voxel -> 118 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473603.351783802] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473604.383552491] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473604.452541816] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473604.496310610] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 365.400000 but the latest data is at time 365.352000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473605.176818499] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473606.447018519] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473606.591052474] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 367.500000 but the latest data is at time 367.452000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473606.753839940] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473606.906512491] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473607.255125555] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473608.742333638] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 369.400000 but the latest data is at time 369.336000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473609.003210425] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473609.162677083] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473609.501714276] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473609.707212752] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473611.037890960] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 371.700000 but the latest data is at time 371.640000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473611.342925383] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.5 graus
+[INFO] [1789473611.495740660] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473612.436120666] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473613.188877666] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473613.371831626] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.5 graus
+[WARN] [1789473613.506364295] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 374.200000 but the latest data is at time 374.148000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473613.891083153] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473614.918707298] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473615.416444338] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[WARN] [1789473615.642855942] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 376.300000 but the latest data is at time 376.116000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473616.077412416] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473616.727793358] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473617.305647737] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473617.639797752] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[WARN] [1789473617.859216868] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 378.500000 but the latest data is at time 378.312000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473618.526101257] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473619.374606429] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473619.877556343] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473620.012880059] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473620.057270058] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 380.700000 but the latest data is at time 380.592000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473621.055261917] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473621.721609725] [candidate_generation_node]: 106 pontos apos voxel -> 106 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473622.118829828] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 382.700000 but the latest data is at time 382.668000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473622.382805151] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 4.4 graus
+[INFO] [1789473623.107453516] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473623.157485676] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473624.180905842] [candidate_generation_node]: 103 pontos apos voxel -> 103 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[WARN] [1789473624.311555308] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 384.800000 but the latest data is at time 384.744000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473624.626195771] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.5 graus
+[INFO] [1789473625.391169996] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473626.310093996] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473626.325463375] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 386.700000 but the latest data is at time 386.676000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473626.502821104] [candidate_generation_node]: 105 pontos apos voxel -> 105 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473626.952956464] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.3 graus
+[INFO] [1789473627.509456526] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473628.621181192] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 389.000000 but the latest data is at time 388.920000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473628.916163538] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473629.427692994] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473629.552557263] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473629.960116146] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473630.655812961] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 391.100000 but the latest data is at time 391.032000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473631.402887663] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473631.431526129] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473632.258334228] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473633.112284472] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473633.119704983] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 393.400000 but the latest data is at time 393.348000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473633.437433853] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473633.710710616] [candidate_generation_node]: 119 pontos apos voxel -> 119 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473634.393391047] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473635.577103091] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 395.800000 but the latest data is at time 395.748000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473635.876009240] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473635.916195891] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[INFO] [1789473636.150071322] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473636.534648796] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473637.578452101] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 397.900000 but the latest data is at time 397.788000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473638.197966097] [candidate_generation_node]: 102 pontos apos voxel -> 102 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473638.227318504] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[INFO] [1789473638.781837551] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473639.352766295] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473639.696974426] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 399.900000 but the latest data is at time 399.828000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473640.549701524] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473640.582558508] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473641.396596532] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473642.119539473] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 402.100000 but the latest data is at time 401.928000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473642.578985820] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473642.815092264] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473642.843332931] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.7 graus
+[INFO] [1789473643.511288203] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473644.650092910] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 404.700000 but the latest data is at time 404.640000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473644.845147203] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473644.878425059] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[INFO] [1789473645.887664046] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473645.937433845] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473646.918607023] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473646.957848821] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[WARN] [1789473647.272704815] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 407.400000 but the latest data is at time 407.292000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473648.312540602] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473649.015813234] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473649.513666788] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473649.567263443] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[WARN] [1789473649.829808067] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 409.800000 but the latest data is at time 409.764000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473650.742453152] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473651.640226014] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473651.672466463] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[WARN] [1789473651.881219474] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 411.800000 but the latest data is at time 411.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473652.336909618] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473653.146022406] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473653.904099586] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 413.900000 but the latest data is at time 413.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473654.042133033] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473654.072857852] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473655.530212892] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473655.578538646] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473655.983725753] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 415.800000 but the latest data is at time 415.728000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473656.189727505] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473656.225645332] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.7 graus
+[INFO] [1789473657.700310224] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473658.238881326] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 418.100000 but the latest data is at time 418.008000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473658.391410840] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473658.403273068] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473658.912588516] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473660.057929823] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473660.713494181] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 420.300000 but the latest data is at time 420.228000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473660.982762190] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473661.008491197] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.3 graus
+[INFO] [1789473662.005514538] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473662.313148082] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473663.197597775] [candidate_generation_node]: 101 pontos apos voxel -> 101 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473663.213525855] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.0 graus
+[WARN] [1789473663.313215185] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 423.100000 but the latest data is at time 423.036000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473664.441847826] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473665.207206225] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473665.286128936] [candidate_generation_node]: 120 pontos apos voxel -> 120 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473665.321438541] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.6 graus
+[WARN] [1789473665.526167656] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 425.200000 but the latest data is at time 425.124000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473666.525293602] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473667.415598305] [candidate_generation_node]: 118 pontos apos voxel -> 118 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473667.443682224] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[WARN] [1789473667.604599801] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 427.300000 but the latest data is at time 427.224000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473668.381720452] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473668.573528782] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473669.820789207] [candidate_generation_node]: 120 pontos apos voxel -> 120 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473669.858997427] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.7 graus
+[WARN] [1789473670.341789239] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 430.000000 but the latest data is at time 429.936000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473670.949429413] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473671.657022354] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473672.452652823] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473672.470452119] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.8 graus
+[WARN] [1789473672.632638167] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 432.300000 but the latest data is at time 432.228000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473673.415368303] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473674.559064799] [candidate_generation_node]: 101 pontos apos voxel -> 101 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473674.583773665] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473674.751642555] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473674.763589531] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 434.400000 but the latest data is at time 434.304000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473675.598125429] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473676.676071826] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473676.702681222] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[WARN] [1789473676.885475225] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 436.500000 but the latest data is at time 436.428000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473677.979588645] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473678.022328350] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473678.684408915] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473678.709075329] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[WARN] [1789473678.888140806] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 438.600000 but the latest data is at time 438.588000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473680.194864876] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473680.718169887] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473680.744277799] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.6 graus
+[WARN] [1789473680.930472531] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 440.500000 but the latest data is at time 440.436000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473681.145666080] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473682.310123721] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473683.065255728] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473683.092574183] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.6 graus
+[WARN] [1789473683.231258419] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 442.900000 but the latest data is at time 442.752000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473684.694240698] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473684.726745951] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473685.253651629] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473685.282085037] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.4 graus
+[WARN] [1789473685.526100471] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 445.200000 but the latest data is at time 445.188000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473687.041535176] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473687.562312807] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473687.588699913] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473687.750235761] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473687.824318660] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 447.500000 but the latest data is at time 447.432000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473689.114338054] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473689.751153814] [candidate_generation_node]: 107 pontos apos voxel -> 107 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473689.764905384] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.3 graus
+[WARN] [1789473689.875978203] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 449.500000 but the latest data is at time 449.424000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473691.012387432] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473691.492571398] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473691.910934197] [candidate_generation_node]: 107 pontos apos voxel -> 107 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473691.928514867] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[WARN] [1789473692.055934801] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 451.600000 but the latest data is at time 451.536000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473693.587454695] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473694.092808422] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473694.101499946] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 453.500000 but the latest data is at time 453.432000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473694.424009344] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473694.454085510] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473695.881822583] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473696.296430775] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 455.800000 but the latest data is at time 455.724000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473696.583399738] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473696.612178438] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.4 graus
+[INFO] [1789473697.168303597] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473698.224940677] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473698.374297892] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 457.900000 but the latest data is at time 457.800000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473698.663415165] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473698.678485022] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473700.229521583] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473700.286766421] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473700.895802178] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 460.200000 but the latest data is at time 460.056000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473700.968237393] [candidate_generation_node]: 103 pontos apos voxel -> 103 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473700.981283482] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473702.399988286] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473703.038599451] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 462.500000 but the latest data is at time 462.420000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473703.325773251] [candidate_generation_node]: 100 pontos apos voxel -> 100 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473703.340678788] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473703.450357016] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473704.504460228] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473705.101276173] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 464.600000 but the latest data is at time 464.568000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473705.504205001] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473705.515510435] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.8 graus
+[INFO] [1789473706.595079135] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473706.643969070] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473707.183796185] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 466.700000 but the latest data is at time 466.644000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473707.921995588] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473707.988049569] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[INFO] [1789473708.772509183] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473709.454125650] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 468.900000 but the latest data is at time 468.624000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473709.928857794] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473710.231864085] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473710.260353819] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.5 graus
+[INFO] [1789473710.913333141] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473711.877312006] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 471.200000 but the latest data is at time 471.132000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473712.669688291] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473712.696150111] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.5 graus
+[INFO] [1789473713.128182129] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473713.161498470] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473713.979724157] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 473.300000 but the latest data is at time 473.232000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473714.867452466] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473714.902591224] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.5 graus
+[INFO] [1789473715.746284225] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473716.093665793] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 475.500000 but the latest data is at time 475.440000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473716.644778388] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473716.991323981] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473717.015503939] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473717.757733670] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473718.571475773] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 478.000000 but the latest data is at time 477.900000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473719.312201474] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473719.328299976] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473719.822666498] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473719.880932242] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473720.628570981] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 479.900000 but the latest data is at time 479.892000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473721.381222055] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473721.395512349] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.4 graus
+[INFO] [1789473721.892192185] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473722.837050863] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 482.100000 but the latest data is at time 482.088000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473723.142412457] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473723.506736778] [candidate_generation_node]: 119 pontos apos voxel -> 119 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473723.534778616] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473724.086722718] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473725.014707868] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 484.400000 but the latest data is at time 484.296000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473726.025428491] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473726.041154766] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.9 graus
+[INFO] [1789473726.119094371] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473726.167045350] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473727.390092777] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 486.600000 but the latest data is at time 486.552000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473728.051216041] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473728.063139931] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473728.129976426] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473729.598349652] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473729.609393765] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 488.900000 but the latest data is at time 488.736000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473730.254269944] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473730.275596029] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[INFO] [1789473730.388760947] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473731.734053514] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 491.100000 but the latest data is at time 490.944000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473732.466483553] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473732.489821396] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.5 graus
+[INFO] [1789473732.594224910] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473732.654805503] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473733.788229040] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 493.000000 but the latest data is at time 492.924000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473734.620805927] [candidate_generation_node]: 103 pontos apos voxel -> 103 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473734.647531299] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.6 graus
+[INFO] [1789473734.729461245] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473735.728262344] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473736.064416621] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 495.200000 but the latest data is at time 495.192000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473736.858457526] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473736.888761990] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473737.019437485] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473738.275258417] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 497.400000 but the latest data is at time 497.328000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473738.891333871] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473738.916223660] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[INFO] [1789473739.028804658] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473739.077961367] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473740.574818324] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 499.800000 but the latest data is at time 499.740000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473741.090271791] [candidate_generation_node]: 102 pontos apos voxel -> 102 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473741.115534120] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.4 graus
+[INFO] [1789473741.216592399] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473742.197896553] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473742.695625865] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 501.800000 but the latest data is at time 501.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473743.601951197] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473743.615705084] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473743.682554866] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473744.911137463] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 504.100000 but the latest data is at time 504.060000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473745.286365656] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473745.715869124] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473746.058145823] [candidate_generation_node]: 108 pontos apos voxel -> 108 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473746.104913475] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 5.4 graus
+[WARN] [1789473747.152481244] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 506.300000 but the latest data is at time 506.148000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473747.802486570] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473748.288805757] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473748.552884362] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473748.585128865] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.5 graus
+[WARN] [1789473749.633621116] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 508.800000 but the latest data is at time 508.788000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473749.966005355] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473750.681981735] [candidate_generation_node]: 111 pontos apos voxel -> 111 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473750.709992135] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.2 graus
+[INFO] [1789473751.879243288] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473751.890140185] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 510.900000 but the latest data is at time 510.636000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473752.205214291] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473752.926391584] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473752.951487718] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.3 graus
+[WARN] [1789473754.213012335] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 513.300000 but the latest data is at time 513.228000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473754.988624138] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473755.036146970] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473755.432342549] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473755.458221779] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[INFO] [1789473757.211469874] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473757.257808073] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 516.300000 but the latest data is at time 516.216000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473757.627418617] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473757.652071762] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.6 graus
+[INFO] [1789473758.336577699] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473759.372891260] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473759.417722968] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 518.500000 but the latest data is at time 518.364000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473759.771653906] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473759.810270488] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.8 graus
+[INFO] [1789473761.416915385] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473761.639756314] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473761.652511971] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 520.500000 but the latest data is at time 520.344000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473761.875552219] [candidate_generation_node]: 115 pontos apos voxel -> 115 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473761.903388470] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.0 graus
+[INFO] [1789473763.534727506] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[WARN] [1789473763.773952230] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 522.800000 but the latest data is at time 522.732000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473763.967686766] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473763.987115431] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[INFO] [1789473764.963558975] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473765.823295899] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473766.313701553] [candidate_generation_node]: 119 pontos apos voxel -> 119 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473766.332066558] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.2 graus
+[WARN] [1789473766.430992576] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 525.400000 but the latest data is at time 525.348000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473767.865427040] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473768.328829284] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473768.806228129] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473768.831762781] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.1 graus
+[WARN] [1789473769.001976782] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 527.900000 but the latest data is at time 527.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473770.078670690] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473770.975533877] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473770.990140996] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.9 graus
+[WARN] [1789473771.100012420] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 530.000000 but the latest data is at time 529.944000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473771.431436345] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473772.439341329] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473773.379270614] [candidate_generation_node]: 114 pontos apos voxel -> 114 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473773.402126241] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 1.5 graus
+[WARN] [1789473773.663539123] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 532.600000 but the latest data is at time 532.548000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473774.768699260] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473774.799701204] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473775.472927014] [candidate_generation_node]: 117 pontos apos voxel -> 117 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473775.489991854] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.0 graus
+[WARN] [1789473776.013710686] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 534.800000 but the latest data is at time 534.720000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473777.089102221] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473778.100428743] [candidate_generation_node]: 109 pontos apos voxel -> 109 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473778.120953689] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 0.4 graus
+[INFO] [1789473778.356854382] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[WARN] [1789473778.368624457] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 537.100000 but the latest data is at time 537.036000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473779.115526985] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473780.293668085] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473780.327887557] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 3.1 graus
+[WARN] [1789473780.542580444] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 539.300000 but the latest data is at time 539.232000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473781.345608241] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473781.389801163] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473782.559414665] [candidate_generation_node]: 116 pontos apos voxel -> 116 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473782.573803568] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.3 graus
+[WARN] [1789473782.994732726] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 541.700000 but the latest data is at time 541.608000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473783.660735600] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473784.583693865] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473784.685672998] [candidate_generation_node]: 113 pontos apos voxel -> 113 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473784.713885537] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.9 graus
+[WARN] [1789473785.071451082] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 543.900000 but the latest data is at time 543.852000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473785.748658195] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473787.015982061] [candidate_generation_node]: 112 pontos apos voxel -> 112 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473787.043300170] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[WARN] [1789473787.213808597] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 545.900000 but the latest data is at time 545.832000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]
+[INFO] [1789473787.761239468] [candidate_generation_node]: [CALIBRACAO] voxel=0.06m | total_areas=626 | areas_confirmadas(>=10)=378
+[INFO] [1789473788.169039652] [candidate_generation_node]: MELHOR AREA (id=228, 626 conhecidas): (-5.15, -4.99, 0.02) raio=0.70m score=0.925 confirmacoes=257
+[INFO] [1789473789.084188762] [candidate_generation_node]: 110 pontos apos voxel -> 110 sobrevivem ao filtro coarse (grid 1.0m, altura max 0.5m)
+[INFO] [1789473789.115329370] [candidate_generation_node]: 50/50 candidatos validos | raio min/media/max: 0.70/0.70/0.70m | inclinacao media: 2.7 graus
+[WARN] [1789473789.312226520] [candidate_generation_node]: TF nao disponivel ainda: Lookup would require extrapolation into the future.  Requested time 548.000000 but the latest data is at time 547.920000, when looking up transform from frame [x500_px4/livox_avia/lidar_3d/gpu_ray] to frame [earth]

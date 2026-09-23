@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="highlight_marker_grande">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.5 2.5 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0 1.0 0.0 0.5</ambient>
+          <diffuse>0.0 1.0 0.0 0.5</diffuse>
+          <emissive>0.0 0.3 0.0 1</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
