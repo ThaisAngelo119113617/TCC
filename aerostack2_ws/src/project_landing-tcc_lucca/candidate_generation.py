@@ -462,8 +462,7 @@ class CandidateGenerationNode(Node):
             #             'roughness': roughness,
             #         })
             if best is not None:
-                radius, normal, roughness, angle_deg , centroid_final= best
-
+                radius, normal, roughness, angle_deg, centroid_final = best
                 # Log TODOS os candidatos (mesmo os rejeitados) para calibracao offline
                 if self.debug_csv is not None:
                     self.debug_csv.writerow([
