@@ -83,6 +83,21 @@ class CandidateGenerationNode(Node):
 
         self.current_position = None  # np.array([x, y]) -- atualizado pelo pose_callback
 
+        ################ salvando info dos candidatos
+        # no __init__, junto dos outros parametros de log:
+        self.declare_parameter('history_csv_path', '')
+        history_csv_path = self.get_parameter('history_csv_path').value
+        self.history_csv = None
+        if history_csv_path:
+            import csv
+            self.history_csv_file = open(history_csv_path, 'w', newline='')
+            self.history_csv = csv.writer(self.history_csv_file)
+            self.history_csv.writerow([
+                'sim_time_s', 'area_id', 'x', 'y', 'spotgrade',
+                'radius', 'inclination_deg', 'roughness',
+                'drone_x', 'drone_y', 'confirmations', 'foi_atualizado'
+            ])
+
         ###############
 
         # --- Filtro de densidade minima (protege contra raio grande com poucos pontos) ---
@@ -134,21 +149,18 @@ class CandidateGenerationNode(Node):
         # Zonas planas conhecidas (ground truth, gerar_heightmap_grama.py),
         # convertidas de pixel para coordenadas earth (aproximado -- ajustar
         # se a orientacao linha/coluna estiver invertida na pratica)
-        self.ground_truth_zones = [
-            {'center': (-4.28,  4.28), 'size': (1.76, 1.76)},
-            {'center': (-3.11, -2.17), 'size': (1.76, 1.76)},
-            {'center': ( 3.34,  1.35), 'size': (1.76, 1.76)},
-        ]
         # self.ground_truth_zones = [
-        #     {'center': (-5.5, -5.5), 'size': (2.5, 2.5)},   # Zona A
-        #     {'center': (6.0, 0.0),   'size': (1.0, 1.0)},   # Zona B
+        #     {'center': (-4.28,  4.28), 'size': (1.76, 1.76)},
+        #     {'center': (-3.11, -2.17), 'size': (1.76, 1.76)},
+        #     {'center': ( 3.34,  1.35), 'size': (1.76, 1.76)},
         # ]
+    
 
-        # self.ground_truth_zones = [
-        # {'center': (-5.5, -5.5), 'size': (2.5, 2.5), 'color': (0.0, 1.0, 0.0)},  # Zona A -- verde (aceita)
-        # {'center': (6.0, 0.0),   'size': (1.0, 1.0), 'color': (0.0, 1.0, 0.0)},  # Zona B -- verde (aceita)
-        # {'center': (0.0, -6.0),  'size': (1.0, 1.0), 'color': (1.0, 0.0, 0.0)},  # Zona C -- vermelha (deve ser rejeitada)
-        #   ]
+        self.ground_truth_zones = [
+        {'center': (-5.5, -5.5), 'size': (2.5, 2.5), 'color': (0.0, 1.0, 0.0)},  # Zona A -- verde (aceita)
+        {'center': (6.0, 0.0),   'size': (1.0, 1.0), 'color': (0.0, 1.0, 0.0)},  # Zona B -- verde (aceita)
+        {'center': (0.0, -6.0),  'size': (1.0, 1.0), 'color': (1.0, 0.0, 0.0)},  # Zona C -- vermelha (deve ser rejeitada)
+          ]
         # Publica o contorno periodicamente (garante visibilidade mesmo se
         # o RViz conectar depois do primeiro frame)
         self.create_timer(2.0, self._publish_ground_truth_zones)
@@ -526,14 +538,43 @@ class CandidateGenerationNode(Node):
                 return area_id
         return None
 
+    # def _update_known_areas(self, candidate: dict, spotgrade: float, stamp) -> None:
+    #     """
+    #     Acumulacao espacial: se o candidato corresponde a uma area ja conhecida,
+    #     atualiza (estrategia 'melhor observacao': so substitui se o novo score
+    #     for maior). Caso contrario, registra como area nova.
+    #     """
+    #     center = candidate['center']
+    #     matched_id = self._match_known_area(center)
+
+    #     if matched_id is None:
+    #         area_id = self._next_area_id
+    #         self._next_area_id += 1
+    #         self.known_areas[area_id] = {
+    #             'center_earth': center,
+    #             'radius': candidate['radius'],
+    #             'inclination_deg': candidate['inclination_deg'],
+    #             'roughness': candidate['roughness'],
+    #             'spotgrade': spotgrade,
+    #             'confirmations': 1,
+    #             'last_seen_stamp': stamp,
+    #         }
+    #     else:
+    #         area = self.known_areas[matched_id]
+    #         area['confirmations'] += 1
+    #         area['last_seen_stamp'] = stamp
+    #         if spotgrade > area['spotgrade']:
+    #             # melhor observacao supera a anterior -- substitui as metricas
+    #             area['center_earth'] = center
+    #             area['radius'] = candidate['radius']
+    #             area['inclination_deg'] = candidate['inclination_deg']
+    #             area['roughness'] = candidate['roughness']
+    #             area['spotgrade'] = spotgrade
+
     def _update_known_areas(self, candidate: dict, spotgrade: float, stamp) -> None:
-        """
-        Acumulacao espacial: se o candidato corresponde a uma area ja conhecida,
-        atualiza (estrategia 'melhor observacao': so substitui se o novo score
-        for maior). Caso contrario, registra como area nova.
-        """
         center = candidate['center']
         matched_id = self._match_known_area(center)
+        drone_x, drone_y = (self.current_position if self.current_position is not None else (None, None))
 
         if matched_id is None:
             area_id = self._next_area_id
@@ -547,17 +588,32 @@ class CandidateGenerationNode(Node):
                 'confirmations': 1,
                 'last_seen_stamp': stamp,
             }
+            self._log_history(area_id, center, spotgrade, candidate, drone_x, drone_y, 1, True)
         else:
             area = self.known_areas[matched_id]
             area['confirmations'] += 1
             area['last_seen_stamp'] = stamp
-            if spotgrade > area['spotgrade']:
-                # melhor observacao supera a anterior -- substitui as metricas
+            atualizou = spotgrade > area['spotgrade']
+            if atualizou:
                 area['center_earth'] = center
                 area['radius'] = candidate['radius']
                 area['inclination_deg'] = candidate['inclination_deg']
                 area['roughness'] = candidate['roughness']
                 area['spotgrade'] = spotgrade
+            self._log_history(matched_id, center, spotgrade, candidate, drone_x, drone_y,
+                            area['confirmations'], atualizou)
+
+
+    def _log_history(self, area_id, center, spotgrade, candidate, drone_x, drone_y, confirmations, atualizou):
+        if self.history_csv is None:
+            return
+        sim_time_s = time.time() - self.t_start
+        self.history_csv.writerow([
+            sim_time_s, area_id, float(center[0]), float(center[1]), spotgrade,
+            candidate['radius'], candidate['inclination_deg'], candidate['roughness'],
+            drone_x, drone_y, confirmations, atualizou
+        ])
+        self.history_csv_file.flush()
 
 
     def _apply_transform(self, points: np.ndarray, transform) -> np.ndarray:

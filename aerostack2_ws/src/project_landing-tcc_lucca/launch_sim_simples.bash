@@ -5,9 +5,10 @@
 # Mesmo modelo de drone (x500_px4) e mesmo mundo (config/world.yaml).
 #
 # Uso:
-#   ./launch_sim_simples.bash
+# #   ./launch_sim_simples.bash
 
-simulation_config="config/world_rugosidade_grossa.yaml"
+# simulation_config="config/world_rugosidade_grossa.yaml"
+simulation_config="config/world_tres_areas_diferentes.yaml"
 
 drones_namespace_comma=$(python3 utils/get_drones.py -p "${simulation_config}" --sep ',')
 IFS=',' read -r -a drone_namespaces <<< "$drones_namespace_comma"

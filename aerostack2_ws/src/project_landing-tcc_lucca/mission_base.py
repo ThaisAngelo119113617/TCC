@@ -277,3 +277,27 @@ class SimpleMission:
             time.sleep(0.1)
         self.drone.destroy_subscription(sub)
         return result['pose']
+
+
+    def send_speed(self, vx: float, vy: float, vz: float = 0.0, yaw_speed: float = 0.0) -> None:
+        """Envia comando de velocidade continuo (Speed Control mode)."""
+        self.drone.motion_ref_handler.speed.send_speed_command_with_yaw_speed(
+            [vx, vy, vz], 'earth', yaw_speed
+        )
+
+    def _iniciar_pose_cache(self):
+        """Assina a pose uma unica vez -- usar depois com _get_pose_cached()."""
+        from geometry_msgs.msg import PoseStamped
+        from rclpy.qos import qos_profile_sensor_data
+
+        def callback(msg):
+            self._ultima_pose = (msg.pose.position.x, msg.pose.position.y, msg.pose.position.z)
+
+        self._ultima_pose = None
+        self._pose_cache_sub = self.drone.create_subscription(
+            PoseStamped, '/x500_px4/self_localization/pose', callback, qos_profile_sensor_data)
+
+    def _get_pose_cached(self) -> tuple:
+        """Le a ultima pose recebida (rapido -- sem criar/destruir subscription)."""
+        return self._ultima_pose
+    

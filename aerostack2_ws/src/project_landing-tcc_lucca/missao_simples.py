@@ -99,6 +99,7 @@ Como rodar (dentro do container, com a simulação já aberta):
 """
 
 from mission_base import SimpleMission
+import inspect
 
 DRONE_NAMESPACE = 'x500_px4'
 ALTURA_DECOLAGEM = 5.0  # metros
@@ -127,7 +128,23 @@ def main():
 
         mission.land()
         print(f'[DEBUG] Pose apos land: {mission._get_pose_now()}')
+        # mission.takeoff(ALTURA_DECOLAGEM)
+        # mission.drone.load_module('motion_reference_handler')
 
+        # print('[teste] Mandando vx=0.3 m/s por 3 segundos...')
+        # import time
+        # t0 = time.time()
+        # while time.time() - t0 < 3.0:
+        #     # print(inspect.signature(mission.drone.motion_ref_handler.speed.send_speed_command_with_yaw_speed))
+            
+        #     mission.send_speed(1.0, 0.0, 0.0)
+        #     pose = mission._get_pose_now()
+        #     print(f'  t={time.time()-t0:.2f}s pose={pose}')
+        #     time.sleep(0.1)
+
+        # mission.send_speed(0.0, 0.0, 0.0)  # para
+        # print('[teste] Pose final:', mission._get_pose_now())
+        # mission.land()
 
 if __name__ == '__main__':
     main()

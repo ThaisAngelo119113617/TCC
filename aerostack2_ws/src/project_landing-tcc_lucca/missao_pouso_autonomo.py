@@ -41,6 +41,8 @@ WAYPOINTS_VARREDURA = [
 def main():
     with SimpleMission(DRONE_NAMESPACE) as mission:
         mission.takeoff(ALTURA_DECOLAGEM)
+        print('Modulos ja carregados:', mission.drone.modules)
+
         print(f'[DEBUG] Home position capturada: {mission.home_position}')
 
         # Zera a memoria de areas conhecidas -- so a partir daqui as
