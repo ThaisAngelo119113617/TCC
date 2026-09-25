@@ -39,6 +39,7 @@ from visualization_msgs.msg import Marker, MarkerArray
 from std_srvs.srv import Trigger
 from geometry_msgs.msg import PoseStamped 
 import time
+from datetime import datetime
 
 class CandidateGenerationNode(Node):
     """No ROS2 que gera candidatos geometricos de pouso a partir do LiDAR."""
@@ -728,12 +729,13 @@ class CandidateGenerationNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = CandidateGenerationNode()
+    now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
-        node._dump_known_areas('/tmp/known_areas_final.json')
+        node._dump_known_areas(f'/tmp/known_areas_final_{now}.json')
         node.destroy_node()
         rclpy.shutdown()
 

@@ -23,6 +23,7 @@ import matplotlib
 matplotlib.use('Agg')  # sem display -- so salva arquivo, roda dentro do container
 import matplotlib.pyplot as plt
 import json
+from datetime import datetime
 
 DRONE_NAMESPACE = 'x500_px4'
 ALTURA_DECOLAGEM = 5.0
@@ -41,6 +42,10 @@ L0, KP, KI, TAU_P = 1.0, 0.3, 0.08, 1.0  # comeca so com P, sem I -- ajustar dep
 H = 0.05  # periodo do loop de controle (20 Hz)
 CENTRO_X, CENTRO_Y = 0.0, 0.0
 
+now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+csv_path = f"trajetoria_hipotrocoide_{now}.csv"
+png_path = f"trajetoria_hipotrocoide_{now}.png"
 
 def referencia_hipotrocoide(t, x0=0.0, y0=0.0):
     """Retorna ((x_d, y_d), (vx_d, vy_d), (ax_d, ay_d)) no instante t,
@@ -57,10 +62,9 @@ def referencia_hipotrocoide(t, x0=0.0, y0=0.0):
     return (x_d, y_d), (vx_d, vy_d), (ax_d, ay_d)
 
 
-def salvar_log_e_grafico(log_t, log_x, log_y, log_xd, log_yd,
-                          csv_path='trajetoria_hipotrocoide.csv',
-                          png_path='trajetoria_hipotrocoide.png'):
-    with open(csv_path, 'w', newline='') as f:
+def salvar_log_e_grafico(log_t, log_x, log_y, log_xd, log_yd, csv_path, png_path):
+    with open(csv_path, 'w', newline=
+              '') as f:
         writer = csv.writer(f)
         writer.writerow(['t', 'x_real', 'y_real', 'x_desejado', 'y_desejado'])
         writer.writerows(zip(log_t, log_x, log_y, log_xd, log_yd))
@@ -152,7 +156,7 @@ def main():
         time.sleep(1.5)  # deixa o modo de controle assentar antes do go_to/land
         print('[missao] Varredura concluida.')
 
-        salvar_log_e_grafico(log_t, log_x, log_y, log_xd, log_yd)
+        salvar_log_e_grafico(log_t, log_x, log_y, log_xd, log_yd, csv_path, png_path)
 
         candidato = mission.wait_for_landing_candidate(timeout=TEMPO_BUSCA)
 
